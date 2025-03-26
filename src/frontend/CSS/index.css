@@ -253,6 +253,7 @@ section.calculadora form#imcForm select{
     color: #767678;
     text-align: center;
     outline: none;
+    cursor: pointer;
 } 
 
 section.calculadora .button {
