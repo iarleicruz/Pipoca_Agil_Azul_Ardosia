@@ -1,5 +1,6 @@
 html{
     height: 100%;
+    scroll-behavior: smooth;
    
 }
 
@@ -61,6 +62,11 @@ body{
 .header-1--menu li:nth-child(3) a{
     color: white;
     background-color: #f82510;
+    transition: .5s;
+
+}
+.header-1--menu li:nth-child(3):hover a{
+background: #ff7161;
 }
 
 .header-1--menu li a{
@@ -72,9 +78,13 @@ body{
     border: 1px solid #f82510;
     padding: 10px;
     border-radius: 5px;
+    transition: .5s;
 
 }
+.header-1--menu li a:hover{
+background: #fff2f0;
 
+}
 
 /*    Fim do Header    */
 
@@ -145,9 +155,13 @@ body{
     font-weight: 600;
     cursor: pointer;
     margin-left: 10px;
+    transition: .5s;
 }
 
+.heartcare_container--intro button:hover{
+ background: rgb(239, 222, 222);
 
+}
 /*    Fin do Hero    */
 
 
@@ -157,6 +171,12 @@ body{
 
 section.calculadora {
     background: white;
+}
+
+section.calculadora::after {
+    content: url("/docs/imagens/Vector.png");
+    position: relative;
+    bottom: 580px;
 }
 
 .calculadora h1 {
@@ -220,6 +240,7 @@ section.calculadora form#imcForm input{
     width: 120px;
     border-radius: 5px;
     text-align: center;
+    outline: none;
     
 }
  
@@ -231,6 +252,7 @@ section.calculadora form#imcForm select{
     border-radius: 5px;
     color: #767678;
     text-align: center;
+    outline: none;
 } 
 
 section.calculadora .button {
@@ -246,6 +268,12 @@ section.calculadora button{
   margin-top: 20px;
   cursor: pointer;
   font-size: 16px;
+  transition: .5s;
+}
+
+section.calculadora button:hover{
+
+    background: #ff7161;
 }
 
 section.calculadora .imcResultado {
@@ -360,6 +388,7 @@ section#saber__sobre__o__que .header-2 .header-2--barra-pesquisa input{
     padding: 5px;
     width: 300px;
     border-radius: 5px;
+    outline: none;
 }
 
 section#saber__sobre__o__que .header-2 .header-2--barra-pesquisa button{
@@ -368,8 +397,13 @@ section#saber__sobre__o__que .header-2 .header-2--barra-pesquisa button{
     border-radius: 5px;
     border: none;
     color: white;
-   cursor: pointer;
+    cursor: pointer;
     font-size: 14px;
+    transition: .5s;
+}
+section#saber__sobre__o__que .header-2 .header-2--barra-pesquisa button:hover{
+
+    background: #ff7161;
 }
 /* 
 section#saber__sobre__o__que article .saber__sobre__o__que__conteudo{
@@ -401,9 +435,10 @@ section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div{
   display: flex;
   justify-content: center;
   align-items: center;
-
-  
 }
+
+
+
 section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div img{
    background: white;
    width: 100px;
@@ -428,12 +463,17 @@ section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div butto
     border-radius: 3px;
     color: #f82510;
     font-size: 14px;
+    transition: .5s;
+    cursor: pointer;
 
 
 }
 
+section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div button:hover{
 
+background: rgb(239, 222, 222);
 
+}
 /*    Fim da section saber__sobre__o__que    */
 
 
@@ -452,6 +492,11 @@ header.header-3 h1{
 
 }
 
+header.header-3::after {
+ content: url("/docs/imagens/Detalhe.svg");
+ position: relative;
+ bottom: 920px;
+}
 header.header-3 h1::before {
     content: url("/docs/imagens/aspas.svg");
   
@@ -471,6 +516,8 @@ header.header-3 .header-3--barra-pesquisa input{
     padding: 5px;
     width: 300px;
     border-radius: 5px;
+    outline: none;
+  
 }
 
 header.header-3 .header-3--barra-pesquisa button{
@@ -479,10 +526,15 @@ header.header-3 .header-3--barra-pesquisa button{
     border-radius: 5px;
     border: none;
     color: white;
-   cursor: pointer;
+    cursor: pointer;
     font-size: 14px;
+    transition: .5s;
 }
 
+header.header-3 .header-3--barra-pesquisa button:hover{
+    background: #ff7161;
+ 
+}
 header.header-3 .contatosUteis {
    display: flex;
    justify-content: center;
@@ -502,22 +554,16 @@ header.header-3 .contatosUteis div > img{
     background: #EAEAEA;
     padding: 20px;
     border-radius: 5px;
-  
- 
-
 }
+
 header.header-3 .contatosUteis div > p{
     margin-bottom: 20px;
     text-align: center;
     font-size: 12px;
-
-
 }
 header.header-3 .contatosUteis div  p strong{
-    
     text-align: center;
     font-size: 16px;
-
 }
 
 header.header-3 .conteudo-1 > div, 
@@ -554,40 +600,56 @@ section.header-informacoes{
 
 section.header-informacoes .header-informacoes--logo{
     
+    
     width: 280px;
     height: 250px;
     text-align: center;
+    margin-top: 100px;
    
 }
-section.header-informacoes  p{
-   width: 200px;
-   text-align: center;
+section.header-informacoes .header-informacoes--logo img{
+    
+    width: 80px;
+  
+   
+}
 
+section.header-informacoes  p{
+   width: 160px;
+   text-align: center;
+   margin: 10px 25px;
 }
 
 section.header-informacoes nav{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
+    text-align: left;
 }
 
 section.header-informacoes ul{
-    width: 100%;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: left;
+ 
 }
+
+section.header-informacoes ul:nth-child(2) {
+ margin-left: 100px;
+ }
+
 section.header-informacoes ul li{
-    width: 100%;
+   width: 100%;
    list-style: none;
-    text-align: left;
-    margin: 5px 0;
+   margin: 5px 0;
 }
+
 section.header-informacoes ul li a{
   text-decoration: none;
+   color: black;
+   
 
 }
 
@@ -608,3 +670,27 @@ footer.rodape{
     font-size: 24px;
 }
 /*   IniFim Footer   */
+
+
+/* Mudar a cor do scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #f82510;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f82510;
+  }
