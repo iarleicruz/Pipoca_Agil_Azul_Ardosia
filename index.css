@@ -169,7 +169,7 @@ section.calculadora {
 }
 
 .calculadora h1::before {
-    content: url("/docs/imagens/aspas.svg");
+    content: url("./docs/imagens/aspas.svg");
   
 
 }
@@ -317,7 +317,7 @@ section.calculadora .imcResultado .imcImagem img {
 
 hr{
     margin: auto;
-    background:url("/docs/imagens/Line.png"); 
+    background:url("./docs/imagens/Line.png"); 
     width: 1122px;
     height: 2px;
 }
@@ -342,7 +342,7 @@ section#saber__sobre__o__que h1{
 
 }
 section#saber__sobre__o__que .header-2 h1::before {
-    content: url("/docs/imagens/aspas.svg");
+    content: url("./docs/imagens/aspas.svg");
   
 
 }
@@ -453,7 +453,7 @@ header.header-3 h1{
 }
 
 header.header-3 h1::before {
-    content: url("/docs/imagens/aspas.svg");
+    content: url("./docs/imagens/aspas.svg");
   
 
 }
