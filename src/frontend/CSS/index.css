@@ -359,8 +359,9 @@ hr{
 
 section#saber__sobre__o__que {
     background: white;
-    padding-bottom: 100px;
-    height: 100%;
+    /* padding-bottom: 10px; */
+    position: relative;
+    bottom: 100px;
 }
 
 section#saber__sobre__o__que h1{
