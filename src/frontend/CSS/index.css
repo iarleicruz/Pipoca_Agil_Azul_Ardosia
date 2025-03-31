@@ -1,18 +1,19 @@
-html{
-    height: 100%;
-    scroll-behavior: smooth;
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-}
 
- * {
+
+*{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Poppins";
+    /* overflow-x: hidden; */
+  
  }
-body{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+ 
+ 
 
-}
 
 /*    Início do Header    */
 
@@ -40,9 +41,9 @@ body{
 
 .header-1--logo--2{
     width: 80px;
-    height: 45px;
+    height: 50px;
     /* border: 1px solid #CD1C0C; */
-    padding: 7px;
+    /* padding: 7px; */
     border-radius: 5px;
   }
 
@@ -82,7 +83,7 @@ background: #ff7161;
 
 }
 .header-1--menu li a:hover{
-background: #fff2f0;
+   background: #fff2f0;
 
 }
 
@@ -91,50 +92,51 @@ background: #fff2f0;
 
 /*    Início do Hero    */
 
-.heartcare_container{
+/* .heartcare_container{
 
-    max-width: 100%; /* ou a largura desejada */
-    height: 100%;
+    width: 100%;
+    height: 100vh;
+    background: url("../../../docs/imagens/Hero-1920.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+ } */
 
-}
 
 .heartcare_container--img-background img{
     width: 100%;
-    display: block;
-    height: 100%;
-
-    /* height: 100%; */
-
+    /* height: 100vh; */
+     
 }
 
-.heartcare_container--img-sobreposta {
+/* .heartcare_container--img-sobreposta {
     max-width: 100%;
 
 }
 
-.heartcare_container--img-sobreposta img {
-    max-width: 600px;
-    height: 422px;
+.heartcare_container--img-sobreposta picture img {
+ 
     position: absolute;
     top: 70px;
     right: 26px;
 }
+ */
 
 .heartcare_container--intro{
     position: absolute;
-    top: 226px;
-    left: 112px;
-    font-size: 25px;
+    top: 300px;
+    left: 200px;
+    font-size: 30px;
     color: white;
-
+    font-weight: 500;
+    
 }
 
 
 .heartcare_container--intro h2{
-    font-size: 25px;
+    font-size: 30px;
     color: #f7f1f1;
-    margin-top: 30px;
-    margin-bottom: 35px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
 }
 
@@ -148,13 +150,12 @@ background: #fff2f0;
     display: block;
     border: none;
     border-radius: 5px;
-    width: 176px;
-    height: 63px;
-    font-size: 20px;
+    width: 196px;
+    height: 73px;
+    font-size: 26px;
     text-transform: uppercase;
     font-weight: 600;
     cursor: pointer;
-    margin-left: 10px;
     transition: .5s;
 }
 
@@ -171,6 +172,7 @@ background: #fff2f0;
 
 section.calculadora {
     background: white;
+    padding-bottom: 100px;
 }
 
 section.calculadora::after {
@@ -219,7 +221,7 @@ section.calculadora h3 {
     font-size: 20px;
     text-align: center;
     color: #f82510;
-    margin: 50px 0 20px 0;
+    margin: 50px 0;
 
 }
 
@@ -229,6 +231,7 @@ section.calculadora form#imcForm .container{
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-bottom: 20px;
 }
 
 section.calculadora form#imcForm input{
@@ -257,8 +260,9 @@ section.calculadora form#imcForm select{
 }
 
 section.calculadora .button {
-    width: 100%;
-    text-align: center;
+   width: 100%;
+   text-align: center;
+  
 }
 section.calculadora button{
   background:  #f82510;
@@ -270,6 +274,7 @@ section.calculadora button{
   cursor: pointer;
   font-size: 16px;
   transition: .5s;
+  margin-right: 18px;
 }
 
 section.calculadora button:hover{
@@ -283,7 +288,7 @@ section.calculadora .imcResultado {
   align-items: center;
   margin-top: 50px;
   gap: 50px;
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
 
 }
 
@@ -316,8 +321,8 @@ section.calculadora .imcResultado .imcClassificacao__Resultado p#resultado{
 
  section.calculadora .imcClassificacao .imc h3,
  section.calculadora .imcClassificacao .classificacao h3{
-     margin: 30px;
-     font-size: 20px;
+     margin: 5px;
+     font-size: 16px;
      color: black;
  }
  section.calculadora .imcClassificacao .imc p,
@@ -346,8 +351,9 @@ section.calculadora .imcResultado .imcImagem img {
 
 hr{
     margin: auto;
-    background:url("/docs/imagens/Line.png");
-    width: 1122px;
+    background:url("../../../docs/imagens/Line.png");
+    background-position: center;
+    max-width: 1122px;
     height: 2px;
 }
 
@@ -359,9 +365,8 @@ hr{
 
 section#saber__sobre__o__que {
     background: white;
-    /* padding-bottom: 10px; */
-    position: relative;
-    bottom: 100px;
+    padding-bottom: 100px;
+
 }
 
 section#saber__sobre__o__que h1{
@@ -485,6 +490,7 @@ background: rgb(239, 222, 222);
 header.header-3{
     background: white;
     border: none;
+    height: 1142px;
 }
 header.header-3 h1{
     font-size: 32px;
@@ -495,12 +501,12 @@ header.header-3 h1{
 }
 
 header.header-3::after {
- content: url("/docs/imagens/Detalhe.svg");
+ content: url("../../../docs/imagens/Detalhe.svg");
  position: relative;
  bottom: 920px;
 }
 header.header-3 h1::before {
-    content: url("/docs/imagens/aspas.svg");
+    content: url("../../../docs/imagens/aspas.svg");
 
 
 }
@@ -592,9 +598,8 @@ section.header-informacoes{
    justify-content: center;
    align-items: center;
    margin: auto;
-   width: 1100px;
-   position: relative;
-   bottom: 100px;
+   max-width: 1100px;
+   
 
 }
 
@@ -609,7 +614,7 @@ section.header-informacoes .header-informacoes--logo img{
 }
 
 section.header-informacoes  p{
-   width: 160px;
+   width: 180px;
    text-align: center;
    margin: 10px 25px;
 }
@@ -686,3 +691,193 @@ footer.rodape{
   ::-webkit-scrollbar-thumb:hover {
     background: #f82510;
   }
+
+  @media (max-width: 1366px){
+	
+    .heartcare_container--intro {
+        position: absolute;
+        top: 250px;
+        left: 130px;
+        font-size: 20px;
+        color: white;
+        font-weight: 500;
+
+    }
+
+    .heartcare_container--intro h2{
+        font-size: 20px;
+        color: #f7f1f1;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    
+    }
+
+    .heartcare_container--intro button{
+       
+        width: 166px;
+        height: 73px;
+        font-size: 18px;
+       
+    }
+}
+    
+@media (max-width: 768px){
+    
+	
+    /* .heartcare_container {
+      
+        background: #f82510;
+     
+        
+    }
+     */
+
+
+
+     .header-1 {
+        /* width: 100%; */
+        /* display: flex
+    ; */
+        justify-content: space-between;
+        /* background-color: #ffffff; */
+        /* padding-top: 5px; */
+        /* position: fixed; */
+        /* z-index: 1; */
+        /* box-shadow: 0 1px 0 rgb(200, 198, 198); */
+    }
+
+     .header-1--logo--1 {
+        /* width: 80px; */
+        /* height: 60px; */
+        margin-left: 20px;
+        /* border: 1px solid #CD1C0C; */
+        /* border-radius: 5px; */
+    }
+  .header-1--menu li a {
+    /* display: inline-block; */
+    /* color: #f82510; */
+    /* text-decoration: none; */
+    /* text-transform: uppercase; */
+    /* font-size: 12px; */
+    /* border: 1px solid #f82510; */
+    padding: 7px;
+    /* border-radius: 5px; */
+    /* transition: .5s; */
+}
+    .heartcare_container--intro {
+               /* position: absolute; */
+               top: 120px;
+               left: 130px;
+               font-size: 16px;
+               /* color: white; */
+               /* font-weight: 500; */
+           
+    }
+    .heartcare_container--intro h2 {
+        font-size: 20px;
+        color: #f7f1f1;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    section.calculadora article {
+     
+        width: 700px;
+        margin-left: 25px;
+       
+       
+    }
+
+    section.calculadora .imcResultado {
+        display: flex
+    ;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        gap: 10px;
+        /* padding-bottom: 100px; */
+    }
+    section.calculadora .imcResultado .imcClassificacao__Resultado {
+        background: #EAEAEA;
+        border-radius: 3px;
+        box-shadow: 2px 2px 0px rgb(200, 198, 198);
+        /* width: 400px; */
+    }
+    hr {
+        margin: auto;
+        background: url(../../../docs/imagens/Line.png);
+        background-position: center;
+        max-width: 600px;
+        height: 2px;
+    }
+    section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div p {
+        background: white;
+        /* font-size: 16px; */
+        /* border-radius: 5px; */
+        margin: 0px 10px;
+        width: 300px;
+        line-height: 1.8;
+    }
+section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-1,
+section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-2,
+section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-3,
+section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-4,
+section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-5{
+   
+    width: 600px;
+    margin: 10px auto;
+   
+
+}
+
+header.header-3 .conteudo-1 > div, header.header-3 .conteudo-2 > div {
+   
+    width: 200px;
+}
+header.header-3 .contatosUteis > div{
+    display: flex;
+    /* width: 100%; */
+
+
+}
+header.header-3 .contatosUteis div > img {
+   
+    width: 140px;
+}
+section.header-informacoes .header-informacoes--logo {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+section.header-informacoes {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    align-items: center;
+    margin: auto;
+    max-width: 1100px;
+}
+
+    section.header-informacoes nav {
+        width: 50%;
+        display: flex;
+        /* justify-content: right; */
+        align-items: center;
+        text-align: left;
+    }
+    section.header-informacoes ul{
+        /* width: 100px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* margin-left: 50px; */
+
+    
+    }
+
+    section.header-informacoes ul:nth-child(2) {
+        margin-left: 20px;
+    }
+
+    
+} 
