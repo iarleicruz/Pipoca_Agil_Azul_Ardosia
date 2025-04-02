@@ -351,7 +351,7 @@ section.calculadora .imcResultado .imcImagem img {
 
 hr{
     margin: auto;
-    background:url("../../../docs/imagens/Line.png");
+    background:url("./docs/imagens/Line.png");
     background-position: center;
     max-width: 1122px;
     height: 2px;
@@ -501,12 +501,12 @@ header.header-3 h1{
 }
 
 header.header-3::after {
- content: url("../../../docs/imagens/Detalhe.svg");
+ content: url("./docs/imagens/Detalhe.svg");
  position: relative;
  bottom: 920px;
 }
 header.header-3 h1::before {
-    content: url("../../../docs/imagens/aspas.svg");
+    content: url("./docs/imagens/aspas.svg");
 
 
 }
@@ -805,7 +805,7 @@ footer.rodape{
     }
     hr {
         margin: auto;
-        background: url(../../../docs/imagens/Line.png);
+        background: url(./docs/imagens/Line.png);
         background-position: center;
         max-width: 600px;
         height: 2px;
