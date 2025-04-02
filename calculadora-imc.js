@@ -3,7 +3,6 @@ document.getElementById('imcForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Evita o envio do formulário
 
     // Obtém os valores
-    const nome = document.getElementById('nome').value;
     const genero = document.getElementById('genero').value;
     const peso = parseFloat(document.getElementById('peso').value);
     const altura = parseFloat(document.getElementById('altura').value);
@@ -12,7 +11,7 @@ document.getElementById('imcForm').addEventListener('submit', function(event) {
     const imc = peso / (altura * altura);
 
     // Exibe o resultado
-    let resultadoTexto = `${nome}, seu IMC é: ${imc.toFixed(2)}`;
+    let resultadoTexto = `Seu IMC é: ${imc.toFixed(2)}`;
 
     // Classificação do IMC
     let classificacao = '';
