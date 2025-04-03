@@ -25,14 +25,17 @@
  <div class="heartcare_container--img-background">
 
     <picture>
-        <!-- <source media="(max-width: 1920px)" srcset="../../../docs/imagens/hero-1920.png"> -->
-        <source media="(min-width: 1366px)" srcset="./docs/imagens/Hero-1366.png">
-        <source media="(min-width: 1280px)" srcset="./docs/imagens/Hero-1280.png">
-        <source media="(max-width: 768px)" srcset="./docs/imagens/bgRed.png">
+        <source media="(max-width: 720px)" srcset="../../../docs/imagens/bgRed.png">
+        <source media="(max-width: 1920px)" srcset="../../../docs/imagens/hero-1920.png">
+        <source media="(min-width: 1366px)" srcset="../../../docs/imagens/Hero-1366.png">
+        <source media="(max-width: 1280px)" srcset="../../../docs/imagens/Hero-1280.png">
+        <source media="(max-width: 1024px)" srcset="../../../docs/imagens/Hero-1024.png">
 
         <!-- <img src="../../../docs/imagens/headerP.png" alt=""> -->
-        <img src="./docs/imagens/hero-1920.png" alt="">
+        <img src="../../../docs/imagens/hero-1920.png" alt="">
    </picture>
+          
+
           
         </div>
         <!-- <div class="heartcare_container--img-sobreposta">
@@ -58,14 +61,11 @@
         <!-- Lógica da calculadora IMC em javascript -->
        <h3>Calculadora de IMC</h3>
         <form id="imcForm">
-            <!-- Label Nome não foi requerido no prototipo -->
-            <!-- <label for="nome">Nome:</label>
-            <input type="text" id="nome" required><br><br>  -->
-
+          
             <!-- <label for="genero">Gênero:</label> -->
        <div class="container">
         <select id="genero" required>
-            <option value="Genero">Gênero</option>
+            <option value="Genero">Selecione Gênero</option>
             <option value="masculino">Masculino</option>
             <option value="feminino">Feminino</option>
         </select>
@@ -88,7 +88,7 @@
        <div class="imcResultado">
       
             <div class="imcClassificacao__Resultado">
-                <p id="resultado">20,3</p>
+                <p id="resultado">00,0</p>
                 <div class="imcClassificacao">
                     <div class="imc">
                         <h3>IMC</h3>
@@ -107,7 +107,7 @@
                 </div>
             </div>
                 <div class="imcImagem">
-                    <img src="./docs/imagens/homemPesoObeso.png" alt="">
+                    <img src="./docs/imagens/homemPesoBaixo-1.png" alt="">
                 </div>
        </div>
 
@@ -132,7 +132,7 @@
               <div class="conteudo-1">
                 <div><img src="./docs/imagens/ai-generated-8470065_1280 1.png" alt=""></div>
                 <div>
-                    <p>Orientações para insuficiência cardíaca</p>
+                    <p><strong>Orientações para insuficiência cardíaca</strong></p>
                     <p>Medicamentos utilizados, reabilitação, autocuidado...</p>
                </div>
                 <div><button>IR PARA O SITE</button> </div>
@@ -140,7 +140,7 @@
               <div class="conteudo-2">
                 <div><img src="./docs/imagens/heart-5079717_1280 1.png" alt=""></div>
                 <div>
-                    <p>Saúde do coração</p>
+                    <p><strong>Saúde do coração</strong></p>
                     <p>Prevenir ataques e problemas do coração; controlar a pressão arterial...</p>
                </div>
                 <div><button>IR PARA O SITE</button> </div>
@@ -148,7 +148,7 @@
               <div class="conteudo-3">
                 <div><img src="./docs/imagens/medicine-2361046_1280 1.png" alt=""></div>
                 <div>
-                    <p>Doenças cardiovasculares</p>
+                    <p><strong>Doenças cardiovasculares</strong></p>
                     <p>Doença cardíaca reumática, Trombose venosa profunda e embolia pulmonar..</p>
                </div>
                 <div><button>IR PARA O SITE</button> </div>
@@ -156,7 +156,7 @@
               <div class="conteudo-4">
                 <div><img src="./docs/imagens/heart-attack-7479253_1280 1.png" alt=""></div>
                 <div>
-                    <p>Parada Cardíaca</p>
+                    <p><strong>Parada Cardíaca</strong></p>
                     <p>O que fazer em caso de emergência cardiovascular.</p>
                </div>
                 <div><button>IR PARA O SITE</button> </div>
@@ -164,7 +164,7 @@
               <div class="conteudo-5">
                 <div><img src="./docs/imagens/doctor-8733826_1280 1.png" alt=""></div>
                 <div>
-                    <p>Fatores de Risco</p>
+                    <p><strong>Fatores de Risco</strong></p>
                     <p>Fatores de risco para doenças cardiovasculares</p>
                </div>
                 <div><button>IR PARA O SITE</button> </div>
@@ -231,8 +231,9 @@
 
     <section class="header-informacoes">
         <div class="header-informacoes--logo">
-            <img src="./docs/imagens/logoPipoca 1.svg" alt="Logotipo Pipoca Ágil">
-            <img src="./docs/imagens/logo1.png" alt="Logotipo Coração Saudável">
+            <a href="https://pipocaagil.com.br" target="_blank">  <img src="../../../docs/imagens/logoPipoca 1.svg" alt="Logotipo Pipoca Ágil"></a>
+            <a href="#"> <img  src="../../../docs/imagens/logo1.png" alt="Logotipo Coração Saudável"></a>
+
        
 
                <p>Um coração saudável é essencial para o bem-estar.</p>
@@ -249,11 +250,11 @@
 
             <ul>
                 <li><strong>Links úteis</strong></li>
-                <li><a href="#">Saúde do coração</a></li>
-                <li><a href="#">Parada cardíaca</a></li>
-                <li><a href="#">Doenças cardiovasculares</a></li>
-                <li><a href="#">Fatores de risco</a></li>
-                <li><a href="#">Criadores</a></li>
+                <li><a href="#saber__sobre__o__que">Saúde do coração</a></li>
+                <li><a href="#saber__sobre__o__que">Parada cardíaca</a></li>
+                <li><a href="#saber__sobre__o__que">Doenças cardiovasculares</a></li>
+                <li><a href="#saber__sobre__o__que">Fatores de risco</a></li>
+                <li><a href="#saber__sobre__o__que">Criadores</a></li>
             </ul>
         </nav>
     </section>
