@@ -8,6 +8,7 @@
     padding: 0;
     scroll-behavior: smooth;
     font-family: "Poppins";
+    --primary-color: #CD1C0C;
   
  }
  
@@ -58,7 +59,7 @@
 
 .header-1--menu li:nth-child(3) a{
     color: white;
-    background-color: #f82510;
+    background-color: var(--primary-color);
     transition: .5s;
 
 }
@@ -68,11 +69,11 @@ background: #ff7161;
 
 .header-1--menu li a{
     display: inline-block;
-    color: #f82510;
+    color: var(--primary-color);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
-    border: 1px solid #f82510;
+    border: 1px solid var(--primary-color);
     padding: 10px;
     border-radius: 5px;
     transition: .5s;
@@ -122,7 +123,7 @@ background: #ff7161;
 }
 .heartcare_container--intro button{
     background-color: white;
-    color: #f82510;
+    color: var(--primary-color);
     padding: 10px;
     display: block;
     border: none;
@@ -162,7 +163,7 @@ section.calculadora::after {
 
     font-size: 32px;
     text-align: center;
-    color: #f82510;
+    color: var(--primary-color);
     padding-top: 100px;
 
 }
@@ -197,7 +198,7 @@ section.calculadora article img{
 section.calculadora h3 {
     font-size: 20px;
     text-align: center;
-    color: #f82510;
+    color: var(--primary-color);
     margin: 50px 0;
 
 }
@@ -215,7 +216,7 @@ section.calculadora form#imcForm input{
     display: flex;
     margin-left: 20px;
     margin-right: 3px;
-    border: 1px solid #f82510;
+    border: 1px solid var(--primary-color);
     padding: 5px;
     width: 130px;
     border-radius: 5px;
@@ -226,7 +227,7 @@ section.calculadora form#imcForm input{
 
 section.calculadora form#imcForm select{
     appearance: none;
-    border: 1px solid #f82510;
+    border: 1px solid var(--primary-color);
     padding: 5px;
     width: 130px;
     border-radius: 5px;
@@ -242,7 +243,7 @@ section.calculadora .button {
   
 }
 section.calculadora button{
-  background:  #f82510;
+  background:  var(--primary-color);
   padding: 10px;
   border-radius: 5px;
   border: none;
@@ -278,7 +279,7 @@ section.calculadora .imcResultado .imcClassificacao__Resultado{
 
 section.calculadora .imcResultado .imcClassificacao__Resultado p#resultado{
     font-size: 56px;
-    color: #f82510;
+    color: var(--primary-color);
     margin-top: 20px;
     text-align: center;
 
@@ -349,7 +350,7 @@ section#saber__sobre__o__que {
 section#saber__sobre__o__que h1{
     font-size: 32px;
     text-align: center;
-    color: #f82510;
+    color: var(--primary-color);
     padding-top: 100px;
 
 }
@@ -368,7 +369,7 @@ section#saber__sobre__o__que .header-2 .header-2--barra-pesquisa{
 
 section#saber__sobre__o__que .header-2 .header-2--barra-pesquisa input{
     margin-right: 3px;
-    border: 1px solid #f82510;
+    border: 1px solid var(--primary-color);
     padding: 5px;
     width: 300px;
     border-radius: 5px;
@@ -376,7 +377,7 @@ section#saber__sobre__o__que .header-2 .header-2--barra-pesquisa input{
 }
 
 section#saber__sobre__o__que .header-2 .header-2--barra-pesquisa button{
-    background:  #f82510;
+    background:  var(--primary-color);
     padding: 5px 10px;
     border-radius: 5px;
     border: none;
@@ -442,10 +443,10 @@ section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div p{
 }
 section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div button{
     background: white;
-    border: 1px solid #f82510;
+    border: 1px solid var(--primary-color);
     padding: 10px;
     border-radius: 3px;
-    color: #f82510;
+    color: var(--primary-color);
     font-size: 14px;
     transition: .5s;
     cursor: pointer;
@@ -472,7 +473,7 @@ header.header-3{
 header.header-3 h1{
     font-size: 32px;
     text-align: center;
-    color: #f82510;
+    color: var(--primary-color);
     padding-top: 100px;
 
 }
@@ -497,7 +498,7 @@ header.header-3 .header-3--barra-pesquisa{
 
 header.header-3 .header-3--barra-pesquisa input{
     margin-right: 3px;
-    border: 1px solid #f82510;
+    border: 1px solid var(--primary-color);
     padding: 5px;
     width: 300px;
     border-radius: 5px;
@@ -506,7 +507,7 @@ header.header-3 .header-3--barra-pesquisa input{
 }
 
 header.header-3 .header-3--barra-pesquisa button{
-    background:  #f82510;
+    background:  var(--primary-color);
     padding: 5px 10px;
     border-radius: 5px;
     border: none;
@@ -634,7 +635,7 @@ section.header-informacoes ul li a{
 /*   Inicio Footer   */
 
 footer.rodape{
-    background: #f82510;
+    background: var(--primary-color);
     height: 80px;
     text-align: center;
     display: flex;
@@ -660,13 +661,13 @@ footer.rodape{
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #f82510;
+    background: var(--primary-color);
     border-radius: 10px;
   }
 
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #f82510;
+    background: var(--primary-color);
   }
 
   @media (max-width: 1366px){
