@@ -1,0 +1,164 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+    --primary-color: #CD1C0C;
+  
+ }
+
+
+ .header-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding-top: 5px;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0 1px 0 rgb(200, 198, 198);
+}
+
+
+.header-1--logo--1{
+    width: 80px;
+    height: 60px;
+    margin-left: 100px;
+    border-radius: 5px;
+}
+
+
+.header-1--logo--2{
+    width: 80px;
+    height: 50px;
+    border-radius: 5px;
+  }
+
+
+.header-1--menu{
+    margin-right: 100px;
+  }
+
+.header-1--menu li{
+    display: inline-block;
+    list-style-type: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.header-1--menu li:nth-child(3) a{
+    color: white;
+    background-color: var(--primary-color);
+    transition: .5s;
+
+}
+.header-1--menu li:nth-child(3):hover a{
+background: #ff7161;
+}
+
+.header-1--menu li a{
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    border-radius: 5px;
+    transition: .5s;
+
+}
+.header-1--menu li a:hover{
+   background: #fff2f0;
+
+}
+
+/*    Fim do Header    */
+
+
+
+/*    Inicio Header Informação   */
+
+
+
+
+section.header-informacoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1100px;
+    
+ 
+ }
+ 
+ section.header-informacoes .header-informacoes--logo{
+     width: 280px;
+     height: 250px;
+     text-align: center;
+ 
+ }
+ section.header-informacoes .header-informacoes--logo img{
+      width: 80px;
+ }
+ 
+ section.header-informacoes  p{
+    width: 180px;
+    text-align: center;
+    margin: 10px 25px;
+ }
+ 
+ section.header-informacoes nav{
+     width: 100%;
+     display: flex;
+     justify-content: right;
+     align-items: center;
+     text-align: left;
+ }
+ 
+ section.header-informacoes ul{
+     width: 300px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ 
+ }
+ 
+ section.header-informacoes ul:nth-child(2) {
+  margin-left: 100px;
+  }
+ 
+ section.header-informacoes ul li{
+    width: 100%;
+    list-style: none;
+    margin: 5px 0;
+ }
+ 
+ section.header-informacoes ul li a{
+   text-decoration: none;
+    color: black;
+   }
+ 
+ 
+ /*    Fim Header Informação   */
+ 
+ 
+ /*   Inicio Footer   */
+ 
+ footer.rodape{
+     background: var(--primary-color);
+     height: 80px;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: white;
+     font-size: 24px;
+ }
+ /*   Fim Footer   */
+ 
