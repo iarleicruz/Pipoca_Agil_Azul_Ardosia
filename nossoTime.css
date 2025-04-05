@@ -143,6 +143,9 @@ section.header-informacoes{
    text-decoration: none;
     color: black;
    }
+   section.header-informacoes ul li a:hover{
+    color: var(--primary-color);
+   }
  
  
  /*    Fim Header Informação   */
