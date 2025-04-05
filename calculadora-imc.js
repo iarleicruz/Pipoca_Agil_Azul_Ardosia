@@ -36,6 +36,8 @@ document.getElementById('imcForm').addEventListener('submit', function(event) {
         classificacao = document.querySelector('.classificacao p:nth-child(4)').style.color = 'black';
         imcClassificacao = document.querySelector('.imc p:nth-child(5)').style.color = 'black';
         classificacao = document.querySelector('.classificacao p:nth-child(5)').style.color = 'black';
+        imcClassificacao = document.querySelector('.imc p:nth-child(6)').style.color = 'black';
+        classificacao = document.querySelector('.classificacao p:nth-child(6)').style.color = 'black';
         resultado.style.color = 'green';  
         imcImagem.src = './docs/imagens/homemPesoBaixo-1.png'
     } else if (imc >= 18.5 && imc < 24.9) {
@@ -50,6 +52,8 @@ document.getElementById('imcForm').addEventListener('submit', function(event) {
         classificacao = document.querySelector('.classificacao p:nth-child(4)').style.color = 'black';
         imcClassificacao = document.querySelector('.imc p:nth-child(5)').style.color = 'black';
         classificacao = document.querySelector('.classificacao p:nth-child(5)').style.color = 'black';
+        imcClassificacao = document.querySelector('.imc p:nth-child(6)').style.color = 'black';
+        classificacao = document.querySelector('.classificacao p:nth-child(6)').style.color = 'black';
         resultado.style.color = "green";
         imcImagem.src = './docs/imagens/homemPesoNormal-1.png'
     } else if (imc >= 25 && imc < 29.9) {
@@ -64,6 +68,8 @@ document.getElementById('imcForm').addEventListener('submit', function(event) {
         classificacao = document.querySelector('.classificacao p:nth-child(4)').style.color = 'red';
         imcClassificacao = document.querySelector('.imc p:nth-child(5)').style.color = 'black';
         classificacao = document.querySelector('.classificacao p:nth-child(5)').style.color = 'black';
+        imcClassificacao = document.querySelector('.imc p:nth-child(6)').style.color = 'black';
+        classificacao = document.querySelector('.classificacao p:nth-child(6)').style.color = 'black';
         resultado.style.color = "red";
         imcImagem.src = './docs/imagens/homemPesoSobrePeso-1.png'
      } else if (imc >= 30 && imc < 34.9) {
@@ -78,8 +84,26 @@ document.getElementById('imcForm').addEventListener('submit', function(event) {
         classificacao = document.querySelector('.classificacao p:nth-child(4)').style.color = 'black';
         imcClassificacao = document.querySelector('.imc p:nth-child(5)').style.color = 'red';
         classificacao = document.querySelector('.classificacao p:nth-child(5)').style.color = 'red';
+        imcClassificacao = document.querySelector('.imc p:nth-child(6)').style.color = 'black';
+        classificacao = document.querySelector('.classificacao p:nth-child(6)').style.color = 'black';
         resultado.style.color = "red";
         imcImagem.src = './docs/imagens/homemPesoObeso-1.png'
+     } else{
+        let imcClassificacao = document.querySelector('.imc p:nth-child(5)');
+        let classificacao = document.querySelector('.classificacao p:nth-child(5)');
+        let imcImagem = document.querySelector('.imcImagem img');
+        imcClassificacao = document.querySelector('.imc p:nth-child(2)').style.color = 'black';
+        classificacao = document.querySelector('.classificacao p:nth-child(2)').style.color = 'black';
+        imcClassificacao = document.querySelector('.imc p:nth-child(3)').style.color = 'black';
+        classificacao = document.querySelector('.classificacao p:nth-child(3)').style.color = 'black';
+        imcClassificacao = document.querySelector('.imc p:nth-child(4)').style.color = 'black';
+        classificacao = document.querySelector('.classificacao p:nth-child(4)').style.color = 'black';
+        imcClassificacao = document.querySelector('.imc p:nth-child(5)').style.color = 'black';
+        classificacao = document.querySelector('.classificacao p:nth-child(5)').style.color = 'black';
+        imcClassificacao = document.querySelector('.imc p:nth-child(6)').style.color = 'red';
+        classificacao = document.querySelector('.classificacao p:nth-child(6)').style.color = 'red';
+        resultado.style.color = "red";
+        imcImagem.src = './docs/imagens/homemPesoObesoG1.png'
      }
 
 
