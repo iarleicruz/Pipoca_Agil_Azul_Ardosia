@@ -1,4 +1,5 @@
 
+
 document.getElementById('imcForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Evita o envio do formulário
 

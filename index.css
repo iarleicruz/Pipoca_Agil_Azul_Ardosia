@@ -88,7 +88,7 @@ background: #ff7161;
 
 .heartcare_container--img-background img{
     width: 100%;
-    /* height: 100vh; */
+    height: 100vh;
      
 }
 
@@ -219,7 +219,9 @@ section.calculadora form#imcForm input{
     outline: none;
 
 }
-
+section.calculadora form#imcForm input:focus{
+    border-color: #e08d85;
+}
 section.calculadora form#imcForm select{
     appearance: none;
     border: 1px solid var(--primary-color);
@@ -231,7 +233,10 @@ section.calculadora form#imcForm select{
     outline: none;
     cursor: pointer;
 }
-
+section.calculadora form#imcForm select:focus{
+    border-color: #e08d85;
+   }
+ 
 section.calculadora .button {
    width: 100%;
    text-align: center;
@@ -669,6 +674,13 @@ footer.rodape{
   }
 
   @media (max-width: 1366px){
+
+    
+.heartcare_container--img-background img{
+    width: 100%;
+    /* height: 100vh; */
+     
+}
 	
     .heartcare_container--intro {
         position: absolute;
