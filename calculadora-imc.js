@@ -1,7 +1,32 @@
 
+// Navegar com a tecla ENTER 
+
+window.addEventListener(
+  'keydown',
+  function (e) {
+   if (e.keyCode != 13) return
+   e.preventDefault()
+   e.keyCode=0
+ 
+    const focusableElements = Array.from(
+    document.querySelectorAll(
+     'a, button, select, input, textarea, [tabindex]:not([tabindex="-1"])'
+    )
+   ).filter(el => !el.disabled && el.offsetParent !== null)
+ 
+   const currentIndex = focusableElements.indexOf(document.activeElement)
+   const nextIndex = (currentIndex + 1) % focusableElements.length
+ 
+   focusableElements[nextIndex].focus()
+
+  })
+
+
+  
+
 
 document.getElementById('imcForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita o envio do formulário
+     event.preventDefault(); // Evita o envio do formulário
 
     // Obtém os valores
     let genero = document.getElementById('genero').value;
