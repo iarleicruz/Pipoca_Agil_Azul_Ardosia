@@ -4,7 +4,7 @@
 window.addEventListener(
   'keydown',
   function (e) {
-   if (e.keyCode != 13) return
+   if ((e.keyCode != 13) && (e.keyCode != 9)) return
    e.preventDefault()
    e.keyCode=0
  

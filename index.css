@@ -472,7 +472,7 @@ background: rgb(239, 222, 222);
 header.header-3{
     background: white;
     border: none;
-    height: 1142px;
+    height: 1100px;
 }
 header.header-3 h1{
     font-size: 32px;
@@ -586,8 +586,8 @@ section.header-informacoes{
 }
 
 section.header-informacoes .header-informacoes--logo{
-    width: 280px;
-    height: 250px;
+    width: 200px;
+    height: 150px;
     text-align: center;
 
 }
@@ -599,14 +599,16 @@ section.header-informacoes  p{
    width: 180px;
    text-align: center;
    margin: 10px 25px;
+   font-size: 18px;
 }
 
 section.header-informacoes nav{
     width: 100%;
     display: flex;
     justify-content: right;
-    align-items: center;
-    text-align: left;
+    /* align-items: center; */
+    /* text-align: left; */
+    margin: 30px 0 30px 0;
 }
 
 section.header-informacoes ul{
@@ -617,15 +619,20 @@ section.header-informacoes ul{
 
 }
 
+
 section.header-informacoes ul:nth-child(2) {
  margin-left: 100px;
+
  }
 
 section.header-informacoes ul li{
    width: 100%;
    list-style: none;
-   margin: 5px 0;
+   margin: 2px 0;
+ 
+  
 }
+
 
 section.header-informacoes ul li a{
   text-decoration: none;
