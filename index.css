@@ -149,7 +149,7 @@ background: #ff7161;
 
 section.calculadora {
     background: white;
-    /* padding-bottom: 100px; */
+    margin-bottom: 100px;
 }
 
 section.calculadora::after {
@@ -270,7 +270,7 @@ section.calculadora .imcResultado {
   align-items: center;
   margin-top: 50px;
   gap: 50px;
-  /* padding-bottom: 100px; */
+
 
 }
 
