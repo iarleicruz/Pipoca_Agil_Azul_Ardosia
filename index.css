@@ -587,7 +587,7 @@ section.header-informacoes{
 
 section.header-informacoes .header-informacoes--logo{
     width: 200px;
-    height: 150px;
+    height: 170px;
     text-align: center;
 
 }
@@ -628,7 +628,7 @@ section.header-informacoes ul:nth-child(2) {
 section.header-informacoes ul li{
    width: 100%;
    list-style: none;
-   margin: 2px 0;
+   margin: 5px 0;
  
   
 }
@@ -684,6 +684,8 @@ footer.rodape{
     background: var(--primary-color);
   }
 
+
+  /* Media screen */
   @media (max-width: 1366px){
 
     
