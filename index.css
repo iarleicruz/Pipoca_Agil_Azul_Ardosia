@@ -153,7 +153,7 @@ section.calculadora {
 }
 
 section.calculadora::after {
-    content: url("/docs/imagens/Vector.png");
+    content: url("./docs/imagens/Vector.png");
     position: relative;
     bottom: 580px;
 }
