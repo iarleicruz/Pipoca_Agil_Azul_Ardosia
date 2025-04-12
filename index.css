@@ -149,7 +149,7 @@ background: #ff7161;
 
 section.calculadora {
     background: white;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 
 section.calculadora::after {
