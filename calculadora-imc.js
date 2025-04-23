@@ -22,9 +22,6 @@ window.addEventListener(
   })
 
 
-  
-
-
 document.getElementById('imcForm').addEventListener('submit', function(event) {
      event.preventDefault(); // Evita o envio do formulário
 
@@ -132,17 +129,11 @@ document.getElementById('imcForm').addEventListener('submit', function(event) {
         imcImagem.src = './docs/imagens/homemPesoObesoG1.png'
      }
 
-
     // Exibe o resultado na página
        
     document.getElementById('resultado').innerText = resultadoTexto;
     console.log(imc)
-  
-  
-
- 
-  
-});
+   });
 
 
 // Pesquina Saber Sobre o que
@@ -150,11 +141,8 @@ document.getElementById('imcForm').addEventListener('submit', function(event) {
 function pesquisaNoGoogleSaberSobre(){
   const termoPesquisa = document.querySelector('.header-2--barra-pesquisa input').value
   const urlPesquisa = `https://www.google.com/search?q=${termoPesquisa}`
-
    window.open(`${urlPesquisa}`, "_blank")
-
 }
-
 document.querySelector('.header-2--barra-pesquisa button').addEventListener('click', pesquisaNoGoogleSaberSobre)
 
 
@@ -222,3 +210,5 @@ function pesquisarEAbrirConteudo5(){
    window.open(`${urlPesquisa}`, "_blank")
 }
 document.querySelector('.conteudo-5 button').addEventListener('click', pesquisarEAbrirConteudo5)
+
+
