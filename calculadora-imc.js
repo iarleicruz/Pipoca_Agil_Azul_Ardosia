@@ -143,3 +143,82 @@ document.getElementById('imcForm').addEventListener('submit', function(event) {
  
   
 });
+
+
+// Pesquina Saber Sobre o que
+
+function pesquisaNoGoogleSaberSobre(){
+  const termoPesquisa = document.querySelector('.header-2--barra-pesquisa input').value
+  const urlPesquisa = `https://www.google.com/search?q=${termoPesquisa}`
+
+   window.open(`${urlPesquisa}`, "_blank")
+
+}
+
+document.querySelector('.header-2--barra-pesquisa button').addEventListener('click', pesquisaNoGoogleSaberSobre)
+
+
+
+
+// Pesquina Contatos Uteis
+
+function pesquisaNoGoogleContatosUteis(){
+  const termoPesquisa = document.querySelector('.header-3--barra-pesquisa input').value
+  const urlPesquisa = `https://www.google.com/search?q=${termoPesquisa}`
+   window.open(`${urlPesquisa}`, "_blank")
+}
+document.querySelector('.header-3--barra-pesquisa button').addEventListener('click', pesquisaNoGoogleContatosUteis)
+
+
+
+
+// Ir para o site com acesso a determinado parámetro  
+
+function pesquisarEAbrirConteudo1(){
+  // const termoPesquisa = "conteudo"
+  const urlPesquisa = "https://www.heartfailurematters.org/pt-br/o-que-e-a-insuficiencia-cardiaca/"
+   window.open(`${urlPesquisa}`, "_blank")
+}
+document.querySelector('.conteudo-1 button').addEventListener('click', pesquisarEAbrirConteudo1)
+
+
+
+// Ir para o site com acesso a determinado parámetro  
+
+function pesquisarEAbrirConteudo2(){
+  // const termoPesquisa = "conteudo"
+  const urlPesquisa = "https://bvsms.saude.gov.br/saude-do-coracao/"
+   window.open(`${urlPesquisa}`, "_blank")
+}
+document.querySelector('.conteudo-2 button').addEventListener('click', pesquisarEAbrirConteudo2)
+
+
+// Ir para o site com acesso a determinado parámetro  
+
+function pesquisarEAbrirConteudo3(){
+  // const termoPesquisa = "conteudo"
+  const urlPesquisa = "https://www.paho.org/pt/topicos/doencas-cardiovasculares#main-content"
+   window.open(`${urlPesquisa}`, "_blank")
+}
+document.querySelector('.conteudo-3 button').addEventListener('click', pesquisarEAbrirConteudo3)
+
+
+
+
+// Ir para o site com acesso a determinado parámetro  
+function pesquisarEAbrirConteudo4(){
+  // const termoPesquisa = "conteudo"
+  const urlPesquisa = "http://www.cardiometro.com.br/video_3.asp#conteudo"
+   window.open(`${urlPesquisa}`, "_blank")
+}
+document.querySelector('.conteudo-4 button').addEventListener('click', pesquisarEAbrirConteudo4)
+
+
+// Ir para o site com acesso a determinado parámetro  
+
+function pesquisarEAbrirConteudo5(){
+  // const termoPesquisa = "conteudo"
+  const urlPesquisa = "https://www.coracao.org.br/fatores-de-risco"
+   window.open(`${urlPesquisa}`, "_blank")
+}
+document.querySelector('.conteudo-5 button').addEventListener('click', pesquisarEAbrirConteudo5)
