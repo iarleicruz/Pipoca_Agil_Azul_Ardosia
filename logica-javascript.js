@@ -1,5 +1,5 @@
 
-// Navegar com a tecla ENTER 
+// Navegar com a tecla ENTER
 
 window.addEventListener(
   'keydown',
@@ -7,16 +7,16 @@ window.addEventListener(
    if ((e.keyCode != 13) && (e.keyCode != 9)) return
    e.preventDefault()
    e.keyCode=0
- 
+
     const focusableElements = Array.from(
     document.querySelectorAll(
      'a, button, select, input, textarea, [tabindex]:not([tabindex="-1"])'
     )
    ).filter(el => !el.disabled && el.offsetParent !== null)
- 
+
    const currentIndex = focusableElements.indexOf(document.activeElement)
    const nextIndex = (currentIndex + 1) % focusableElements.length
- 
+
    focusableElements[nextIndex].focus()
 
   })
@@ -29,10 +29,10 @@ document.getElementById('imcForm').addEventListener('submit', function(event) {
     let genero = document.getElementById('genero').value;
     let peso = parseFloat(document.getElementById('peso').value);
     let altura = parseFloat(document.getElementById('altura').value);
-  
- 
 
-      
+
+
+
     // Calcula o IMC
     const imc = peso / (altura * altura);
 
@@ -40,22 +40,20 @@ document.getElementById('imcForm').addEventListener('submit', function(event) {
       let resultadoTexto = `${imc.toFixed(2)}`;
 
    // Limpar os valores
- 
-   // genero = document.getElementById('genero').selectedIndex = 'Selecione Gênero';
    peso = document.getElementById('peso').value = '';
    altura = document.getElementById('altura').value = '';
    document.getElementById('resultado').value = '';
-   
+
    if(genero){
       if(genero === 'masculino'){
        generoMasculino()
      }else{
        generoFeminino()
      }
- }  
-    // Classificação e valores do IMC 
-    
-      
+ }
+    // Classificação e valores do IMC
+
+
   function generoMasculino(){
     if (imc < 18.5) {
         let imcClassificacao = document.querySelector('.imc p:nth-child(2)');
@@ -71,7 +69,7 @@ document.getElementById('imcForm').addEventListener('submit', function(event) {
         classificacao = document.querySelector('.classificacao p:nth-child(5)').style.color = 'black';
         imcClassificacao = document.querySelector('.imc p:nth-child(6)').style.color = 'black';
         classificacao = document.querySelector('.classificacao p:nth-child(6)').style.color = 'black';
-        resultado.style.color = 'green';  
+        resultado.style.color = 'green';
         imcImagem.src = './docs/imagens/H1.png';
     } else if (imc >= 18.5 && imc < 24.9) {
         let imcClassificacao = document.querySelector('.imc p:nth-child(3)');
@@ -140,7 +138,7 @@ document.getElementById('imcForm').addEventListener('submit', function(event) {
      };
 
    };
- 
+
    function generoFeminino(){
       if (imc < 18.5) {
           let imcClassificacao = document.querySelector('.imc p:nth-child(2)');
@@ -156,7 +154,7 @@ document.getElementById('imcForm').addEventListener('submit', function(event) {
           classificacao = document.querySelector('.classificacao p:nth-child(5)').style.color = 'black';
           imcClassificacao = document.querySelector('.imc p:nth-child(6)').style.color = 'black';
           classificacao = document.querySelector('.classificacao p:nth-child(6)').style.color = 'black';
-          resultado.style.color = 'green';  
+          resultado.style.color = 'green';
           imcImagem.src = './docs/imagens/M1.png';
       } else if (imc >= 18.5 && imc < 24.9) {
           let imcClassificacao = document.querySelector('.imc p:nth-child(3)');
@@ -225,10 +223,10 @@ document.getElementById('imcForm').addEventListener('submit', function(event) {
        };
      }
     // Exibe o resultado na página
-       
+
     document.getElementById('resultado').innerText = resultadoTexto;
     console.log(imc);
- 
+
    });
 
 
