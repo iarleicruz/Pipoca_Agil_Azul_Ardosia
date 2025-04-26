@@ -15,7 +15,7 @@
                <a href="#"> <img class="header-1--logo--2" src="./docs/imagens/logo1.png" alt="Logotipo Coração Saudável"></a>
             </div>
             <ul>
-                <!--<li><a href="#calculeSeuIMC"><strong>Calcule seu IMC</strong></a></li>-->
+                <li><a href="#calculeSeuIMC"><strong>Calcule seu IMC</strong></a></li>
                 <li><a href="#saber__sobre__o__que"><strong>Saber Sobre o Que É</strong></a></li> <!-- Já com direcionamento para link -->
                 <li><a href="#contatosUteis"><strong>Contatos Úteis</strong></a></li>
             </ul>
@@ -45,7 +45,7 @@
         </div>
     </section>
 
-<!--
+
     <section class="calculadora" id="calculeSeuIMC">
         <h1>Calcule seu imc</h1>
         <article>
@@ -53,35 +53,35 @@
               <img src="./docs/imagens/formulaIMC.png" alt=" imagem com o indice da massa corporal">
 
         </article>
-    -->
+ 
         <!-- Lógica da calculadora IMC em javascript -->
-    <!--
+    
        <h3>Calculadora de IMC</h3>
-        <form id="imcForm">-->
+        <form id="imcForm">
 
-            <!-- <label for="genero">Gênero:</label> -->
-       <!--<div class="container">
+             <label for="genero"></label> 
+            <div class="container">
         <select id="genero" required>
-            <option value="Genero">Selecione Gênero</option>
+            <option value="">Selecione Gênero</option>
             <option value="masculino">Masculino</option>
             <option value="feminino">Feminino</option>
-        </select>-->
+        </select>
  
-        <!-- <label for="peso">Peso (kg): </label> -->
-        <!--<input type="number" id="peso" step="0.1" placeholder=" Digite seu peso" required>-->
+        <label for="peso"></label>
+        <input type="text" id="peso" placeholder="Peso (kg)" oninput="this.value = this.value.replace(/\D+/, '').replace(/^(\d+)(\d{1})$/, '$1.$2')" required/>
 
-        <!-- <label for="altura">Altura (m): </label> -->
-        <!--<input type="number" id="altura" step="0.01" placeholder=" Digite sua Altura" required>
+        <label for="altura"></label>
+        <input type="text" id="altura" placeholder=" Altura (m)" oninput="this.value = this.value.replace(/\D+/, '').replace(/^(\d+)(\d{2})$/, '$1.$2')" required/>
 
      </div>
          <div class="button">
             <button type="submit">Calcular IMC</button>
          </div>
 
-        </form>-->
+        </form>
 
         <!-- <h2>Resultado:</h2> -->
-<!--
+
        <div class="imcResultado">
 
             <div class="imcClassificacao__Resultado">
@@ -112,9 +112,9 @@
 
 
     </section>
--->
 
-    <!--<hr>-->
+
+    <hr>
 
     <section id="saber__sobre__o__que">
 
@@ -180,12 +180,12 @@
     </section>
 
     <hr>
-    <!-- Lógica de itens de pesquisa -->
+     Lógica de itens de pesquisa 
 
     <header class="header-3" id="contatosUteis">
         <h1>Contatos úteis</h1>
         <div class="header-3--barra-pesquisa">
-            <!-- <img src="/docs/imagens/Search.svg" alt="Imagems do ícone de pesquisa"> -->
+          
             <input type="Pesquisar...">
             <button>Pesquisar</button>
         </div>
@@ -237,7 +237,7 @@
     <section class="header-informacoes">
         <div class="header-informacoes--logo">
             <a href="https://pipocaagil.com.br" target="_blank">  <img src="./docs/imagens/logoPipoca 1.svg" alt="Logotipo Pipoca Ágil"></a>
-            <a href="#"> <img  src="./docs/imagens/logo1.png" alt="Logotipo Coração Saudável"></a>
+            <a href="./index.html"> <img  src="./docs/imagens/logo1.png" alt="Logotipo Coração Saudável"></a>
 
 
 
@@ -249,7 +249,7 @@
                 <li><strong>Menu</strong></li>
                 <li><a href="#">Início</a></li>
                 <li><a href="#saber__sobre__o__que">Saber sobre o quê?</a></li>
-                <!--<li><a href="#calculeSeuIMC">Calcule seu IMC</a></li>-->
+                <li><a href="#calculeSeuIMC">Calcule seu IMC</a></li>
                 <li><a href="#contatosUteis">Contatos úteis</a></li>
                 <br>
                 
