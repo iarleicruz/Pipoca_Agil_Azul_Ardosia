@@ -7,9 +7,8 @@
     scroll-behavior: smooth;
     font-family: "Roboto", sans-serif;
     --primary-color: #CD1C0C;
-    overflow-x: hidden;
+   
  }
- 
 
 /*    Início do Header    */
 
@@ -102,6 +101,7 @@ background: #ff7161;
     font-size: 30px;
     color: white;
     font-weight: 500;
+   
     
 }
 
@@ -811,6 +811,10 @@ footer.rodape{
 
 }
 @media (max-width: 768px){
+
+    * {
+        overflow-x: hidden;
+    }
      .header-1 {
     justify-content: space-between;
       
@@ -828,7 +832,10 @@ footer.rodape{
      top: 120px;
      left: 50px;
      font-size: 14px;
+     height: 200px;
     }
+
+    
 
     .heartcare_container--intro h2 {
     font-size: 16px;
@@ -849,6 +856,14 @@ footer.rodape{
         /* cursor: pointer; */
         transition: .5s;
         text-decoration: none;
+    }
+
+    section.calculadora::after {
+        content: url(./docs/imagens/Vectorpeq.png);
+       
+    }
+    .calculadora h1::before {
+        content: url(./docs/imagens/aspaspeq.png);
     }
 
     section.calculadora article {
@@ -878,6 +893,10 @@ footer.rodape{
     height: 2px;
     }
 
+    section#saber__sobre__o__que .header-2 h1::before {
+        content: url(./docs/imagens/aspaspeq.png);
+    }
+
     section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div p {
     background: white;
     margin: 0px 10px;
@@ -893,14 +912,20 @@ footer.rodape{
     width: 600px;
     margin: 10px auto;
    }
-
+   header.header-3::after {
+    content: url(./docs/imagens/Detalhepeq.png);
+    position: relative;
+    bottom: 730px;
+}
     header.header-3{
         background: white;
         border: none;
         height: 1010px;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
-
+    header.header-3 h1::before {
+        content: url(./docs/imagens/aspaspeq.png);
+    }
     header.header-3 .conteudo-1 > div, header.header-3 .conteudo-2 > div {
         width: 200px;
     }
@@ -946,37 +971,16 @@ footer.rodape{
 
     @media (max-width: 720px){
       
-
-        .header-1 {
-         
-            display: block;
-            width: max-content;
           
-
-        }
         .header-1--logo{
             display: block;
           
         }
 
-    
-        .header-1--menu {
-         height: 200px;
-        }
-
-        .header-1--menu ul{
-         display: flex;
-         flex-direction: column;
-       
-        }
-        .header-1--menu ul li a{
-        width: 100%;
-       
-        }
 
         .heartcare_container  {
             width: 100%;
-            /* height: 500px; */
+         
         }
 
         section.calculadora article {
@@ -986,5 +990,51 @@ footer.rodape{
     }
 
 
+    @media (max-width: 411px){
 
+        .header-1 {
+        height: 220px;
+        }
+
+        .header-1--menu {
+        
+        display: block;
+        margin: auto;
+        
+        }
+
+        .header-1--logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .header-1--menu ul {
+        
+        width: 100%;
+
+        }
+     
+        .header-1--menu li {
+         
+        display: block;
+        margin: 0;
+        }
+
+        .header-1--menu li a{
+         
+        display: block;
+        margin: 5px;
+        text-align: center;
+        }
+    }
     
+    @media (max-width: 375px){
+
+    }
+    
+    @media (max-width: 360px){
+
+    }
+    
+  
