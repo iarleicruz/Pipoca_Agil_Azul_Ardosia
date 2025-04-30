@@ -449,6 +449,7 @@ section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div p {
   padding: 10px 20px;
   line-height: 1.5;
   width: 400px;
+  text-align: justify;
   
 }
 section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div button{
@@ -1253,6 +1254,7 @@ footer.rodape{
             align-items: center;
             font-size: 14px;
             width: 280px;
+            text-align: justify;
 
           
             
@@ -1271,7 +1273,15 @@ footer.rodape{
             margin-top: 20px;
         }
       
-
+        header.header-3 {
+            /* background: white; */
+            /* border: none; */
+            /* height: 1010px; */
+            /* overflow-x: hidden; */
+            position: absolute;
+            /* z-index: 1; */
+            top: 4250px;
+        }
        
     }
     
