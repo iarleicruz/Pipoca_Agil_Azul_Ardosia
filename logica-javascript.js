@@ -235,7 +235,7 @@ document.getElementById('imcForm').addEventListener('submit', function(event) {
 function pesquisaNoGoogleSaberSobre(){
   const termoPesquisa = document.querySelector('.header-2--barra-pesquisa input').value;
   const urlPesquisa = `https://www.google.com/search?q=${termoPesquisa}`;
-   window.open(`${urlPesquisa}`, "_blank")
+   window.open(`${urlPesquisa}`, "_blank");
 }
 document.querySelector('.header-2--barra-pesquisa button').addEventListener('click', pesquisaNoGoogleSaberSobre);
 
