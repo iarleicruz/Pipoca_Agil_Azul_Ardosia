@@ -441,6 +441,7 @@ section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div img{
    box-shadow: 2px 2px 0px rgb(200, 198, 198);
 }
 
+
 section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div p {
 
   background: white;
@@ -452,6 +453,7 @@ section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div p {
   text-align: justify;
   
 }
+
 section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div button{
     background: white;
     border: 1px solid var(--primary-color);
@@ -480,7 +482,7 @@ header.header-3{
     background: white;
     border: none;
     height: 1100px;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 header.header-3 h1{
     font-size: 32px;
@@ -607,21 +609,18 @@ section.header-informacoes .header-informacoes--logo img{
 section.header-informacoes  p{
    width: 180px;
    text-align: center;
-   margin: 10px 25px;
    font-size: 18px;
 }
 
 section.header-informacoes nav{
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: right;
-    /* align-items: center; */
-    /* text-align: left; */
     margin: 30px 0 30px 0;
 }
 
 section.header-informacoes ul{
-    width: 300px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -630,7 +629,7 @@ section.header-informacoes ul{
 
 
 section.header-informacoes ul:nth-child(2) {
- margin-left: 100px;
+ margin-left: 150px;
 
  }
 
@@ -751,14 +750,22 @@ footer.rodape{
     .heartcare_container--intro h2{
     font-size: 18px;
     color: #f7f1f1;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin: 30px 0;
     }
 
-    .heartcare_container--intro button{
-     width: 126px;
-     height: 43px;
-     font-size: 16px;
+    .heartcare_container--intro a{
+        background-color: white;
+        color: var(--primary-color);
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 26px;
+        text-transform: uppercase;
+        font-weight: 600;
+        cursor: pointer;
+        transition: .5s;
+        text-decoration: none;
+    
     }
 
     hr{
@@ -770,7 +777,11 @@ footer.rodape{
     height: 300;
     margin: 0 13%;
     }
-
+    section.calculadora::after {
+        content: url(./docs/imagens/Vectorpeq.png);
+        position: relative;
+        bottom: 580px;
+    }
     section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div p {
     background: white;
     margin: 0px 10px;
@@ -792,24 +803,42 @@ footer.rodape{
     border: none;
     height: 1000px;
 }
+    header.header-3::after {
+    content: url(./docs/imagens/Detalhepeq.png);
+    position: relative;
+    bottom: 920px;
+    }
 
     header.header-3 .conteudo-1 > div, header.header-3 .conteudo-2 > div {
-        width: 200px;
+    width: 200px;
     }
     header.header-3 .contatosUteis > div{
-        display: flex;
+    display: flex;
     }
     header.header-3 .contatosUteis div > img {
-        width: 140px;
+    width: 140px;
     }
-    section.header-informacoes nav {
+    section.header-informacoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 700px;
+    }
+    /* section.header-informacoes nav {
     
-        justify-content: center;
+    justify-content: center;
    
+    } */
+    section.header-informacoes ul {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     }
-
     section.header-informacoes ul:nth-child(2) {
-        margin-left: 0px;
+    margin-left: 85px;
     }
 
 }
@@ -965,7 +994,7 @@ footer.rodape{
     }
 
     section.header-informacoes ul:nth-child(2) {
-        margin-left: 20px;
+        margin-left: 60px;
     }
 
     
@@ -1071,7 +1100,7 @@ footer.rodape{
         }
            
         .calculadora h1 {
-            font-size: 20px;
+            font-size: 22px;
             width: 100%;
            
             padding-bottom: 20px;
@@ -1142,6 +1171,8 @@ footer.rodape{
         }
         section.calculadora button {
             margin: 0;
+            font-size: 14px;
+            padding: 8px;
          }
 
         section.calculadora .imcResultado {
@@ -1200,6 +1231,7 @@ footer.rodape{
             width: 25%;
             height: 245px;
         }
+        
 
         section#saber__sobre__o__que {
             background: white;
@@ -1255,9 +1287,6 @@ footer.rodape{
             font-size: 14px;
             width: 280px;
             text-align: justify;
-
-          
-            
         }
       
         
@@ -1274,15 +1303,89 @@ footer.rodape{
         }
       
         header.header-3 {
-            /* background: white; */
-            /* border: none; */
-            /* height: 1010px; */
-            /* overflow-x: hidden; */
             position: absolute;
-            /* z-index: 1; */
-            top: 4250px;
+            top: 4150px;
+            height: 2300px;
+            width: 100%;
         }
-       
+        header.header-3::after {
+            content: normal;
+           
+        }
+
+        header.header-3 .header-3--barra-pesquisa input {
+            margin-right: 3px;
+            border: 1px solid var(--primary-color);
+            padding: 5px;
+            width: 180px;
+            border-radius: 5px;
+            outline: none;
+        }
+        header.header-3 h1 {
+            font-size: 22px;
+            text-align: center;
+            color: var(--primary-color);
+            padding-top: 100px;
+        }
+        header.header-3 .contatosUteis > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        header.header-3 .conteudo-1 > div, header.header-3 .conteudo-2 > div {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header.header-3 .contatosUteis div > img {
+            width: 200px;
+        }
+        hr {
+            margin: auto;
+            background: url(../../../docs/imagens/Line.png);
+            background-position: center;
+            max-width: 300px;
+            height: 2px;
+        }
+        section.header-informacoes {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 6520px;
+            width: 100%;
+        }
+        section.header-informacoes .header-informacoes--logo {
+            width: 180px;
+            height: 150px;
+         
+        }
+        section.header-informacoes nav {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        section.header-informacoes ul {
+            width: 150px;
+            margin: auto;
+        }
+        section.header-informacoes ul:nth-child(2) {
+            margin:0;
+        }
+        footer.rodape {
+            background: var(--primary-color);
+            height: 80px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 22px;
+            position: absolute;
+            top: 7100px;
+            width: 100%;
+        }
     }
     
     @media (max-width: 375px){
@@ -1313,7 +1416,6 @@ footer.rodape{
         }
         section.calculadora .imcClassificacao .imc p, section.calculadora .imcClassificacao .classificacao p {
             font-size: 14px;
-            /* width: 100%; */
             margin: 10px 0 10px 0;
         }
         section.calculadora .imcResultado .imcImagem {
@@ -1324,6 +1426,43 @@ footer.rodape{
         section.calculadora .imcResultado .imcImagem img {
             width: 25%;
             height: 200px;
+        }
+
+        section#saber__sobre__o__que {
+            position: absolute;
+            top: 1600px;
+        }
+        header.header-3 {
+            position: absolute;
+            top: 4050px;
+            height: 2300px;
+        }
+        hr {
+            margin: auto;
+            background: url(../../../docs/imagens/Line.png);
+            background-position: center;
+            max-width: 250px;
+            height: 2px;
+        }
+        section.header-informacoes {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 6430px;
+            width: 100%;
+        }
+        footer.rodape {
+            background: var(--primary-color);
+            height: 80px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 22px;
+            position: absolute;
+            top: 7020px;
+            width: 100%;
         }
       
     }
