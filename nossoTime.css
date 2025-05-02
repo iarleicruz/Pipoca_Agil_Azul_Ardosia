@@ -199,7 +199,6 @@ section.header-informacoes{
   margin: auto;
   max-width: 1100px;
   
-
 }
 
 section.header-informacoes .header-informacoes--logo{
@@ -215,21 +214,18 @@ section.header-informacoes .header-informacoes--logo img{
 section.header-informacoes  p{
   width: 180px;
   text-align: center;
-  margin: 10px 25px;
   font-size: 18px;
 }
 
 section.header-informacoes nav{
-   width: 100%;
+   width: 70%;
    display: flex;
    justify-content: right;
-   /* align-items: center; */
-   /* text-align: left; */
    margin: 30px 0 30px 0;
 }
 
 section.header-informacoes ul{
-   width: 300px;
+   width: 200px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -238,7 +234,7 @@ section.header-informacoes ul{
 
 
 section.header-informacoes ul:nth-child(2) {
-margin-left: 100px;
+margin-left: 150px;
 
 }
 
@@ -246,8 +242,7 @@ section.header-informacoes ul li{
   width: 100%;
   list-style: none;
   margin: 5px 0;
-
- 
+  
 }
 
 
