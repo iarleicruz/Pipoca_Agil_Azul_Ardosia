@@ -158,6 +158,7 @@ section.calculadora::after {
     text-align: center;
     color: var(--primary-color);
     padding-top: 100px;
+    margin-bottom: 20px;
 
 }
 
@@ -177,7 +178,6 @@ section.calculadora article{
 
 section.calculadora article h2 {
     text-align: center;
-    margin-top: 36px;
     padding-top: 30px;
     font-size: 20px;
 
@@ -699,7 +699,7 @@ footer.rodape{
     
 .heartcare_container--img-background img{
     width: 100%;
-    /* height: 100vh; */
+    height: 100vh;
      
 }
 	
@@ -861,35 +861,57 @@ footer.rodape{
    }
 
     .heartcare_container--intro {
-     top: 120px;
-     left: 50px;
-     font-size: 14px;
-     height: 200px;
+        top: 530px;
+        font-size: 32px;
+        height: 365px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--primary-color);
+        position: absolute;
+        left: 0;
+        padding: 70px 0;
     }
 
-    
+    .heartcare_container--img-background  {
+       background-image: url(./docs/imagens/heart-care.png);
+       background-size: 80%;
+       background-position-x: center;
+       background-repeat: no-repeat;
+    }
+    .heartcare_container--img-background img {
+        visibility: hidden;
+    }
 
     .heartcare_container--intro h2 {
-    font-size: 16px;
-    color: #f7f1f1;
-    margin-top: 30px;
-    margin-bottom: 20px;
+        font-size: 28px;
+        color: #f7f1f1;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 490px;
     }
     
     .heartcare_container--intro a {
         background-color: white;
         color: var(--primary-color);
-        padding: 10px;
+        padding: 20px;
         border: none;
         border-radius: 5px;
-        font-size: 12px;
+        font-size: 22px;
         text-transform: uppercase;
         font-weight: 600;
-        /* cursor: pointer; */
+        cursor: pointer;
         transition: .5s;
         text-decoration: none;
+        position: relative;
+        right: 150px;
+        margin-top: 10px;
     }
-
+    section.calculadora {
+        background: white;
+        margin-bottom: 100px;
+    }
     section.calculadora::after {
         content: url(./docs/imagens/Vectorpeq.png);
        
@@ -1014,11 +1036,82 @@ footer.rodape{
             width: 100%;
          
         }
+        .heartcare_container::after{
+            content: url(./docs/imagens/Detalhe.svg);
+            position: relative;
+            bottom: 180px;
+        }
+        .heartcare_container--intro {
+            top: 600px;
+            font-size: 32px;
+            height: 600px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: var(--primary-color);
+            position: absolute;
+            left: 0;
+        }
+      
+        .heartcare_container--img-background {
+            background-image: url(./docs/imagens/heart-care.png);
+            background-size: 100%;
+            background-position-x: center;
+            background-repeat: no-repeat;
+        }
+        .heartcare_container--intro h1 {
+          margin-top: 60px;
+          line-height: 1.5;
+          font-size: 52px;
+        }
+        .heartcare_container--intro h2 {
+            font-size: 42px;
+            color: #f7f1f1;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            width: 543px;
+            line-height: 1.5;
+        }
+        .heartcare_container--intro a {
+            background-color: white;
+            color: var(--primary-color);
+            padding: 22px;
+            border: none;
+            border-radius: 5px;
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: 600;
+            cursor: pointer;
+            transition: .5s;
+            text-decoration: none;
+            position: relative;
+            right: 170px;
+            margin-top: 20px;
+        }
+       
+        section.calculadora {
+            
+        margin-bottom: 100px;
+           
+        }
 
         section.calculadora article {
-        width: 650px;
-        margin-left: 25px;
+        width: 640px;
         }
+     
+        section#saber__sobre__o__que {
+            background: white;
+            padding-bottom: 100px;
+            
+        }
+        header.header-3 {
+            background: white;
+            border: none;
+            height: 1010px;
+            position: relative;
+        }
+      
     }
 
 
@@ -1064,34 +1157,50 @@ footer.rodape{
         .heartcare_container {
             width: 100%;
             position: absolute;
-            top: 204px;
-            /* overflow: hidden; */
+            top: 190px;
+            overflow: hidden;
+        }
+        .heartcare_container::after{
+            content: url('');
+            
+        }
+        .heartcare_container--img-background {
+            background-image: url(./docs/imagens/heart-care.png);
+            background-size: 80%;
+            background-position-x: center;
+            background-repeat: no-repeat;
         }
         .heartcare_container--intro {
-            top: 50px;
-            left: 30px;
-            font-size: 10px;
-            height: 150px;
-      }
+            top: 270px;
+            padding: 30px 0;
+        
+        }
+        .heartcare_container--intro h1 {
+            line-height: 1.5;
+            font-size: 22px;
+            width: 300px;
+            margin: 0;
+        }
 
         .heartcare_container--intro h2 {
-            font-size: 12px;
+            font-size: 18px;
             color: #f7f1f1;
-            margin-top: 15px;
+            margin: 15px 0 0 0;
+            width: 300px;
           
         }
         .heartcare_container--intro a {
-          
-            padding: 8px;
-        
-            font-size: 10px;
+            padding: 10px;
+            right: 100px;
+            position: relative;
+            font-size: 14px;
         
         }
 
         section.calculadora {
             
             position: absolute;
-            top: 400px;
+            top: 750px;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -1264,7 +1373,6 @@ footer.rodape{
             width: 300px;
             display: flex;
             flex-direction: column;
-            /* margin: 10px auto; */
         }
         section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div img {
             background: white;
@@ -1362,13 +1470,11 @@ footer.rodape{
          
         }
         section.header-informacoes nav {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
+            width: 80%;
         }
         section.header-informacoes ul {
             width: 150px;
-            margin: auto;
+            margin: auto auto auto 0;
         }
         section.header-informacoes ul:nth-child(2) {
             margin:0;
@@ -1383,19 +1489,55 @@ footer.rodape{
             color: white;
             font-size: 22px;
             position: absolute;
-            top: 7100px;
+            top: 6950px;
             width: 100%;
         }
     }
-    
-    @media (max-width: 375px){
 
-        .heartcare_container {
-           height: 200px;
+  
+    /* @media (min-width: 375px) and (max-width: 812px){
+
+       
+        .heartcare_container--img-background {
+            background-size: 100%;
         }
+        
         .heartcare_container--intro {
-          
-            font-size: 9px;
+            top: 320px;
+            padding: 50px 0;
+            height: 380px;
+        }
+        
+        .heartcare_container--intro h1 {
+            line-height: 1.2;
+            font-size: 22px;
+            width: 250px;
+        }
+
+        .heartcare_container--intro h2 {
+            font-size: 18px;
+            color: #f7f1f1;
+            margin: 15px 0 0 0;
+            width: 250px;
+            line-height: 1.2;
+        }
+
+        .heartcare_container--intro a {
+            padding: 10px;
+            right: 70px;
+            position: relative;
+            font-size: 14px;
+        }
+
+        section.calculadora {
+            position: absolute;
+            top: 815px;
+           
+        }
+        .calculadora h1 {
+            font-size: 22px;
+            width: 100%;
+            padding: 100px 0 20px 0;
         }
         section.calculadora article {
             width: 300px;
@@ -1410,6 +1552,7 @@ footer.rodape{
             padding-bottom: 10px;
             width: 120px;
         }
+
         section.calculadora .imcResultado .imcClassificacao__Resultado {
             width: 280px;
             margin: auto;
@@ -1430,11 +1573,11 @@ footer.rodape{
 
         section#saber__sobre__o__que {
             position: absolute;
-            top: 1600px;
+            top: 2000px;
         }
         header.header-3 {
             position: absolute;
-            top: 4050px;
+            top: 4450px;
             height: 2300px;
         }
         hr {
@@ -1448,8 +1591,11 @@ footer.rodape{
             display: flex;
             flex-direction: column;
             position: absolute;
-            top: 6430px;
+            top: 6830px;
             width: 100%;
+        }
+        section.header-informacoes nav {
+            width: 85%;
         }
         footer.rodape {
             background: var(--primary-color);
@@ -1461,17 +1607,102 @@ footer.rodape{
             color: white;
             font-size: 22px;
             position: absolute;
-            top: 7020px;
+            top: 7250px;
             width: 100%;
         }
       
+    } */
+
+    @media (min-width: 375px) and (max-width: 667px) {
+        .heartcare_container--img-background {
+            background-size: 80%;
+        }
+        .heartcare_container--intro {
+            top: 250px;
+            padding: 10px 0;
+            height: 210px;
+        }
+        .heartcare_container--intro h1 {
+            /* margin-top: 60px; */
+            /* line-height: 1.2; */
+            font-size: 18px;
+            width: 250px;
+            margin: 10px 0 0;
+        }
+        .heartcare_container--intro h2 {
+            font-size: 16px;
+            color: #f7f1f1;
+            margin: 15px 0 0 0;
+            width: 250px;
+            line-height: 1.2;
+        }
+        .heartcare_container--intro a {
+            padding: 8px;
+            right: 80px;
+            position: relative;
+            font-size: 12px;
+        }
+        section.calculadora {
+            position: absolute;
+            top: 680px;
+        }
+        .calculadora h1 {
+            font-size: 22px;
+            width: 100%;
+            padding: 50px 0 20px 0;
+        }
+        section#saber__sobre__o__que {
+            position: absolute;
+            top: 1810px;
+        }
+        section#saber__sobre__o__que h1 {
+            font-size: 22px;
+            text-align: center;
+            color: var(--primary-color);
+            padding-top: 50px;
+        }
+        header.header-3 h1 {
+            font-size: 22px;
+            text-align: center;
+            color: var(--primary-color);
+            padding-top: 50px;
+        }
+        header.header-3 {
+            position: absolute;
+            top: 4220px;
+            height: 2300px;
+        }
+        header.header-3 .contatosUteis {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+        section.header-informacoes {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 6480px;
+            width: 100%;
+        }
+        footer.rodape {
+            
+            top: 6900px;
+        }
     }
+    
     
     @media (max-width: 360px){
         .heartcare_container--intro a {
             padding: 7px;
             font-size: 9px;
         }
+        section.header-informacoes nav {
+            width: 85%;
+        }
     }
     
-  
+    @media (min-width: 360px) and (max-width: 640px) {
+        /* Estilos específicos para dispositivos com largura entre 360px e 640px */
+      }
