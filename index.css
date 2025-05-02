@@ -1494,8 +1494,9 @@ footer.rodape{
         }
     }
 
+    /* Estilos específicos para dispositivos com largura entre 375px e 812px */
   
-    /* @media (min-width: 375px) and (max-width: 812px){
+    @media (max-width: 375px) and (max-height: 812px){
 
        
         .heartcare_container--img-background {
@@ -1611,9 +1612,11 @@ footer.rodape{
             width: 100%;
         }
       
-    } */
+    }
 
-    @media (min-width: 375px) and (max-width: 667px) {
+    /* Estilos específicos para dispositivos com largura entre 375px e 667px */
+
+    @media (max-width: 375px) and (max-height: 667px) {
         .heartcare_container--img-background {
             background-size: 80%;
         }
@@ -1623,8 +1626,6 @@ footer.rodape{
             height: 210px;
         }
         .heartcare_container--intro h1 {
-            /* margin-top: 60px; */
-            /* line-height: 1.2; */
             font-size: 18px;
             width: 250px;
             margin: 10px 0 0;
@@ -1692,17 +1693,101 @@ footer.rodape{
         }
     }
     
+    /* Estilos específicos para dispositivos com largura entre 360px e 720px */
     
-    @media (max-width: 360px){
-        .heartcare_container--intro a {
-            padding: 7px;
-            font-size: 9px;
+    @media (max-width: 360px) and (max-height:720px){
+        .heartcare_container--intro {
+            top: 280px;
+            padding: 30px 0 20px 0;
+            height: 200px;
         }
-        section.header-informacoes nav {
-            width: 85%;
+        .heartcare_container--intro a {
+            padding: 10px;
+            right: 70px;
+            position: relative;
+            font-size: 14px;
+        
+        }
+        section.calculadora {
+            position: absolute;
+            top: 720px;
+        }
+        section#saber__sobre__o__que {
+            position: absolute;
+            top: 1880px;
+        }
+        header.header-3 {
+            position: absolute;
+            top: 4330px;
+            height: 2300px;
+        }
+        section.header-informacoes {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 6700px;
+            width: 100%;
+        }
+        footer.rodape {
+            background: var(--primary-color);
+            height: 80px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 22px;
+            position: absolute;
+            top: 7120px;
+            width: 100%;
         }
     }
     
-    @media (min-width: 360px) and (max-width: 640px) {
-        /* Estilos específicos para dispositivos com largura entre 360px e 640px */
+    /* Estilos específicos para dispositivos com largura entre 360px e 640px */
+    @media (max-width: 360px) and (max-height: 640px) {
+        
+        .heartcare_container--intro {
+            top: 230px;
+            padding: 10px 0 20px 0;
+            height: 200px;
+        }
+        .heartcare_container--intro a {
+            padding: 8px;
+            right: 80px;
+            position: relative;
+            font-size: 12px;
+        }
+        section.calculadora {
+            position: absolute;
+            top: 650px;
+        }
+        section#saber__sobre__o__que {
+            position: absolute;
+            top: 1780px;
+        }
+        header.header-3 {
+            position: absolute;
+            top: 4180px;
+            height: 2300px;
+        }
+        section.header-informacoes {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 6450px;
+            width: 100%;
+        }
+        footer.rodape {
+            background: var(--primary-color);
+            height: 80px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 22px;
+            position: absolute;
+            top: 6880px;
+            width: 100%;
+        }
       }
