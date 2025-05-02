@@ -1248,12 +1248,9 @@ footer.rodape{
             width: 100%;
         }
         section.calculadora form#imcForm .container {
-            display: flex
-        ;
+            display: flex;
             flex-direction: column;
-            /* justify-content: center; */
             align-items: center;
-            /* position: relative; */
             gap: 5px;
             margin-bottom: 20px;
         }
@@ -1285,19 +1282,15 @@ footer.rodape{
          }
 
         section.calculadora .imcResultado {
-          
             flex-direction: column;
-          
             gap: 10px;
-           
             width: 350px;
         }
 
         section.calculadora .imcResultado .imcClassificacao__Resultado {
             width: 100%;
             margin: auto;
-           
-            
+                      
         }
         section.calculadora .imcResultado .imcClassificacao__Resultado p#resultado {
             font-size: 36px;
@@ -1346,7 +1339,7 @@ footer.rodape{
             background: white;
             padding-bottom: 100px;
             position: absolute;
-            top: 1700px;
+            top: 2035px;
             width: 100%;
         }
  
@@ -1412,7 +1405,7 @@ footer.rodape{
       
         header.header-3 {
             position: absolute;
-            top: 4150px;
+            top: 4500px;
             height: 2300px;
             width: 100%;
         }
@@ -1461,7 +1454,7 @@ footer.rodape{
             display: flex;
             flex-direction: column;
             position: absolute;
-            top: 6520px;
+            top: 6880px;
             width: 100%;
         }
         section.header-informacoes .header-informacoes--logo {
@@ -1489,7 +1482,7 @@ footer.rodape{
             color: white;
             font-size: 22px;
             position: absolute;
-            top: 6950px;
+            top: 7300px;
             width: 100%;
         }
     }
@@ -1714,11 +1707,11 @@ footer.rodape{
         }
         section#saber__sobre__o__que {
             position: absolute;
-            top: 1880px;
+            top: 1900px;
         }
         header.header-3 {
             position: absolute;
-            top: 4330px;
+            top: 4350px;
             height: 2300px;
         }
         section.header-informacoes {
