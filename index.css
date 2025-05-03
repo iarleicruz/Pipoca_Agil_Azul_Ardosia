@@ -1011,6 +1011,7 @@ footer.rodape{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: 0 auto auto 0;
           
     }
 
@@ -1035,15 +1036,11 @@ footer.rodape{
             width: 100%;
          
         }
-        .heartcare_container::after{
-            content: url(./docs/imagens/Detalhe.svg);
-            position: relative;
-            bottom: 180px;
-        }
+      
         .heartcare_container--intro {
             top: 600px;
             font-size: 32px;
-            height: 600px;
+            height: 860px;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -1060,25 +1057,25 @@ footer.rodape{
             background-repeat: no-repeat;
         }
         .heartcare_container--intro h1 {
-          margin-top: 60px;
-          line-height: 1.5;
-          font-size: 52px;
+          margin-top: 100px;
+          line-height: 1.3;
+          font-size: 56px;
         }
         .heartcare_container--intro h2 {
-            font-size: 42px;
+            font-size: 48px;
             color: #f7f1f1;
             margin-top: 30px;
             margin-bottom: 20px;
-            width: 543px;
+            width: 590px;
             line-height: 1.5;
         }
         .heartcare_container--intro a {
             background-color: white;
             color: var(--primary-color);
-            padding: 22px;
+            padding: 26px;
             border: none;
             border-radius: 5px;
-            font-size: 24px;
+            font-size: 26px;
             text-transform: uppercase;
             font-weight: 600;
             cursor: pointer;
@@ -1086,7 +1083,8 @@ footer.rodape{
             text-decoration: none;
             position: relative;
             right: 170px;
-            margin-top: 20px;
+            margin-top: 30px;
+        
         }
        
         section.calculadora {
@@ -1195,7 +1193,7 @@ footer.rodape{
             font-size: 14px;
         
         }
-
+     
         section.calculadora {
             
             position: absolute;
@@ -1332,13 +1330,13 @@ footer.rodape{
             width: 25%;
             height: 245px;
         }
-        
-
+      
         section#saber__sobre__o__que {
             background: white;
             padding-bottom: 100px;
             position: absolute;
-            top: 2035px;
+            /* top: 2035px; */
+            top: 735px;
             width: 100%;
         }
  
@@ -1404,7 +1402,8 @@ footer.rodape{
       
         header.header-3 {
             position: absolute;
-            top: 4500px;
+            /* top: 4500px; */
+            top: 3200px;
             height: 2300px;
             width: 100%;
         }
@@ -1453,7 +1452,8 @@ footer.rodape{
             display: flex;
             flex-direction: column;
             position: absolute;
-            top: 6880px;
+            /* top: 6880px; */
+            top: 5580px;
             width: 100%;
         }
         section.header-informacoes .header-informacoes--logo {
@@ -1466,7 +1466,7 @@ footer.rodape{
         }
         section.header-informacoes ul {
             width: 150px;
-            margin: auto auto auto 0;
+            margin: 0 auto auto 0;
         }
         section.header-informacoes ul:nth-child(2) {
             margin:0;
@@ -1481,7 +1481,8 @@ footer.rodape{
             color: white;
             font-size: 22px;
             position: absolute;
-            top: 7300px;
+            /* top: 7300px; */
+            top: 6000px;
             width: 100%;
         }
     }
@@ -1566,11 +1567,13 @@ footer.rodape{
 
         section#saber__sobre__o__que {
             position: absolute;
-            top: 2000px;
+            /* top: 2000px; */
+            top: 800px;
         }
         header.header-3 {
             position: absolute;
-            top: 4450px;
+            /* top: 4450px; */
+            top: 3250px;
             height: 2300px;
         }
         hr {
@@ -1584,7 +1587,8 @@ footer.rodape{
             display: flex;
             flex-direction: column;
             position: absolute;
-            top: 6830px;
+            /* top: 6830px; */
+            top: 5630px;
             width: 100%;
         }
         section.header-informacoes nav {
@@ -1600,7 +1604,8 @@ footer.rodape{
             color: white;
             font-size: 22px;
             position: absolute;
-            top: 7250px;
+            /* top: 7250px; */
+            top: 6050px;
             width: 100%;
         }
       
@@ -1646,7 +1651,8 @@ footer.rodape{
         }
         section#saber__sobre__o__que {
             position: absolute;
-            top: 1810px;
+            /* top: 1810px; */
+            top: 690px;
         }
         section#saber__sobre__o__que h1 {
             font-size: 22px;
@@ -1662,7 +1668,8 @@ footer.rodape{
         }
         header.header-3 {
             position: absolute;
-            top: 4220px;
+            /* top: 4220px; */
+            top: 3120px;
             height: 2300px;
         }
         header.header-3 .contatosUteis {
@@ -1676,12 +1683,14 @@ footer.rodape{
             display: flex;
             flex-direction: column;
             position: absolute;
-            top: 6480px;
+            /* top: 6480px; */
+            top: 5380px;
             width: 100%;
         }
         footer.rodape {
             
-            top: 6900px;
+            /* top: 6900px; */
+            top: 5800px;
         }
     }
     
@@ -1706,18 +1715,21 @@ footer.rodape{
         }
         section#saber__sobre__o__que {
             position: absolute;
-            top: 1900px;
+            /* top: 1900px; */
+            top: 720px;
         }
         header.header-3 {
             position: absolute;
-            top: 4350px;
+            /* top: 4350px; */
+            top: 3190px;
             height: 2300px;
         }
         section.header-informacoes {
             display: flex;
             flex-direction: column;
             position: absolute;
-            top: 6700px;
+            /* top: 6700px; */
+            top: 5550px;
             width: 100%;
         }
         footer.rodape {
@@ -1730,7 +1742,8 @@ footer.rodape{
             color: white;
             font-size: 22px;
             position: absolute;
-            top: 7120px;
+            /* top: 7120px; */
+            top: 5980px;
             width: 100%;
         }
     }
@@ -1755,18 +1768,21 @@ footer.rodape{
         }
         section#saber__sobre__o__que {
             position: absolute;
-            top: 1780px;
+            /* top: 1780px; */
+            top: 650px;
         }
         header.header-3 {
             position: absolute;
-            top: 4180px;
+            /* top: 4180px; */
+            top: 3080px;
             height: 2300px;
         }
         section.header-informacoes {
             display: flex;
             flex-direction: column;
             position: absolute;
-            top: 6450px;
+            /* top: 6450px; */
+            top: 5350px;
             width: 100%;
         }
         footer.rodape {
@@ -1779,7 +1795,7 @@ footer.rodape{
             color: white;
             font-size: 22px;
             position: absolute;
-            top: 6880px;
+            top: 5780px;
             width: 100%;
         }
       }

@@ -7,14 +7,16 @@
     scroll-behavior: smooth;
     font-family: "Roboto", sans-serif;
     --primary-color: #CD1C0C;
+    overflow-x: hidden;
   
  }
 
 
- .header-1{
+ /*    Início do Header    */
+
+.header-1{
     width: 100%;
     display: flex;
-    justify-content: space-between;
     background-color: #ffffff;
     padding-top: 5px;
     position: fixed;
@@ -23,10 +25,10 @@
 }
 
 
+
 .header-1--logo--1{
     width: 80px;
     height: 60px;
-    margin-left: 100px;
     border-radius: 5px;
 }
 
@@ -39,7 +41,11 @@
 
 
 .header-1--menu{
-    margin-right: 100px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    
   }
 
 .header-1--menu li{
@@ -107,6 +113,7 @@ aside {
     gap: 30px;
     max-width: 1100px;
     margin: 0 auto;
+    overflow: hidden;
   }
   
   .nossoTime > div {
@@ -262,7 +269,7 @@ section.header-informacoes ul li a:hover{
 
 footer.rodape{
    background: var(--primary-color);
-   height: 80px;
+   height: 90px;
    text-align: center;
    display: flex;
    align-items: center;
@@ -295,3 +302,499 @@ footer.rodape{
  ::-webkit-scrollbar-thumb:hover {
    background: var(--primary-color);
  }
+
+
+ 
+  /* Media screen */
+ 
+    @media (max-width: 1024px){
+    
+        .header-1--logo--1 {
+        margin-left: 50px;
+        }
+    
+        .header-1--menu {
+            margin-right: 40px;
+        }
+    
+        .heartcare_container--intro {
+        top: 220px;
+        left: 70px;
+        font-size: 16px;
+        color: white;
+        font-weight: 500;
+        }
+    
+        .heartcare_container--intro h2{
+        font-size: 18px;
+        color: #f7f1f1;
+        margin: 30px 0;
+        }
+    
+        .heartcare_container--intro a{
+            background-color: white;
+            color: var(--primary-color);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 26px;
+            text-transform: uppercase;
+            font-weight: 600;
+            cursor: pointer;
+            transition: .5s;
+            text-decoration: none;
+        
+        }
+    
+        hr{
+        max-width: 722px;
+         }
+    
+        section.calculadora article {
+        width: 700px;
+        height: 300;
+        margin: 0 13%;
+        }
+        section.calculadora::after {
+            content: url(./docs/imagens/Vectorpeq.png);
+            position: relative;
+            bottom: 580px;
+        }
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div p {
+        background: white;
+        margin: 0px 10px;
+        width: 300px;
+        line-height: 1.8;
+        }
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-1,
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-2,
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-3,
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-4,
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-5{
+        width: 600px;
+        margin: 10px auto;
+       
+    }
+    
+        header.header-3{
+        background: white;
+        border: none;
+        height: 1000px;
+    }
+        header.header-3::after {
+        content: url(./docs/imagens/Detalhepeq.png);
+        position: relative;
+        bottom: 920px;
+        }
+    
+        header.header-3 .conteudo-1 > div, header.header-3 .conteudo-2 > div {
+        width: 200px;
+        }
+        header.header-3 .contatosUteis > div{
+        display: flex;
+        }
+        header.header-3 .contatosUteis div > img {
+        width: 140px;
+        }
+        section.header-informacoes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        max-width: 700px;
+        }
+        
+        section.header-informacoes ul {
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+        section.header-informacoes ul:nth-child(2) {
+        margin-left: 85px;
+        }
+    
+    }
+    @media (max-width: 768px){
+    
+        * {
+            overflow-x: hidden;
+        }
+         .header-1 {
+        justify-content: space-between;
+          
+        }
+    
+         .header-1--logo--1 {
+            margin: 0px;
+        }
+     
+        .header-1--menu li a {
+        padding: 7px;
+       }
+    
+        .heartcare_container--intro {
+            top: 530px;
+            font-size: 32px;
+            height: 365px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: var(--primary-color);
+            position: absolute;
+            left: 0;
+            padding: 70px 0;
+        }
+    
+        .heartcare_container--img-background  {
+           background-image: url(./docs/imagens/heart-care.png);
+           background-size: 80%;
+           background-position-x: center;
+           background-repeat: no-repeat;
+        }
+        .heartcare_container--img-background img {
+            visibility: hidden;
+        }
+    
+        .heartcare_container--intro h2 {
+            font-size: 28px;
+            color: #f7f1f1;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            width: 490px;
+        }
+        
+        .heartcare_container--intro a {
+            background-color: white;
+            color: var(--primary-color);
+            padding: 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 22px;
+            text-transform: uppercase;
+            font-weight: 600;
+            cursor: pointer;
+            transition: .5s;
+            text-decoration: none;
+            position: relative;
+            right: 150px;
+            margin-top: 10px;
+        }
+        section.calculadora {
+            background: white;
+            margin-bottom: 100px;
+        }
+        section.calculadora::after {
+            content: url(./docs/imagens/Vectorpeq.png);
+           
+        }
+        .calculadora h1::before {
+            content: url(./docs/imagens/aspaspeq.png);
+        }
+    
+        section.calculadora article {
+        width: 700px;
+        margin-left: 25px;
+        }
+    
+        section.calculadora .imcResultado {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        gap: 10px;
+            
+        }
+        section.calculadora .imcResultado .imcClassificacao__Resultado {
+        background: #EAEAEA;
+        border-radius: 3px;
+        box-shadow: 2px 2px 0px rgb(200, 198, 198);
+           
+        }
+        hr {
+        margin: auto;
+        background: url(../../../docs/imagens/Line.png);
+        background-position: center;
+        max-width: 600px;
+        height: 2px;
+        }
+    
+        section#saber__sobre__o__que .header-2 h1::before {
+            content: url(./docs/imagens/aspaspeq.png);
+        }
+    
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div p {
+        background: white;
+        margin: 0px 10px;
+        width: 300px;
+        line-height: 1.8;
+        }
+    
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-1,
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-2,
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-3,
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-4,
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-5{
+        width: 600px;
+        margin: 10px auto;
+       }
+       header.header-3::after {
+        content: url(./docs/imagens/Detalhepeq.png);
+        position: relative;
+        bottom: 730px;
+    }
+        header.header-3{
+            background: white;
+            border: none;
+            height: 1010px;
+            /* overflow-x: hidden; */
+        }
+        header.header-3 h1::before {
+            content: url(./docs/imagens/aspaspeq.png);
+        }
+        header.header-3 .conteudo-1 > div, header.header-3 .conteudo-2 > div {
+            width: 200px;
+        }
+        header.header-3 .contatosUteis > div{
+            display: flex;
+        }
+        header.header-3 .contatosUteis div > img {
+            width: 140px;
+        }
+        section.header-informacoes .header-informacoes--logo {
+            width: 250px;
+            height: 200px;
+            text-align: center;
+        }
+        section.header-informacoes {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: auto;
+            max-width: 1100px;
+        }
+    
+        section.header-informacoes nav {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            text-align: left;
+        }
+        section.header-informacoes ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto auto 0;
+              
+        }
+    
+        section.header-informacoes ul:nth-child(2) {
+            margin-left: 60px;
+        }
+            
+        } 
+    
+    
+        @media (max-width: 720px){
+          
+              
+            .header-1--logo{
+                display: block;
+              
+            }
+    
+            header.header-3 {
+                background: white;
+                border: none;
+                height: 1010px;
+                position: relative;
+            }
+          
+        }
+    
+    
+        @media (max-width: 411px){
+    
+            .header-1 {
+            height: 220px;
+            position: absolute;
+            }
+    
+            .header-1--menu {
+            
+            display: block;
+            margin: auto;
+            
+            }
+    
+            .header-1--logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+    
+            .header-1--menu ul {
+            
+            width: 100%;
+    
+            }
+         
+            .header-1--menu li {
+             
+            display: block;
+            margin: 0;
+            }
+    
+            .header-1--menu li a{
+             
+            display: block;
+            margin: 5px;
+            text-align: center;
+            }
+    
+            .nossoTime {
+              display: grid;
+              grid-template-columns: repeat(1, 1fr);
+              gap: 30px;
+              max-width: 1100px;
+              margin: 0 auto;
+              overflow: hidden;
+          }
+          
+            hr {
+                margin: auto;
+                background: url(../../../docs/imagens/Line.png);
+                background-position: center;
+                max-width: 300px;
+                height: 2px;
+                margin-top: 50px;
+
+            }
+            section.header-informacoes {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding-top: 100px;
+            }
+            section.header-informacoes .header-informacoes--logo {
+                width: 180px;
+                height: 150px;
+             
+            }
+            section.header-informacoes nav {
+                width: 80%;
+            }
+            section.header-informacoes ul {
+                width: 150px;
+                margin: 0 auto auto 0;
+            }
+            section.header-informacoes ul:nth-child(2) {
+                margin:0;
+            }
+            footer.rodape {
+                background: var(--primary-color);
+                height: 80px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 22px;
+                width: 100%;
+            }
+        }
+    
+        /* Estilos específicos para dispositivos com largura entre 375px e 812px */
+      
+        @media (max-width: 375px) and (max-height: 812px){
+    
+           
+         
+            hr {
+                margin: auto;
+                background: url(../../../docs/imagens/Line.png);
+                background-position: center;
+                max-width: 250px;
+                height: 2px;
+                margin-top: 50px;
+            }
+            section.header-informacoes {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding-top: 100px;
+            }
+            section.header-informacoes nav {
+                width: 85%;
+            }
+            footer.rodape {
+                background: var(--primary-color);
+                height: 80px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 22px;
+                width: 100%;
+            }
+          
+        }
+    
+        /* Estilos específicos para dispositivos com largura entre 375px e 667px */
+    
+        @media (max-width: 375px) and (max-height: 667px) {
+          
+            section.header-informacoes {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+           
+        }
+        
+        /* Estilos específicos para dispositivos com largura entre 360px e 720px */
+        
+        @media (max-width: 360px) and (max-height:720px){
+           
+            section.header-informacoes {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            footer.rodape {
+                background: var(--primary-color);
+                height: 80px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 22px;
+                width: 100%;
+            }
+        }
+        
+        /* Estilos específicos para dispositivos com largura entre 360px e 640px */
+        @media (max-width: 360px) and (max-height: 640px) {
+            
+        
+            section.header-informacoes {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            footer.rodape {
+                background: var(--primary-color);
+                height: 80px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 22px;
+                width: 100%;
+            }
+          }

@@ -1195,7 +1195,7 @@ footer.rodape{
             font-size: 14px;
         
         }
-     
+
         section.calculadora {
             
             position: absolute;
@@ -1332,13 +1332,13 @@ footer.rodape{
             width: 25%;
             height: 245px;
         }
-      
+        
+
         section#saber__sobre__o__que {
             background: white;
             padding-bottom: 100px;
             position: absolute;
-            /* top: 2035px; */
-            top: 735px;
+            top: 2035px;
             width: 100%;
         }
  
@@ -1404,8 +1404,7 @@ footer.rodape{
       
         header.header-3 {
             position: absolute;
-            /* top: 4500px; */
-            top: 3200px;
+            top: 4500px;
             height: 2300px;
             width: 100%;
         }
@@ -1454,8 +1453,7 @@ footer.rodape{
             display: flex;
             flex-direction: column;
             position: absolute;
-            /* top: 6880px; */
-            top: 5580px;
+            top: 6880px;
             width: 100%;
         }
         section.header-informacoes .header-informacoes--logo {
@@ -1483,8 +1481,7 @@ footer.rodape{
             color: white;
             font-size: 22px;
             position: absolute;
-            /* top: 7300px; */
-            top: 6000px;
+            top: 7300px;
             width: 100%;
         }
     }
