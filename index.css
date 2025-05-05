@@ -1198,7 +1198,8 @@ footer.rodape{
         section.calculadora {
             
             position: absolute;
-            top: 750px;
+            /* top: 750px; */
+            top: 770px;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -1336,8 +1337,8 @@ footer.rodape{
             background: white;
             padding-bottom: 100px;
             position: absolute;
-            /* top: 2035px; */
-            top: 735px;
+            top: 2035px;
+            /* top: 735px; */
             width: 100%;
         }
  
@@ -1454,7 +1455,7 @@ footer.rodape{
             flex-direction: column;
             position: absolute;
             /* top: 6880px; */
-            top: 5580px;
+            top: 4580px;
             width: 100%;
         }
         section.header-informacoes .header-informacoes--logo {
@@ -1483,7 +1484,7 @@ footer.rodape{
             font-size: 22px;
             position: absolute;
             /* top: 7300px; */
-            top: 6000px;
+            top: 5000px;
             width: 100%;
         }
     }
@@ -1569,7 +1570,7 @@ footer.rodape{
         section#saber__sobre__o__que {
             position: absolute;
             /* top: 2000px; */
-            top: 800px;
+            top: 850px;
         }
         header.header-3 {
             position: absolute;
@@ -1589,7 +1590,7 @@ footer.rodape{
             flex-direction: column;
             position: absolute;
             /* top: 6830px; */
-            top: 5630px;
+            top: 3330px;
             width: 100%;
         }
         section.header-informacoes nav {
@@ -1606,7 +1607,7 @@ footer.rodape{
             font-size: 22px;
             position: absolute;
             /* top: 7250px; */
-            top: 6050px;
+            top: 3750px;
             width: 100%;
         }
       
@@ -1685,13 +1686,13 @@ footer.rodape{
             flex-direction: column;
             position: absolute;
             /* top: 6480px; */
-            top: 5380px;
+            top: 3180px;
             width: 100%;
         }
         footer.rodape {
             
             /* top: 6900px; */
-            top: 5800px;
+            top: 3600px;
         }
     }
     
@@ -1730,7 +1731,7 @@ footer.rodape{
             flex-direction: column;
             position: absolute;
             /* top: 6700px; */
-            top: 5550px;
+            top: 3250px;
             width: 100%;
         }
         footer.rodape {
@@ -1744,7 +1745,7 @@ footer.rodape{
             font-size: 22px;
             position: absolute;
             /* top: 7120px; */
-            top: 5980px;
+            top: 3680px;
             width: 100%;
         }
     }
@@ -1783,7 +1784,7 @@ footer.rodape{
             flex-direction: column;
             position: absolute;
             /* top: 6450px; */
-            top: 5350px;
+            top: 3150px;
             width: 100%;
         }
         footer.rodape {
@@ -1796,7 +1797,7 @@ footer.rodape{
             color: white;
             font-size: 22px;
             position: absolute;
-            top: 5780px;
+            top: 3580px;
             width: 100%;
         }
       }
