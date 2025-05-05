@@ -1567,11 +1567,12 @@ footer.rodape{
             height: 200px;
         }
 
-        section#saber__sobre__o__que {
+        /* section#saber__sobre__o__que {
             position: absolute;
             /* top: 2000px; */
-            top: 850px;
-        }
+            /* top: 850px; */
+        
+        /* }  */
         header.header-3 {
             position: absolute;
             /* top: 4450px; */
@@ -1590,7 +1591,7 @@ footer.rodape{
             flex-direction: column;
             position: absolute;
             /* top: 6830px; */
-            top: 3330px;
+            top: 4530px;
             width: 100%;
         }
         section.header-informacoes nav {
@@ -1607,7 +1608,7 @@ footer.rodape{
             font-size: 22px;
             position: absolute;
             /* top: 7250px; */
-            top: 3750px;
+            top: 4950px;
             width: 100%;
         }
       
@@ -1654,7 +1655,7 @@ footer.rodape{
         section#saber__sobre__o__que {
             position: absolute;
             /* top: 1810px; */
-            top: 690px;
+            top: 1835px;
         }
         section#saber__sobre__o__que h1 {
             font-size: 22px;
@@ -1686,13 +1687,13 @@ footer.rodape{
             flex-direction: column;
             position: absolute;
             /* top: 6480px; */
-            top: 3180px;
+            top: 4280px;
             width: 100%;
         }
         footer.rodape {
-            
+            position: absolute;
             /* top: 6900px; */
-            top: 3600px;
+            top: 4700px;
         }
     }
     
@@ -1717,8 +1718,8 @@ footer.rodape{
         }
         section#saber__sobre__o__que {
             position: absolute;
-            /* top: 1900px; */
-            top: 720px;
+            top: 1900px;
+            /* top: 720px; */
         }
         header.header-3 {
             position: absolute;
@@ -1731,7 +1732,7 @@ footer.rodape{
             flex-direction: column;
             position: absolute;
             /* top: 6700px; */
-            top: 3250px;
+            top: 4400px;
             width: 100%;
         }
         footer.rodape {
@@ -1745,7 +1746,7 @@ footer.rodape{
             font-size: 22px;
             position: absolute;
             /* top: 7120px; */
-            top: 3680px;
+            top: 4820px;
             width: 100%;
         }
     }
@@ -1770,8 +1771,8 @@ footer.rodape{
         }
         section#saber__sobre__o__que {
             position: absolute;
-            /* top: 1780px; */
-            top: 650px;
+            top: 1780px;
+            /* top: 650px; */
         }
         header.header-3 {
             position: absolute;
@@ -1783,8 +1784,8 @@ footer.rodape{
             display: flex;
             flex-direction: column;
             position: absolute;
-            /* top: 6450px; */
-            top: 3150px;
+            top: 4250px;
+            /* top: 3150px; */
             width: 100%;
         }
         footer.rodape {
@@ -1797,7 +1798,7 @@ footer.rodape{
             color: white;
             font-size: 22px;
             position: absolute;
-            top: 3580px;
+            top: 4680px;
             width: 100%;
         }
       }
