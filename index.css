@@ -1111,6 +1111,378 @@ footer.rodape{
       
     }
 
+     /* Estilos específicos para dispositivos com largura entre 414px e 896px */
+  
+    @media (max-width: 414px) and (max-height: 896px){
+
+     .header-1 {
+        height: 220px;
+        position: absolute;
+        }
+
+        .header-1--menu {
+        
+        display: block;
+        margin: auto;
+        
+        }
+
+        .header-1--logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .header-1--menu ul {
+        
+        width: 100%;
+
+        }
+     
+        .header-1--menu li {
+         
+        display: block;
+        margin: 0;
+        }
+
+        .header-1--menu li a{
+         
+        display: block;
+        margin: 5px;
+        text-align: center;
+        }
+
+        .heartcare_container {
+            width: 100%;
+            position: absolute;
+            top: 190px;
+            overflow: hidden;
+        }
+        .heartcare_container::after{
+            content: url('');
+            
+        }
+        .heartcare_container--img-background {
+            background-image: url(./docs/imagens/heart-care.png);
+            background-size: 100%;
+            background-position-x: center;
+            background-repeat: no-repeat;
+        }
+        .heartcare_container--intro {
+            top: 320px;
+            padding: 0;
+        
+        }
+        .heartcare_container--intro h1 {
+            line-height: 1.5;
+            font-size: 18px;
+            width: 300px;
+            margin: 20px 0 10px;
+        }
+
+        .heartcare_container--intro h2 {
+            font-size: 16px;
+            color: #f7f1f1;
+            margin: 10px 0 0 0;
+            width: 300px;
+          
+        }
+        .heartcare_container--intro a {
+            padding: 10px;
+            right: 100px;
+            position: relative;
+            font-size: 14px;
+            margin: 5px;
+        
+        }
+     
+        section.calculadora {
+            
+            position: absolute;
+            top: 920px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+           
+        .calculadora h1 {
+            font-size: 22px;
+            width: 100%;
+           
+            padding-bottom: 20px;
+        }
+        
+        section.calculadora article{
+            
+          
+            width: 350px;
+            margin: auto;
+           
+        }
+
+        section.calculadora article h2 {
+            text-align: center;
+            padding-top: 30px;
+            font-size: 16px;
+            padding-bottom: 10px;
+        }
+        section.calculadora article p {
+            width: 320px;
+                      
+            font-size: 14px;
+         
+        }
+        section.calculadora article img {
+           
+            padding-bottom: 10px;
+        }
+
+        section.calculadora h3 {
+            font-size: 16px;
+          
+            width: 100%;
+        }
+        section.calculadora form#imcForm .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+        section.calculadora form#imcForm input {
+            display: flex;
+            margin: 0;
+            border: 1px solid var(--primary-color);
+            padding: 5px;
+            width: 130px;
+            border-radius: 5px;
+            text-align: center;
+            outline: none;
+        }
+        section.calculadora form#imcForm select {
+            appearance: none;
+            border: 1px solid var(--primary-color);
+            padding: 5px;
+            width: 140px;
+            border-radius: 5px;
+            color: #767678;
+            text-align: center;
+            outline: none;
+            cursor: pointer;
+        }
+        section.calculadora button {
+            margin: 0;
+            font-size: 14px;
+            padding: 8px;
+         }
+
+        section.calculadora .imcResultado {
+            flex-direction: column;
+            gap: 10px;
+            width: 350px;
+        }
+
+        section.calculadora .imcResultado .imcClassificacao__Resultado {
+            width: 100%;
+            margin: auto;
+                      
+        }
+        section.calculadora .imcResultado .imcClassificacao__Resultado p#resultado {
+            font-size: 36px;
+            color: var(--primary-color);
+            margin-top: 20px;
+            text-align: center;
+        }
+        section.calculadora .imcClassificacao .imc,
+        section.calculadora .imcClassificacao .classificacao {
+            
+            width: 175px;
+           
+          
+        }
+        section.calculadora .imcClassificacao .imc h3,
+        section.calculadora .imcClassificacao .classificacao h3 {
+          
+           margin: 0px;
+       }
+        section.calculadora .imcClassificacao .imc p, 
+        section.calculadora .imcClassificacao .classificacao p {
+            font-size: 16px;
+            width: 100%;
+            margin: 10px 0 10px 0;
+        }
+        section.calculadora::after {
+            content: url("");
+        }
+      section.calculadora .imcResultado .imcImagem {
+            background: #EAEAEA;
+            width: 250px;
+            height: 280px;
+            border-radius: 3px;
+            box-shadow: 2px 2px 0px rgb(200, 198, 198);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+    }
+        section.calculadora .imcResultado .imcImagem img {
+            width: 25%;
+            height: 245px;
+        }
+      
+        section#saber__sobre__o__que {
+            background: white;
+            padding-bottom: 100px;
+            position: absolute;
+            top: 2200px;
+            width: 100%;
+        }
+ 
+        section#saber__sobre__o__que h1 {
+            font-size: 22px;
+            text-align: center;
+            color: var(--primary-color);
+            padding-top: 100px;
+        }
+
+        section#saber__sobre__o__que .header-2 .header-2--barra-pesquisa input {
+            margin-right: 3px;
+            border: 1px solid var(--primary-color);
+            padding: 5px;
+            width: 180px;
+            border-radius: 5px;
+            outline: none;
+        }
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-1, 
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-2, 
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-3, 
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-4,
+         section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-5 {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div img {
+            background: white;
+            width: 100px;
+            height: 80px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 0px rgb(200, 198, 198);
+            margin-bottom: 20px;
+        }
+         
+        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-1 > div p,
+        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-2 > div p,
+        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-3 > div p,
+        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-4 > div p,
+        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-5 > div p{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 14px;
+            width: 280px;
+            text-align: justify;
+        }
+      
+        
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div button {
+            background: white;
+            border: 1px solid var(--primary-color);
+            padding: 10px;
+            border-radius: 3px;
+            color: var(--primary-color);
+            font-size: 14px;
+            transition: .5s;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+      
+        header.header-3 {
+            position: absolute;
+            top: 3200px;
+            height: 2300px;
+            width: 100%;
+        }
+        header.header-3::after {
+            content: normal;
+           
+        }
+
+        header.header-3 .header-3--barra-pesquisa input {
+            margin-right: 3px;
+            border: 1px solid var(--primary-color);
+            padding: 5px;
+            width: 180px;
+            border-radius: 5px;
+            outline: none;
+        }
+        header.header-3 h1 {
+            font-size: 22px;
+            text-align: center;
+            color: var(--primary-color);
+            padding-top: 100px;
+        }
+        header.header-3 .contatosUteis > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        header.header-3 .conteudo-1 > div, header.header-3 .conteudo-2 > div {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header.header-3 .contatosUteis div > img {
+            width: 200px;
+        }
+        hr {
+            margin: auto;
+            background: url(../../../docs/imagens/Line.png);
+            background-position: center;
+            max-width: 300px;
+            height: 2px;
+        }
+        section.header-informacoes {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 4720px;
+            width: 100%;
+        }
+        section.header-informacoes .header-informacoes--logo {
+            width: 180px;
+            height: 150px;
+         
+        }
+        section.header-informacoes nav {
+            width: 80%;
+        }
+        section.header-informacoes ul {
+            width: 150px;
+            margin: 0 auto auto 0;
+        }
+        section.header-informacoes ul:nth-child(2) {
+            margin:0;
+        }
+        footer.rodape {
+            background: var(--primary-color);
+            height: 80px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 22px;
+            position: absolute;
+            top: 5150px;
+            width: 100%;
+        }
+    } 
+   
     
  /* Estilos específicos para dispositivos com largura entre 412px e 915px */
   
@@ -1485,378 +1857,7 @@ footer.rodape{
     } 
    
 
-     /* Estilos específicos para dispositivos com largura entre 414px e 896px */
-  
-    @media (max-width: 414px) and (max-height: 896px){
-
-     .header-1 {
-        height: 220px;
-        position: absolute;
-        }
-
-        .header-1--menu {
-        
-        display: block;
-        margin: auto;
-        
-        }
-
-        .header-1--logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        }
-
-        .header-1--menu ul {
-        
-        width: 100%;
-
-        }
-     
-        .header-1--menu li {
-         
-        display: block;
-        margin: 0;
-        }
-
-        .header-1--menu li a{
-         
-        display: block;
-        margin: 5px;
-        text-align: center;
-        }
-
-        .heartcare_container {
-            width: 100%;
-            position: absolute;
-            top: 190px;
-            overflow: hidden;
-        }
-        .heartcare_container::after{
-            content: url('');
-            
-        }
-        .heartcare_container--img-background {
-            background-image: url(./docs/imagens/heart-care.png);
-            background-size: 100%;
-            background-position-x: center;
-            background-repeat: no-repeat;
-        }
-        .heartcare_container--intro {
-            top: 320px;
-            padding: 0;
-        
-        }
-        .heartcare_container--intro h1 {
-            line-height: 1.5;
-            font-size: 18px;
-            width: 300px;
-            margin: 20px 0 10px;
-        }
-
-        .heartcare_container--intro h2 {
-            font-size: 16px;
-            color: #f7f1f1;
-            margin: 10px 0 0 0;
-            width: 300px;
-          
-        }
-        .heartcare_container--intro a {
-            padding: 10px;
-            right: 100px;
-            position: relative;
-            font-size: 14px;
-            margin: 5px;
-        
-        }
-     
-        section.calculadora {
-            
-            position: absolute;
-            top: 920px;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-           
-        }
-           
-        .calculadora h1 {
-            font-size: 22px;
-            width: 100%;
-           
-            padding-bottom: 20px;
-        }
-        
-        section.calculadora article{
-            
-          
-            width: 350px;
-            margin: auto;
-           
-        }
-
-        section.calculadora article h2 {
-            text-align: center;
-            padding-top: 30px;
-            font-size: 16px;
-            padding-bottom: 10px;
-        }
-        section.calculadora article p {
-            width: 320px;
-                      
-            font-size: 14px;
-         
-        }
-        section.calculadora article img {
-           
-            padding-bottom: 10px;
-        }
-
-        section.calculadora h3 {
-            font-size: 16px;
-          
-            width: 100%;
-        }
-        section.calculadora form#imcForm .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 5px;
-            margin-bottom: 20px;
-        }
-        section.calculadora form#imcForm input {
-            display: flex;
-            margin: 0;
-            border: 1px solid var(--primary-color);
-            padding: 5px;
-            width: 130px;
-            border-radius: 5px;
-            text-align: center;
-            outline: none;
-        }
-        section.calculadora form#imcForm select {
-            appearance: none;
-            border: 1px solid var(--primary-color);
-            padding: 5px;
-            width: 140px;
-            border-radius: 5px;
-            color: #767678;
-            text-align: center;
-            outline: none;
-            cursor: pointer;
-        }
-        section.calculadora button {
-            margin: 0;
-            font-size: 14px;
-            padding: 8px;
-         }
-
-        section.calculadora .imcResultado {
-            flex-direction: column;
-            gap: 10px;
-            width: 350px;
-        }
-
-        section.calculadora .imcResultado .imcClassificacao__Resultado {
-            width: 100%;
-            margin: auto;
-                      
-        }
-        section.calculadora .imcResultado .imcClassificacao__Resultado p#resultado {
-            font-size: 36px;
-            color: var(--primary-color);
-            margin-top: 20px;
-            text-align: center;
-        }
-        section.calculadora .imcClassificacao .imc,
-        section.calculadora .imcClassificacao .classificacao {
-            
-            width: 175px;
-           
-          
-        }
-        section.calculadora .imcClassificacao .imc h3,
-        section.calculadora .imcClassificacao .classificacao h3 {
-          
-           margin: 0px;
-       }
-        section.calculadora .imcClassificacao .imc p, 
-        section.calculadora .imcClassificacao .classificacao p {
-            font-size: 16px;
-            width: 100%;
-            margin: 10px 0 10px 0;
-        }
-        section.calculadora::after {
-            content: url("");
-        }
-      section.calculadora .imcResultado .imcImagem {
-            background: #EAEAEA;
-            width: 250px;
-            height: 280px;
-            border-radius: 3px;
-            box-shadow: 2px 2px 0px rgb(200, 198, 198);
-            justify-content: center;
-            align-items: center;
-            display: flex;
-    }
-        section.calculadora .imcResultado .imcImagem img {
-            width: 25%;
-            height: 245px;
-        }
-      
-        section#saber__sobre__o__que {
-            background: white;
-            padding-bottom: 100px;
-            position: absolute;
-            top: 2200px;
-            width: 100%;
-        }
- 
-        section#saber__sobre__o__que h1 {
-            font-size: 22px;
-            text-align: center;
-            color: var(--primary-color);
-            padding-top: 100px;
-        }
-
-        section#saber__sobre__o__que .header-2 .header-2--barra-pesquisa input {
-            margin-right: 3px;
-            border: 1px solid var(--primary-color);
-            padding: 5px;
-            width: 180px;
-            border-radius: 5px;
-            outline: none;
-        }
-        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-1, 
-        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-2, 
-        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-3, 
-        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-4,
-         section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-5 {
-            width: 300px;
-            display: flex;
-            flex-direction: column;
-        }
-        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div img {
-            background: white;
-            width: 100px;
-            height: 80px;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 2px 2px 0px rgb(200, 198, 198);
-            margin-bottom: 20px;
-        }
-         
-        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-1 > div p,
-        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-2 > div p,
-        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-3 > div p,
-        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-4 > div p,
-        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-5 > div p{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-size: 14px;
-            width: 280px;
-            text-align: justify;
-        }
-      
-        
-        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div button {
-            background: white;
-            border: 1px solid var(--primary-color);
-            padding: 10px;
-            border-radius: 3px;
-            color: var(--primary-color);
-            font-size: 14px;
-            transition: .5s;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-      
-        header.header-3 {
-            position: absolute;
-            top: 3200px;
-            height: 2300px;
-            width: 100%;
-        }
-        header.header-3::after {
-            content: normal;
-           
-        }
-
-        header.header-3 .header-3--barra-pesquisa input {
-            margin-right: 3px;
-            border: 1px solid var(--primary-color);
-            padding: 5px;
-            width: 180px;
-            border-radius: 5px;
-            outline: none;
-        }
-        header.header-3 h1 {
-            font-size: 22px;
-            text-align: center;
-            color: var(--primary-color);
-            padding-top: 100px;
-        }
-        header.header-3 .contatosUteis > div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-        }
-        header.header-3 .conteudo-1 > div, header.header-3 .conteudo-2 > div {
-            width: 300px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        header.header-3 .contatosUteis div > img {
-            width: 200px;
-        }
-        hr {
-            margin: auto;
-            background: url(../../../docs/imagens/Line.png);
-            background-position: center;
-            max-width: 300px;
-            height: 2px;
-        }
-        section.header-informacoes {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            top: 4720px;
-            width: 100%;
-        }
-        section.header-informacoes .header-informacoes--logo {
-            width: 180px;
-            height: 150px;
-         
-        }
-        section.header-informacoes nav {
-            width: 80%;
-        }
-        section.header-informacoes ul {
-            width: 150px;
-            margin: 0 auto auto 0;
-        }
-        section.header-informacoes ul:nth-child(2) {
-            margin:0;
-        }
-        footer.rodape {
-            background: var(--primary-color);
-            height: 80px;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 22px;
-            position: absolute;
-            top: 5150px;
-            width: 100%;
-        }
-    } 
-   
+    
 
     @media (max-width: 411px){
 

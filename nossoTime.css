@@ -614,6 +614,195 @@ footer.rodape{
           
         }
     
+     /* Estilos específicos para dispositivos com largura entre 414px e 896px */
+  
+    @media (max-width: 414px) and (max-height: 896px){
+
+     .header-1 {
+        height: 220px;
+        position: absolute;
+        }
+
+        .header-1--menu {
+        
+        display: block;
+        margin: auto;
+        
+        }
+
+        .header-1--logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .header-1--menu ul {
+        
+        width: 100%;
+
+        }
+     
+        .header-1--menu li {
+         
+        display: block;
+        margin: 0;
+        }
+
+        .header-1--menu li a{
+         
+        display: block;
+        margin: 5px;
+        text-align: center;
+        }
+        .nossoTime {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+            hr {
+        margin: auto;
+        background: url(../../../docs/imagens/Line.png) center center;
+        max-width: 300px;
+        height: 2px;
+    }
+            
+        section.header-informacoes {
+            display: flex;
+            flex-direction: column;
+            /* position: absolute; */
+            /* top: 4720px; */
+            margin-top: 20px;
+            width: 100%;
+        }
+        section.header-informacoes .header-informacoes--logo {
+            width: 180px;
+            height: 150px;
+         
+        }
+        section.header-informacoes nav {
+            width: 80%;
+        }
+        section.header-informacoes ul {
+            width: 150px;
+            margin: 0 auto auto 0;
+        }
+        section.header-informacoes ul:nth-child(2) {
+            margin:0;
+        }
+        footer.rodape {
+            background: var(--primary-color);
+            height: 80px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 22px;
+            position: absolute;
+            /* top: 5150px; */
+            width: 100%;
+        }
+    } 
+   
+    
+ /* Estilos específicos para dispositivos com largura entre 412px e 915px */
+  
+    @media (max-width: 412px) and (max-height: 915px){
+
+     .header-1 {
+        height: 220px;
+        position: absolute;
+        }
+
+        .header-1--menu {
+        
+        display: block;
+        margin: auto;
+        
+        }
+
+        .header-1--logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .header-1--menu ul {
+        
+        width: 100%;
+
+        }
+     
+        .header-1--menu li {
+         
+        display: block;
+        margin: 0;
+        }
+
+        .header-1--menu li a{
+         
+        display: block;
+        margin: 5px;
+        text-align: center;
+        }
+
+       .nossoTime {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        hr {
+            margin: auto;
+            background: url(../../../docs/imagens/Line.png);
+            background-position: center;
+            max-width: 300px;
+            height: 2px;
+        }
+        section.header-informacoes {
+            display: flex;
+            flex-direction: column;
+            /* position: absolute; */
+            /* top: 4720px; */
+            width: 100%;
+            margin-top: 20px;
+        }
+        section.header-informacoes .header-informacoes--logo {
+            width: 180px;
+            height: 150px;
+         
+        }
+        section.header-informacoes nav {
+            width: 80%;
+        }
+        section.header-informacoes ul {
+            width: 150px;
+            margin: 0 auto auto 0;
+        }
+        section.header-informacoes ul:nth-child(2) {
+            margin:0;
+        }
+        footer.rodape {
+            background: var(--primary-color);
+            height: 80px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 22px;
+            /* position: absolute; */
+            /* top: 5150px; */
+            width: 100%;
+        }
+    } 
+   
+
     
         @media (max-width: 411px){
     
