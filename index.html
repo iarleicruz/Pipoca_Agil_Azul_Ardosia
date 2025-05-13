@@ -59,11 +59,16 @@
         </select>
  
         <label for="peso"></label>
-        <!-- <input type="text" id="peso" placeholder="Peso (kg)" oninput="this.value = this.value.replace(/\D+/, '').replace(/^(\d+)(\d{1})$/, '$1.$2')" required/> -->
-        <input type="text" id="peso" placeholder="Peso (kg)" required/>
+            <div class="input-com-unidade">
+                <input type="text" id="peso" placeholder="Peso (kg)" required/>
+                <span class="unidade" id="peso-unidade"></span>
+            </div>
 
         <label for="altura"></label>
-        <input type="text" id="altura" placeholder=" Altura (m)" oninput="this.value = this.value.replace(/\D+/, '').replace(/^(\d+)(\d{2})$/, '$1.$2')" required/>
+            <div class="input-com-unidade">
+                <input type="text" id="altura" placeholder="Altura (m)" required />
+                <span class="unidade" id="altura-unidade"></span>
+            </div>
 
      </div>
          <div class="button">
