@@ -31,24 +31,19 @@ const FaixaIMC = Object.freeze({
   OBESIDADE_GRAVE: 5
 });
 
-// Função para o campo de peso (adiciona "kg" após o segundo dígito e proíbe começar com 0)
+// Função para o campo de peso (permite apenas números inteiros e adiciona "kg")
 function bloquearPeso(input) {
   input.addEventListener("input", function () {
-    let valor = this.value.replace(/[^0-9.,]/g, "").replace(/([.,])[.,]+/g, "$1");
-    valor = valor.replace(",", ".");
+    // Remove tudo que não for número
+    let valor = this.value.replace(/[^0-9]/g, "");
 
-    
+    // Remove zero inicial indevido
     if (valor.length > 1 && valor.charAt(0) === "0") {
       valor = valor.slice(1);
     }
 
-    const partes = valor.split(".");
-    if (partes.length > 1 && partes[1].length > 1) {
-      valor = partes[0] + "." + partes[1].substring(0, 1);
-    }
-
     let valorFormatado = valor;
-    if (valor.replace(".", "").length >= 2) {
+    if (valor.length >= 2) {
       valorFormatado += " kg";
     }
 
@@ -56,7 +51,8 @@ function bloquearPeso(input) {
   });
 
   input.addEventListener("keydown", function (e) {
-    if (e.key === " ") e.preventDefault();
+    // Bloqueia espaços, pontos e vírgulas
+    if ([" ", ".", ","].includes(e.key)) e.preventDefault();
   });
 }
 
@@ -79,9 +75,8 @@ function bloquearCaracteresInvalidos(input) {
       resultado += "," + parteDecimal;
     }
 
-    
     if (parteDecimal.length >= 1) {
-      resultado += " metros";
+      resultado += " m";
     }
 
     this.value = resultado;
@@ -108,24 +103,23 @@ document.getElementById("imcForm").addEventListener("submit", function (e) {
   const altura = parseFloat(alturaInput.value.replace(" metros", "").replace(",", "."));
 
   if (!peso || !altura || altura === 0) {
-  alert("Dados inválidos:\n O peso deve estar entre 30kg e 200kg.\n A altura deve estar entre 1 e 2.5 metros.");
-  return;
-}
+    alert("Dados inválidos:\n O peso deve estar entre 30kg e 200kg.\n A altura deve estar entre 1 e 2.5 metros.");
+    return;
+  }
 
-const pesoInvalido = peso < 30 || peso > 200;
-const alturaInvalida = altura < 1 || altura > 2.5;
+  const pesoInvalido = peso < 30 || peso > 200;
+  const alturaInvalida = altura < 1 || altura > 2.5;
 
-if (pesoInvalido && alturaInvalida) {
-  alert("Dados inválidos:\n O peso deve estar entre 30kg e 200kg.\n A altura deve estar entre 1 e 2.5 metros.");
-  return;
-} else if (pesoInvalido) {
-  alert("O peso deve estar entre 30kg e 200kg.");
-  return;
-} else if (alturaInvalida) {
-  alert("A altura deve estar entre 1 e 2.5 metros.");
-  return;
-}
-
+  if (pesoInvalido && alturaInvalida) {
+    alert("Dados inválidos:\n O peso deve estar entre 30kg e 200kg.\n A altura deve estar entre 1 e 2.5 metros.");
+    return;
+  } else if (pesoInvalido) {
+    alert("O peso deve estar entre 30kg e 200kg.");
+    return;
+  } else if (alturaInvalida) {
+    alert("A altura deve estar entre 1 e 2.5 metros.");
+    return;
+  }
 
   const imc = peso / (altura * altura);
   const imcFormatado = imc.toFixed(2).replace(".", ",");
@@ -175,6 +169,7 @@ function atualizarClassificacao(imc, prefixoImagem) {
 
   imagem.src = `./docs/imagens/${prefixoImagem}${faixa}.png`;
 }
+
 
 // Pesquina Saber Sobre o que
 
