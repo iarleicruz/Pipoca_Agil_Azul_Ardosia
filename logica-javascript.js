@@ -21,213 +21,154 @@ window.addEventListener(
 
   })
 
+// Calcular IMC
 
-document.getElementById('imcForm').addEventListener('submit', function(event) {
-     event.preventDefault(); // Evita o envio do formulário
+const FaixaIMC = Object.freeze({
+  ABAIXO_DO_PESO: 1,
+  PESO_NORMAL: 2,
+  SOBREPESO: 3,
+  OBESIDADE: 4,
+  OBESIDADE_GRAVE: 5
+});
 
-    // Obtém os valores
-    let genero = document.getElementById('genero').value;
-    let peso = parseFloat(document.getElementById('peso').value);
-    let altura = parseFloat(document.getElementById('altura').value);
+// Função para o campo de peso (permite apenas números inteiros e adiciona "kg")
+function bloquearPeso(input) {
+  input.addEventListener("input", function () {
+    // Remove tudo que não for número
+    let valor = this.value.replace(/[^0-9]/g, "");
 
+    // Remove zero inicial indevido
+    if (valor.length > 1 && valor.charAt(0) === "0") {
+      valor = valor.slice(1);
+    }
 
+    let valorFormatado = valor;
+    if (valor.length >= 2) {
+      valorFormatado += " kg";
+    }
 
+    this.value = valorFormatado;
+  });
 
-    // Calcula o IMC
-    const imc = peso / (altura * altura);
+  input.addEventListener("keydown", function (e) {
+    // Bloqueia espaços, pontos e vírgulas
+    if ([" ", ".", ","].includes(e.key)) e.preventDefault();
+  });
+}
 
-    // Exibe o resultado
-      let resultadoTexto = `${imc.toFixed(2)}`;
+// Função para o campo de altura (adiciona "metros" após 1 número depois da vírgula)
+function bloquearCaracteresInvalidos(input) {
+  input.addEventListener("input", function () {
+    let valor = this.value.replace(/[^0-9]/g, "");
 
-   // Limpar os valores
-   peso = document.getElementById('peso').value = '';
-   altura = document.getElementById('altura').value = '';
-   document.getElementById('resultado').value = '';
+    if (valor.length === 0) {
+      this.value = "";
+      return;
+    }
 
-   if(genero){
-      if(genero === 'masculino'){
-       generoMasculino()
-     }else{
-       generoFeminino()
-     }
- }
-    // Classificação e valores do IMC
+    let parteInteira = valor.substring(0, 1);
+    let parteDecimal = valor.substring(1, 3); 
 
+    let resultado = parteInteira;
 
-  function generoMasculino(){
-    if (imc < 18.5) {
-        let imcClassificacao = document.querySelector('.imc p:nth-child(2)');
-        let classificacao = document.querySelector('.classificacao p:nth-child(2)');
-        let imcImagem = document.querySelector('.imcImagem img');
-        imcClassificacao = document.querySelector('.imc p:nth-child(2)').style.color = 'green';
-        classificacao = document.querySelector('.classificacao p:nth-child(2)').style.color = 'green';
-        imcClassificacao = document.querySelector('.imc p:nth-child(3)').style.color = 'black';
-        classificacao = document.querySelector('.classificacao p:nth-child(3)').style.color = 'black';
-        imcClassificacao = document.querySelector('.imc p:nth-child(4)').style.color = 'black';
-        classificacao = document.querySelector('.classificacao p:nth-child(4)').style.color = 'black';
-        imcClassificacao = document.querySelector('.imc p:nth-child(5)').style.color = 'black';
-        classificacao = document.querySelector('.classificacao p:nth-child(5)').style.color = 'black';
-        imcClassificacao = document.querySelector('.imc p:nth-child(6)').style.color = 'black';
-        classificacao = document.querySelector('.classificacao p:nth-child(6)').style.color = 'black';
-        resultado.style.color = 'green';
-        imcImagem.src = './docs/imagens/H1.png';
-    } else if (imc >= 18.5 && imc < 24.9) {
-        let imcClassificacao = document.querySelector('.imc p:nth-child(3)');
-        let classificacao = document.querySelector('.classificacao p:nth-child(3)');
-        let imcImagem = document.querySelector('.imcImagem img');
-        imcClassificacao = document.querySelector('.imc p:nth-child(2)').style.color = 'black';
-        classificacao = document.querySelector('.classificacao p:nth-child(2)').style.color = 'black';
-        imcClassificacao = document.querySelector('.imc p:nth-child(3)').style.color = 'green';
-        classificacao = document.querySelector('.classificacao p:nth-child(3)').style.color = 'green';
-        imcClassificacao = document.querySelector('.imc p:nth-child(4)').style.color = 'black';
-        classificacao = document.querySelector('.classificacao p:nth-child(4)').style.color = 'black';
-        imcClassificacao = document.querySelector('.imc p:nth-child(5)').style.color = 'black';
-        classificacao = document.querySelector('.classificacao p:nth-child(5)').style.color = 'black';
-        imcClassificacao = document.querySelector('.imc p:nth-child(6)').style.color = 'black';
-        classificacao = document.querySelector('.classificacao p:nth-child(6)').style.color = 'black';
-        resultado.style.color = "green";
-        imcImagem.src = './docs/imagens/H2.png';
-    } else if (imc >= 25 && imc < 29.9) {
-        let imcClassificacao = document.querySelector('.imc p:nth-child(4)');
-        let classificacao = document.querySelector('.classificacao p:nth-child(4)');
-        let imcImagem = document.querySelector('.imcImagem img');
-        imcClassificacao = document.querySelector('.imc p:nth-child(2)').style.color = 'black';
-        classificacao = document.querySelector('.classificacao p:nth-child(2)').style.color = 'black';
-        imcClassificacao = document.querySelector('.imc p:nth-child(3)').style.color = 'black';
-        classificacao = document.querySelector('.classificacao p:nth-child(3)').style.color = 'black';
-        imcClassificacao = document.querySelector('.imc p:nth-child(4)').style.color = 'red';
-        classificacao = document.querySelector('.classificacao p:nth-child(4)').style.color = 'red';
-        imcClassificacao = document.querySelector('.imc p:nth-child(5)').style.color = 'black';
-        classificacao = document.querySelector('.classificacao p:nth-child(5)').style.color = 'black';
-        imcClassificacao = document.querySelector('.imc p:nth-child(6)').style.color = 'black';
-        classificacao = document.querySelector('.classificacao p:nth-child(6)').style.color = 'black';
-        resultado.style.color = "red";
-        imcImagem.src = './docs/imagens/H3.png';
-     } else if (imc >= 30 && imc < 34.9) {
-        let imcClassificacao = document.querySelector('.imc p:nth-child(5)');
-        let classificacao = document.querySelector('.classificacao p:nth-child(5)');
-        let imcImagem = document.querySelector('.imcImagem img');
-        imcClassificacao = document.querySelector('.imc p:nth-child(2)').style.color = 'black';
-        classificacao = document.querySelector('.classificacao p:nth-child(2)').style.color = 'black';
-        imcClassificacao = document.querySelector('.imc p:nth-child(3)').style.color = 'black';
-        classificacao = document.querySelector('.classificacao p:nth-child(3)').style.color = 'black';
-        imcClassificacao = document.querySelector('.imc p:nth-child(4)').style.color = 'black';
-        classificacao = document.querySelector('.classificacao p:nth-child(4)').style.color = 'black';
-        imcClassificacao = document.querySelector('.imc p:nth-child(5)').style.color = 'red';
-        classificacao = document.querySelector('.classificacao p:nth-child(5)').style.color = 'red';
-        imcClassificacao = document.querySelector('.imc p:nth-child(6)').style.color = 'black';
-        classificacao = document.querySelector('.classificacao p:nth-child(6)').style.color = 'black';
-        resultado.style.color = "red";
-        imcImagem.src = './docs/imagens/H4.png';
-     } else{
-        let imcClassificacao = document.querySelector('.imc p:nth-child(5)');
-        let classificacao = document.querySelector('.classificacao p:nth-child(5)');
-        let imcImagem = document.querySelector('.imcImagem img');
-        imcClassificacao = document.querySelector('.imc p:nth-child(2)').style.color = 'black';
-        classificacao = document.querySelector('.classificacao p:nth-child(2)').style.color = 'black';
-        imcClassificacao = document.querySelector('.imc p:nth-child(3)').style.color = 'black';
-        classificacao = document.querySelector('.classificacao p:nth-child(3)').style.color = 'black';
-        imcClassificacao = document.querySelector('.imc p:nth-child(4)').style.color = 'black';
-        classificacao = document.querySelector('.classificacao p:nth-child(4)').style.color = 'black';
-        imcClassificacao = document.querySelector('.imc p:nth-child(5)').style.color = 'black';
-        classificacao = document.querySelector('.classificacao p:nth-child(5)').style.color = 'black';
-        imcClassificacao = document.querySelector('.imc p:nth-child(6)').style.color = 'red';
-        classificacao = document.querySelector('.classificacao p:nth-child(6)').style.color = 'red';
-        resultado.style.color = "red";
-        imcImagem.src = './docs/imagens/H5.png';
-     };
+    if (parteDecimal.length > 0) {
+      resultado += "," + parteDecimal;
+    }
 
-   };
+    if (parteDecimal.length >= 1) {
+      resultado += " m";
+    }
 
-   function generoFeminino(){
-      if (imc < 18.5) {
-          let imcClassificacao = document.querySelector('.imc p:nth-child(2)');
-          let classificacao = document.querySelector('.classificacao p:nth-child(2)');
-          let imcImagem = document.querySelector('.imcImagem img');
-          imcClassificacao = document.querySelector('.imc p:nth-child(2)').style.color = 'green';
-          classificacao = document.querySelector('.classificacao p:nth-child(2)').style.color = 'green';
-          imcClassificacao = document.querySelector('.imc p:nth-child(3)').style.color = 'black';
-          classificacao = document.querySelector('.classificacao p:nth-child(3)').style.color = 'black';
-          imcClassificacao = document.querySelector('.imc p:nth-child(4)').style.color = 'black';
-          classificacao = document.querySelector('.classificacao p:nth-child(4)').style.color = 'black';
-          imcClassificacao = document.querySelector('.imc p:nth-child(5)').style.color = 'black';
-          classificacao = document.querySelector('.classificacao p:nth-child(5)').style.color = 'black';
-          imcClassificacao = document.querySelector('.imc p:nth-child(6)').style.color = 'black';
-          classificacao = document.querySelector('.classificacao p:nth-child(6)').style.color = 'black';
-          resultado.style.color = 'green';
-          imcImagem.src = './docs/imagens/M1.png';
-      } else if (imc >= 18.5 && imc < 24.9) {
-          let imcClassificacao = document.querySelector('.imc p:nth-child(3)');
-          let classificacao = document.querySelector('.classificacao p:nth-child(3)');
-          let imcImagem = document.querySelector('.imcImagem img');
-          imcClassificacao = document.querySelector('.imc p:nth-child(2)').style.color = 'black';
-          classificacao = document.querySelector('.classificacao p:nth-child(2)').style.color = 'black';
-          imcClassificacao = document.querySelector('.imc p:nth-child(3)').style.color = 'green';
-          classificacao = document.querySelector('.classificacao p:nth-child(3)').style.color = 'green';
-          imcClassificacao = document.querySelector('.imc p:nth-child(4)').style.color = 'black';
-          classificacao = document.querySelector('.classificacao p:nth-child(4)').style.color = 'black';
-          imcClassificacao = document.querySelector('.imc p:nth-child(5)').style.color = 'black';
-          classificacao = document.querySelector('.classificacao p:nth-child(5)').style.color = 'black';
-          imcClassificacao = document.querySelector('.imc p:nth-child(6)').style.color = 'black';
-          classificacao = document.querySelector('.classificacao p:nth-child(6)').style.color = 'black';
-          resultado.style.color = "green";
-          imcImagem.src = './docs/imagens/M2.png';
-      } else if (imc >= 25 && imc < 29.9) {
-          let imcClassificacao = document.querySelector('.imc p:nth-child(4)');
-          let classificacao = document.querySelector('.classificacao p:nth-child(4)');
-          let imcImagem = document.querySelector('.imcImagem img');
-          imcClassificacao = document.querySelector('.imc p:nth-child(2)').style.color = 'black';
-          classificacao = document.querySelector('.classificacao p:nth-child(2)').style.color = 'black';
-          imcClassificacao = document.querySelector('.imc p:nth-child(3)').style.color = 'black';
-          classificacao = document.querySelector('.classificacao p:nth-child(3)').style.color = 'black';
-          imcClassificacao = document.querySelector('.imc p:nth-child(4)').style.color = 'red';
-          classificacao = document.querySelector('.classificacao p:nth-child(4)').style.color = 'red';
-          imcClassificacao = document.querySelector('.imc p:nth-child(5)').style.color = 'black';
-          classificacao = document.querySelector('.classificacao p:nth-child(5)').style.color = 'black';
-          imcClassificacao = document.querySelector('.imc p:nth-child(6)').style.color = 'black';
-          classificacao = document.querySelector('.classificacao p:nth-child(6)').style.color = 'black';
-          resultado.style.color = "red";
-          imcImagem.src = './docs/imagens/M3.png';
-       } else if (imc >= 30 && imc < 34.9) {
-          let imcClassificacao = document.querySelector('.imc p:nth-child(5)');
-          let classificacao = document.querySelector('.classificacao p:nth-child(5)');
-          let imcImagem = document.querySelector('.imcImagem img');
-          imcClassificacao = document.querySelector('.imc p:nth-child(2)').style.color = 'black';
-          classificacao = document.querySelector('.classificacao p:nth-child(2)').style.color = 'black';
-          imcClassificacao = document.querySelector('.imc p:nth-child(3)').style.color = 'black';
-          classificacao = document.querySelector('.classificacao p:nth-child(3)').style.color = 'black';
-          imcClassificacao = document.querySelector('.imc p:nth-child(4)').style.color = 'black';
-          classificacao = document.querySelector('.classificacao p:nth-child(4)').style.color = 'black';
-          imcClassificacao = document.querySelector('.imc p:nth-child(5)').style.color = 'red';
-          classificacao = document.querySelector('.classificacao p:nth-child(5)').style.color = 'red';
-          imcClassificacao = document.querySelector('.imc p:nth-child(6)').style.color = 'black';
-          classificacao = document.querySelector('.classificacao p:nth-child(6)').style.color = 'black';
-          resultado.style.color = "red";
-          imcImagem.src = './docs/imagens/M4.png';
-       } else{
-          let imcClassificacao = document.querySelector('.imc p:nth-child(5)');
-          let classificacao = document.querySelector('.classificacao p:nth-child(5)');
-          let imcImagem = document.querySelector('.imcImagem img');
-          imcClassificacao = document.querySelector('.imc p:nth-child(2)').style.color = 'black';
-          classificacao = document.querySelector('.classificacao p:nth-child(2)').style.color = 'black';
-          imcClassificacao = document.querySelector('.imc p:nth-child(3)').style.color = 'black';
-          classificacao = document.querySelector('.classificacao p:nth-child(3)').style.color = 'black';
-          imcClassificacao = document.querySelector('.imc p:nth-child(4)').style.color = 'black';
-          classificacao = document.querySelector('.classificacao p:nth-child(4)').style.color = 'black';
-          imcClassificacao = document.querySelector('.imc p:nth-child(5)').style.color = 'black';
-          classificacao = document.querySelector('.classificacao p:nth-child(5)').style.color = 'black';
-          imcClassificacao = document.querySelector('.imc p:nth-child(6)').style.color = 'red';
-          classificacao = document.querySelector('.classificacao p:nth-child(6)').style.color = 'red';
-          resultado.style.color = "red";
-          imcImagem.src = './docs/imagens/M5.png';
-       };
-     }
-    // Exibe o resultado na página
+    this.value = resultado;
+  });
 
-    document.getElementById('resultado').innerText = resultadoTexto;
-    console.log(imc);
+  input.addEventListener("keydown", function (e) {
+    if (e.key === " ") e.preventDefault();
+  });
+}
 
-   });
+const pesoInput = document.getElementById("peso");
+const alturaInput = document.getElementById("altura");
+
+bloquearPeso(pesoInput);
+bloquearCaracteresInvalidos(alturaInput);
+
+document.getElementById("imcForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const genero = document.getElementById("genero").value;
+  const resultado = document.getElementById("resultado");
+
+  const peso = parseFloat(pesoInput.value.replace(" kg", "").replace(",", "."));
+  const altura = parseFloat(alturaInput.value.replace(" metros", "").replace(",", "."));
+
+  if (!peso || !altura || altura === 0) {
+    alert("Dados inválidos:\n O peso deve estar entre 30kg e 200kg.\n A altura deve estar entre 1 e 2.5 metros.");
+    return;
+  }
+
+  const pesoInvalido = peso < 30 || peso > 200;
+  const alturaInvalida = altura < 1 || altura > 2.5;
+
+  if (pesoInvalido && alturaInvalida) {
+    alert("Dados inválidos:\n O peso deve estar entre 30kg e 200kg.\n A altura deve estar entre 1 e 2.5 metros.");
+    return;
+  } else if (pesoInvalido) {
+    alert("O peso deve estar entre 30kg e 200kg.");
+    return;
+  } else if (alturaInvalida) {
+    alert("A altura deve estar entre 1 e 2.5 metros.");
+    return;
+  }
+
+  const imc = peso / (altura * altura);
+  const imcFormatado = imc.toFixed(2).replace(".", ",");
+
+  resultado.innerText = imcFormatado;
+  resultado.style.color = imc >= 25 ? "red" : "green";
+
+  resetarCores();
+
+  if (genero === "masculino") {
+    atualizarClassificacao(imc, "H");
+  } else if (genero === "feminino") {
+    atualizarClassificacao(imc, "M");
+  } else {
+    resultado.innerText = "Selecione o gênero.";
+    resultado.style.color = "black";
+  }
+});
+
+function resetarCores() {
+  const imcP = document.querySelectorAll(".imc p");
+  const classificacaoP = document.querySelectorAll(".classificacao p");
+  imcP.forEach(p => p.style.color = "black");
+  classificacaoP.forEach(p => p.style.color = "black");
+}
+
+function atualizarClassificacao(imc, prefixoImagem) {
+  const imagem = document.querySelector(".imcImagem img");
+
+  let faixa;
+  if (imc < 18.5) faixa = FaixaIMC.ABAIXO_DO_PESO;
+  else if (imc < 25) faixa = FaixaIMC.PESO_NORMAL;
+  else if (imc < 30) faixa = FaixaIMC.SOBREPESO;
+  else if (imc < 35) faixa = FaixaIMC.OBESIDADE;
+  else faixa = FaixaIMC.OBESIDADE_GRAVE;
+
+  const imcP = document.querySelector(`.imc p:nth-child(${faixa + 1})`);
+  const classificacaoP = document.querySelector(`.classificacao p:nth-child(${faixa + 1})`);
+
+  if (faixa === FaixaIMC.PESO_NORMAL || faixa === FaixaIMC.ABAIXO_DO_PESO) {
+    imcP.style.color = "green";
+    classificacaoP.style.color = "green";
+  } else {
+    imcP.style.color = "red";
+    classificacaoP.style.color = "red";
+  }
+
+  imagem.src = `./docs/imagens/${prefixoImagem}${faixa}.png`;
+}
 
 
 // Pesquina Saber Sobre o que
