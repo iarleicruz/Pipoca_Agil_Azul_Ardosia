@@ -37,6 +37,8 @@ function bloquearPeso(input) {
     // Remove tudo que não for número
     let valor = this.value.replace(/[^0-9]/g, "");
 
+    valor = valor.slice(0, 3);
+
     // Remove zero inicial indevido
     if (valor.length > 1 && valor.charAt(0) === "0") {
       valor = valor.slice(1);
