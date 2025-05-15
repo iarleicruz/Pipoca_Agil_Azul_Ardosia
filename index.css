@@ -2375,15 +2375,8 @@ footer.rodape{
             height: 200px;
         }
 
-        /* section#saber__sobre__o__que {
-            position: absolute;
-            /* top: 2000px; */
-            /* top: 850px; */
-        
-        /* }  */
         header.header-3 {
             position: absolute;
-            /* top: 4450px; */
             top: 4480px;
             height: 2300px;
         }
@@ -2460,7 +2453,6 @@ footer.rodape{
         }
         section#saber__sobre__o__que {
             position: absolute;
-            /* top: 1810px; */
             top: 1835px;
         }
         section#saber__sobre__o__que h1 {
@@ -2522,7 +2514,6 @@ footer.rodape{
         section#saber__sobre__o__que {
             position: absolute;
             top: 1900px;
-            /* top: 720px; */
         }
         header.header-3 {
             position: absolute;
@@ -2632,6 +2623,11 @@ footer.rodape{
             position: absolute;
             top: 1900px;
         }
+            section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-1, section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-2, section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-3, section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-4, section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-5 {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+    }
         header.header-3 {
             position: absolute;
             top: 4320px;
