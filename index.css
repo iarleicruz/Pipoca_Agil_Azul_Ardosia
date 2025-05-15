@@ -295,7 +295,6 @@ section.calculadora .imcResultado .imcClassificacao__Resultado p#resultado{
  section.calculadora .imcClassificacao{
      display: flex;
      width: 100%;
-     /* height: 285px; */
 
  }
  section.calculadora .imcClassificacao .imc,
@@ -475,7 +474,6 @@ header.header-3{
     background: white;
     border: none;
     height: 1100px;
-    /* overflow-y: hidden; */
 }
 header.header-3 h1{
     font-size: 32px;
@@ -603,7 +601,7 @@ align-items: center;
 header.header-3 .conteudo-1 div p a ,
 header.header-3 .conteudo-2 div p a {
 margin-left: 10px;
-left: 15px; */
+left: 15px; 
 
 }
 header.header-3 .conteudo-1 div p a img,
@@ -611,7 +609,7 @@ header.header-3 .conteudo-2 div p a img{
 width: 30px;
 padding: 0;
 margin: 0;
-left: 15px; */
+left: 15px; 
 
 }
 
