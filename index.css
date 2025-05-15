@@ -143,7 +143,6 @@ background: #ff7161;
 
 section.calculadora {
     background: white;
-    /* margin-bottom: 100px; */
 }
 
 section.calculadora::after {
@@ -296,7 +295,6 @@ section.calculadora .imcResultado .imcClassificacao__Resultado p#resultado{
  section.calculadora .imcClassificacao{
      display: flex;
      width: 100%;
-     /* height: 285px; */
 
  }
  section.calculadora .imcClassificacao .imc,
@@ -398,13 +396,7 @@ section#saber__sobre__o__que .header-2 .header-2--barra-pesquisa button:hover{
 
     background: #ff7161;
 }
-/*
-section#saber__sobre__o__que article .saber__sobre__o__que__conteudo{
 
-    width: 100%;
-
-
-} */
 
 section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-1,
 section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-2,
@@ -482,7 +474,6 @@ header.header-3{
     background: white;
     border: none;
     height: 1100px;
-    /* overflow-y: hidden; */
 }
 header.header-3 h1{
     font-size: 32px;
@@ -560,13 +551,10 @@ header.header-3 .contatosUteis div a > img{
 header.header-3 .contatosUteis div > p{
     margin-bottom: 20px;
     text-align: center;
-    font-size: 12px;
-}
-
-header.header-3 .contatosUteis div p strong{
-    text-align: center;
     font-size: 16px;
 }
+
+
 
 header.header-3 .conteudo-1 > div,
 header.header-3 .conteudo-2 > div{
@@ -610,13 +598,18 @@ align-items: center;
 
 }
 
+header.header-3 .conteudo-1 div p a ,
+header.header-3 .conteudo-2 div p a {
+margin-left: 10px;
+left: 15px; 
+
+}
 header.header-3 .conteudo-1 div p a img,
 header.header-3 .conteudo-2 div p a img{
 width: 30px;
 padding: 0;
 margin: 0;
-position: relative;
-left: 15px;
+left: 15px; 
 
 }
 
@@ -859,9 +852,21 @@ footer.rodape{
     header.header-3 .contatosUteis > div{
     display: flex;
     }
-    header.header-3 .contatosUteis div > img {
+    header.header-3 .contatosUteis div a > img {
     width: 140px;
     }
+    
+    header.header-3 .conteudo-1 div p a ,
+    header.header-3 .conteudo-2 div p a {
+    margin-left: 2px;
+ 
+
+}
+    header.header-3 .contatosUteis div > p {
+   
+    font-size: 12px;
+   
+}
     section.header-informacoes {
     display: flex;
     flex-direction: row;
@@ -870,11 +875,7 @@ footer.rodape{
     margin: auto;
     max-width: 700px;
     }
-    /* section.header-informacoes nav {
-    
-    justify-content: center;
-   
-    } */
+  
     section.header-informacoes ul {
     width: 150px;
     display: flex;
@@ -1019,7 +1020,6 @@ footer.rodape{
         background: white;
         border: none;
         height: 1010px;
-        /* overflow-x: hidden; */
     }
     header.header-3 h1::before {
         content: url(./docs/imagens/aspaspeq.png);
@@ -1150,7 +1150,7 @@ footer.rodape{
         header.header-3 {
             background: white;
             border: none;
-            height: 1010px;
+            height: 900px;
             position: relative;
         }
       
@@ -1446,10 +1446,11 @@ footer.rodape{
       
         header.header-3 {
             position: absolute;
-            top: 3200px;
+            top: 4650px;
             height: 2300px;
             width: 100%;
         }
+      
         header.header-3::after {
             content: normal;
            
@@ -1481,9 +1482,11 @@ footer.rodape{
             flex-direction: column;
             align-items: center;
         }
-        header.header-3 .contatosUteis div > img {
-            width: 200px;
+     
+        header.header-3 .contatosUteis div a > img {
+            width: 250px;
         }
+
         hr {
             margin: auto;
             background: url(../../../docs/imagens/Line.png);
@@ -1495,7 +1498,7 @@ footer.rodape{
             display: flex;
             flex-direction: column;
             position: absolute;
-            top: 4720px;
+            top: 6850px;
             width: 100%;
         }
         section.header-informacoes .header-informacoes--logo {
@@ -1523,7 +1526,7 @@ footer.rodape{
             color: white;
             font-size: 22px;
             position: absolute;
-            top: 5150px;
+            top: 7270px;
             width: 100%;
         }
     } 
@@ -1819,7 +1822,7 @@ footer.rodape{
       
         header.header-3 {
             position: absolute;
-            top: 3200px;
+            top: 4650px;
             height: 2300px;
             width: 100%;
         }
@@ -1854,8 +1857,8 @@ footer.rodape{
             flex-direction: column;
             align-items: center;
         }
-        header.header-3 .contatosUteis div > img {
-            width: 200px;
+        header.header-3 .contatosUteis div a > img {
+            width: 250px;
         }
         hr {
             margin: auto;
@@ -1868,7 +1871,7 @@ footer.rodape{
             display: flex;
             flex-direction: column;
             position: absolute;
-            top: 4720px;
+            top: 6880px;
             width: 100%;
         }
         section.header-informacoes .header-informacoes--logo {
@@ -1896,7 +1899,7 @@ footer.rodape{
             color: white;
             font-size: 22px;
             position: absolute;
-            top: 5150px;
+            top: 7300px;
             width: 100%;
         }
     } 
@@ -2016,13 +2019,11 @@ footer.rodape{
 
         section.calculadora article h2 {
             text-align: center;
-            /* margin-top: 36px; */
             padding-top: 30px;
             font-size: 16px;
             padding-bottom: 10px;
         }
         section.calculadora article p {
-            /* margin: auto; */
             width: 320px;
                       
             font-size: 14px;
@@ -2130,7 +2131,6 @@ footer.rodape{
             padding-bottom: 100px;
             position: absolute;
             top: 2035px;
-            /* top: 735px; */
             width: 100%;
         }
  
@@ -2196,8 +2196,7 @@ footer.rodape{
       
         header.header-3 {
             position: absolute;
-            /* top: 4500px; */
-            top: 3200px;
+            top: 4500px;
             height: 2300px;
             width: 100%;
         }
@@ -2246,8 +2245,7 @@ footer.rodape{
             display: flex;
             flex-direction: column;
             position: absolute;
-            /* top: 6880px; */
-            top: 4580px;
+            top: 6700px;
             width: 100%;
         }
         section.header-informacoes .header-informacoes--logo {
@@ -2275,8 +2273,7 @@ footer.rodape{
             color: white;
             font-size: 22px;
             position: absolute;
-            /* top: 7300px; */
-            top: 5000px;
+            top: 7120px;
             width: 100%;
         }
     }
@@ -2359,16 +2356,9 @@ footer.rodape{
             height: 200px;
         }
 
-        /* section#saber__sobre__o__que {
-            position: absolute;
-            /* top: 2000px; */
-            /* top: 850px; */
-        
-        /* }  */
         header.header-3 {
             position: absolute;
-            /* top: 4450px; */
-            top: 3250px;
+            top: 4480px;
             height: 2300px;
         }
         hr {
@@ -2382,8 +2372,7 @@ footer.rodape{
             display: flex;
             flex-direction: column;
             position: absolute;
-            /* top: 6830px; */
-            top: 4530px;
+            top: 6700px;
             width: 100%;
         }
         section.header-informacoes nav {
@@ -2399,8 +2388,7 @@ footer.rodape{
             color: white;
             font-size: 22px;
             position: absolute;
-            /* top: 7250px; */
-            top: 4950px;
+            top: 7120px;
             width: 100%;
         }
       
@@ -2446,7 +2434,6 @@ footer.rodape{
         }
         section#saber__sobre__o__que {
             position: absolute;
-            /* top: 1810px; */
             top: 1835px;
         }
         section#saber__sobre__o__que h1 {
@@ -2463,8 +2450,7 @@ footer.rodape{
         }
         header.header-3 {
             position: absolute;
-            /* top: 4220px; */
-            top: 3120px;
+            top: 4280px;
             height: 2300px;
         }
         header.header-3 .contatosUteis {
@@ -2478,14 +2464,12 @@ footer.rodape{
             display: flex;
             flex-direction: column;
             position: absolute;
-            /* top: 6480px; */
-            top: 4280px;
+            top: 6380px;
             width: 100%;
         }
         footer.rodape {
             position: absolute;
-            /* top: 6900px; */
-            top: 4700px;
+            top: 6800px;
         }
     }
     
@@ -2511,20 +2495,17 @@ footer.rodape{
         section#saber__sobre__o__que {
             position: absolute;
             top: 1900px;
-            /* top: 720px; */
         }
         header.header-3 {
             position: absolute;
-            /* top: 4350px; */
-            top: 3190px;
+            top: 4350px;
             height: 2300px;
         }
         section.header-informacoes {
             display: flex;
             flex-direction: column;
             position: absolute;
-            /* top: 6700px; */
-            top: 4400px;
+            top: 6550px;
             width: 100%;
         }
         footer.rodape {
@@ -2537,8 +2518,7 @@ footer.rodape{
             color: white;
             font-size: 22px;
             position: absolute;
-            /* top: 7120px; */
-            top: 4820px;
+            top: 6980px;
             width: 100%;
         }
     }
@@ -2564,20 +2544,17 @@ footer.rodape{
         section#saber__sobre__o__que {
             position: absolute;
             top: 1780px;
-            /* top: 650px; */
         }
         header.header-3 {
             position: absolute;
-            /* top: 4180px; */
-            top: 3080px;
+            top: 4180px;
             height: 2300px;
         }
         section.header-informacoes {
             display: flex;
             flex-direction: column;
             position: absolute;
-            top: 4250px;
-            /* top: 3150px; */
+            top: 6300px;
             width: 100%;
         }
         footer.rodape {
@@ -2590,7 +2567,7 @@ footer.rodape{
             color: white;
             font-size: 22px;
             position: absolute;
-            top: 4680px;
+            top: 6750px;
             width: 100%;
         }
       }
@@ -2626,20 +2603,22 @@ footer.rodape{
         section#saber__sobre__o__que {
             position: absolute;
             top: 1900px;
-            /* top: 720px; */
         }
+            section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-1, section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-2, section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-3, section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-4, section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-5 {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+    }
         header.header-3 {
             position: absolute;
-            /* top: 4350px; */
-            top: 3190px;
+            top: 4320px;
             height: 2300px;
         }
         section.header-informacoes {
             display: flex;
             flex-direction: column;
             position: absolute;
-            /* top: 6700px; */
-            top: 4400px;
+            top: 6450px;
             width: 100%;
         }
         footer.rodape {
@@ -2652,61 +2631,10 @@ footer.rodape{
             color: white;
             font-size: 22px;
             position: absolute;
-            /* top: 7120px; */
-            top: 4820px;
+            top: 6900px;
             width: 100%;
         }
     }
     
-    /* Estilos específicos para dispositivos com largura entre 360px e 640px */
-    @media (max-width: 360px) and (max-height: 640px) {
-
-   
-        .heartcare_container--intro {
-            top: 230px;
-            padding: 10px 0 20px 0;
-            height: 200px;
-        }
-        .heartcare_container--intro a {
-            padding: 8px;
-            right: 80px;
-            position: relative;
-            font-size: 12px;
-        }
-        section.calculadora {
-            position: absolute;
-            top: 650px;
-        }
-        section#saber__sobre__o__que {
-            position: absolute;
-            top: 1780px;
-            /* top: 650px; */
-        }
-        header.header-3 {
-            position: absolute;
-            /* top: 4180px; */
-            top: 3080px;
-            height: 2300px;
-        }
-        section.header-informacoes {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            top: 4250px;
-            /* top: 3150px; */
-            width: 100%;
-        }
-        footer.rodape {
-            background: var(--primary-color);
-            height: 80px;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 22px;
-            position: absolute;
-            top: 4680px;
-            width: 100%;
-        }
-      }
+ 
+      
