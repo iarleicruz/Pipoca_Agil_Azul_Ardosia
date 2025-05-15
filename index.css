@@ -143,7 +143,6 @@ background: #ff7161;
 
 section.calculadora {
     background: white;
-    /* margin-bottom: 100px; */
 }
 
 section.calculadora::after {
@@ -398,13 +397,7 @@ section#saber__sobre__o__que .header-2 .header-2--barra-pesquisa button:hover{
 
     background: #ff7161;
 }
-/*
-section#saber__sobre__o__que article .saber__sobre__o__que__conteudo{
 
-    width: 100%;
-
-
-} */
 
 section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-1,
 section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-2,
@@ -563,10 +556,7 @@ header.header-3 .contatosUteis div > p{
     font-size: 16px;
 }
 
-/* header.header-3 .contatosUteis div p {
-    text-align: center;
-    font-size: 16px;
-} */
+
 
 header.header-3 .conteudo-1 > div,
 header.header-3 .conteudo-2 > div{
@@ -613,7 +603,6 @@ align-items: center;
 header.header-3 .conteudo-1 div p a ,
 header.header-3 .conteudo-2 div p a {
 margin-left: 10px;
-/* position: relative;
 left: 15px; */
 
 }
@@ -622,7 +611,6 @@ header.header-3 .conteudo-2 div p a img{
 width: 30px;
 padding: 0;
 margin: 0;
-/* position: relative;
 left: 15px; */
 
 }
@@ -2033,13 +2021,11 @@ footer.rodape{
 
         section.calculadora article h2 {
             text-align: center;
-            /* margin-top: 36px; */
             padding-top: 30px;
             font-size: 16px;
             padding-bottom: 10px;
         }
         section.calculadora article p {
-            /* margin: auto; */
             width: 320px;
                       
             font-size: 14px;
@@ -2147,7 +2133,6 @@ footer.rodape{
             padding-bottom: 100px;
             position: absolute;
             top: 2035px;
-            /* top: 735px; */
             width: 100%;
         }
  
@@ -2213,7 +2198,6 @@ footer.rodape{
       
         header.header-3 {
             position: absolute;
-            /* top: 4500px; */
             top: 4500px;
             height: 2300px;
             width: 100%;
@@ -2263,7 +2247,6 @@ footer.rodape{
             display: flex;
             flex-direction: column;
             position: absolute;
-            /* top: 6880px; */
             top: 6700px;
             width: 100%;
         }
