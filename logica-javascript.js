@@ -31,21 +31,23 @@ const FaixaIMC = Object.freeze({
   OBESIDADE_GRAVE: 5
 });
 
-// Função para o campo de peso (permite apenas números inteiros e adiciona "kg")
+// Função para o campo de peso (permite até 3 dígitos antes da vírgula e 2 depois, com "kg")
 function bloquearPeso(input) {
   input.addEventListener("input", function () {
-    // Remove tudo que não for número
-    let valor = this.value.replace(/[^0-9]/g, "");
+    let valor = this.value.replace(/[^0-9,]/g, "");
 
-    valor = valor.slice(0, 3);
+    // Dividir entre parte inteira e decimal, se houver vírgula
+    const partes = valor.split(",");
+    let parteInteira = partes[0].slice(0, 3); // máximo 3 dígitos antes da vírgula
+    let parteDecimal = partes[1] ? partes[1].slice(0, 2) : ""; // máximo 2 dígitos após a vírgula
 
-    // Remove zero inicial indevido
-    if (valor.length > 1 && valor.charAt(0) === "0") {
-      valor = valor.slice(1);
+    let valorFormatado = parteInteira;
+
+    if (valor.includes(",")) {
+      valorFormatado += "," + parteDecimal;
     }
 
-    let valorFormatado = valor;
-    if (valor.length >= 2) {
+    if (valorFormatado.length > 0) {
       valorFormatado += " kg";
     }
 
@@ -53,8 +55,8 @@ function bloquearPeso(input) {
   });
 
   input.addEventListener("keydown", function (e) {
-    // Bloqueia espaços, pontos e vírgulas
-    if ([" ", ".", ","].includes(e.key)) e.preventDefault();
+    // Bloqueia espaços e pontos
+    if ([" ", "."].includes(e.key)) e.preventDefault();
   });
 }
 
