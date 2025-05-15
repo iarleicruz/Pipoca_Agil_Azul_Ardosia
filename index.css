@@ -986,7 +986,7 @@ footer.rodape{
     }
     hr {
     margin: auto;
-    background: url(../../../docs/imagens/Line.png);
+    background: url(./docs/imagens/Line.png);
     background-position: center;
     max-width: 600px;
     height: 2px;
@@ -1489,7 +1489,7 @@ footer.rodape{
 
         hr {
             margin: auto;
-            background: url(../../../docs/imagens/Line.png);
+            background: url(./docs/imagens/Line.png);
             background-position: center;
             max-width: 300px;
             height: 2px;
@@ -1862,7 +1862,7 @@ footer.rodape{
         }
         hr {
             margin: auto;
-            background: url(../../../docs/imagens/Line.png);
+            background: url(./docs/imagens/Line.png);
             background-position: center;
             max-width: 300px;
             height: 2px;
@@ -2236,7 +2236,7 @@ footer.rodape{
         }
         hr {
             margin: auto;
-            background: url(../../../docs/imagens/Line.png);
+            background: url(./docs/imagens/Line.png);
             background-position: center;
             max-width: 300px;
             height: 2px;
@@ -2363,7 +2363,7 @@ footer.rodape{
         }
         hr {
             margin: auto;
-            background: url(../../../docs/imagens/Line.png);
+            background: url(./docs/imagens/Line.png);
             background-position: center;
             max-width: 250px;
             height: 2px;
