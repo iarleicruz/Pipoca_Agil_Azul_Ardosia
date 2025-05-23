@@ -1,0 +1,2640 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+    --primary-color: #CD1C0C;
+   
+ }
+
+/*    Início do Header    */
+
+.header-1{
+    width: 100%;
+    display: flex;
+    background-color: #ffffff;
+    padding-top: 5px;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0 1px 0 rgb(200, 198, 198);
+}
+
+
+
+.header-1--logo--1{
+    width: 80px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+
+.header-1--logo--2{
+    width: 80px;
+    height: 50px;
+    border-radius: 5px;
+  }
+
+
+.header-1--menu{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+  }
+
+.header-1--menu li{
+    display: inline-block;
+    list-style-type: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.header-1--menu li:nth-child(3) a{
+    color: white;
+    background-color: var(--primary-color);
+    transition: .5s;
+
+}
+.header-1--menu li:nth-child(3):hover a{
+background: #ff7161;
+}
+
+.header-1--menu li a{
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    border-radius: 5px;
+    transition: .5s;
+
+}
+.header-1--menu li a:hover{
+   background: #fff2f0;
+
+}
+
+/*    Fim do Header    */
+
+
+/*    Início do Hero    */
+
+
+
+.heartcare_container--img-background img{
+    width: 100%;
+}
+
+
+
+.heartcare_container--intro{
+    position: absolute;
+    top: 300px;
+    left: 120px;
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+   
+    
+}
+
+
+.heartcare_container--intro h2{
+    font-size: 30px;
+    color: #f7f1f1;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+
+.heartcare_container--intro a{
+    background-color: white;
+    color: var(--primary-color);
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s;
+    text-decoration: none;
+
+}
+
+.heartcare_container--intro a:hover{
+ background: rgb(239, 222, 222);
+
+}
+/*    Fin do Hero    */
+
+
+
+
+/*    Início da section Calculara    */
+
+section.calculadora {
+    background: white;
+}
+
+section.calculadora::after {
+    content: url("./docs/imagens/Vector.svg");
+    position: relative;
+    bottom: 580px;
+}
+
+.calculadora h1 {
+
+    font-size: 32px;
+    text-align: center;
+    color: var(--primary-color);
+    padding-top: 100px;
+    margin-bottom: 20px;
+
+}
+
+.calculadora h1::before {
+    content: url("./docs/imagens/aspas.svg");
+
+
+}
+section.calculadora article{
+    background: #EAEAEA ;
+    width: 900px;
+    height: 300;
+    margin: auto;
+    border-radius: 5PX;
+    box-shadow: 2px 2px 0px rgb(200, 198, 198);
+}
+
+section.calculadora article h2 {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+
+ }
+
+section.calculadora article p{
+    margin: auto;
+    width: 600px;
+    padding: 20px;
+    line-height: 1.5;
+    font-size: 18px;
+    
+
+}
+section.calculadora article img{
+    display: flex;
+    margin: auto;
+
+}
+
+section.calculadora h3 {
+    font-size: 20px;
+    text-align: center;
+    color: var(--primary-color);
+    margin: 50px 0;
+
+}
+
+section.calculadora form#imcForm .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+section.calculadora form#imcForm input{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 3px;
+    border: 1px solid var(--primary-color);
+    padding: 5px;
+    width: 130px;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+
+}
+section.calculadora form#imcForm input:focus{
+    border-color: #e08d85;
+}
+section.calculadora form#imcForm select{
+    appearance: none;
+    border: 1px solid var(--primary-color);
+    padding: 5px;
+    width: 130px;
+    border-radius: 5px;
+    color: #767678;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+section.calculadora form#imcForm select:focus{
+    border-color: #e08d85;
+   }
+ 
+section.calculadora .button {
+   width: 100%;
+   text-align: center;
+  
+}
+section.calculadora button{
+  background:  var(--primary-color);
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: .5s;
+  margin-right: 18px;
+}
+
+section.calculadora button:hover{
+
+    background: #ff7161;
+}
+
+section.calculadora .imcResultado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 50px;
+
+
+}
+
+section.calculadora .imcResultado .imcClassificacao__Resultado{
+    background: #EAEAEA;
+    border-radius: 3px;
+    box-shadow: 2px 2px 0px rgb(200, 198, 198);
+    width: 400px;
+}
+
+section.calculadora .imcResultado .imcClassificacao__Resultado p#resultado{
+    font-size: 56px;
+    color: var(--primary-color);
+    margin-top: 20px;
+    text-align: center;
+
+ }
+
+ section.calculadora .imcClassificacao{
+     display: flex;
+     width: 100%;
+
+ }
+ section.calculadora .imcClassificacao .imc,
+ section.calculadora .imcClassificacao .classificacao{
+     text-align: center;
+
+ }
+
+ section.calculadora .imcClassificacao .imc h3,
+ section.calculadora .imcClassificacao .classificacao h3{
+     margin: 5px;
+     font-size: 16px;
+     color: black;
+ }
+ section.calculadora .imcClassificacao .imc p,
+ section.calculadora .imcClassificacao .classificacao p{
+     margin: 30px;
+     font-size: 20px;
+  }
+
+
+section.calculadora .imcResultado .imcImagem {
+    background: #EAEAEA;
+    width: 250px;
+    height: 400px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 0px rgb(200, 198, 198);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+section.calculadora .imcResultado .imcImagem img {
+  width: 100px;
+  height: 345px;
+
+}
+
+hr{
+    margin: auto;
+    background:url("./docs/imagens/Line.png");
+    background-position: center;
+    max-width: 1122px;
+    height: 2px;
+}
+
+/*    Fim da section Calculara    */
+
+
+/*    Início da section  saber__sobre__o__que  */
+
+
+section#saber__sobre__o__que {
+    background: white;
+    padding-bottom: 100px;
+
+}
+
+section#saber__sobre__o__que h1{
+    font-size: 32px;
+    text-align: center;
+    color: var(--primary-color);
+    padding-top: 100px;
+
+}
+section#saber__sobre__o__que .header-2 h1::before {
+    content: url("./docs/imagens/aspas.svg");
+
+
+}
+
+section#saber__sobre__o__que .header-2 .header-2--barra-pesquisa{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+section#saber__sobre__o__que .header-2 .header-2--barra-pesquisa input{
+    margin-right: 3px;
+    border: 1px solid var(--primary-color);
+    padding: 5px;
+    width: 300px;
+    border-radius: 5px;
+    outline: none;
+}
+
+section#saber__sobre__o__que .header-2 .header-2--barra-pesquisa button{
+    background:  var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: .5s;
+}
+section#saber__sobre__o__que .header-2 .header-2--barra-pesquisa button:hover{
+
+    background: #ff7161;
+}
+
+
+section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-1,
+section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-2,
+section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-3,
+section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-4,
+section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-5{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    width: 750px;
+    margin: 10px auto;
+    border: 1px solid #EAEAEA;
+    background: #EAEAEA;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0px rgb(200, 198, 198);
+
+}
+
+section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div img{
+   background: white;
+   width: 100px;
+   height: 80px;
+   padding: 10px;
+   border-radius: 5px;
+   box-shadow: 2px 2px 0px rgb(200, 198, 198);
+}
+
+
+section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div p {
+
+  background: white;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  line-height: 1.5;
+  width: 400px;
+  text-align: justify;
+  
+}
+
+section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div button{
+    background: white;
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    border-radius: 3px;
+    color: var(--primary-color);
+    font-size: 14px;
+    transition: .5s;
+    cursor: pointer;
+
+
+}
+
+section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div button:hover{
+
+background: rgb(239, 222, 222);
+
+}
+/*    Fim da section saber__sobre__o__que    */
+
+
+
+/*    Início da section  Contatos Úteis  */
+
+header.header-3{
+    background: white;
+    border: none;
+    height: 1100px;
+}
+header.header-3 h1{
+    font-size: 32px;
+    text-align: center;
+    color: var(--primary-color);
+    padding-top: 100px;
+
+}
+
+header.header-3::after {
+ content: url("./docs/imagens/Detalhe.svg");
+ position: relative;
+ bottom: 920px;
+}
+header.header-3 h1::before {
+    content: url("./docs/imagens/aspas.svg");
+
+
+}
+
+header.header-3 .header-3--barra-pesquisa{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+header.header-3 .header-3--barra-pesquisa input{
+    margin-right: 3px;
+    border: 1px solid var(--primary-color);
+    padding: 5px;
+    width: 300px;
+    border-radius: 5px;
+    outline: none;
+
+}
+
+header.header-3 .header-3--barra-pesquisa button{
+    background:  var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: .5s;
+}
+
+header.header-3 .header-3--barra-pesquisa button:hover{
+    background: #ff7161;
+
+}
+header.header-3 .contatosUteis {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-bottom: 100px;
+   
+
+}
+
+header.header-3 .contatosUteis > div  {
+    display: flex;
+
+}
+
+header.header-3 .contatosUteis div a > img{
+    margin: 10px;
+    background: transparent;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+header.header-3 .contatosUteis div > p{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+header.header-3 .conteudo-1 > div,
+header.header-3 .conteudo-2 > div{
+    background: transparent;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0px rgb(200, 198, 198);
+}
+
+header.header-3 .conteudo-1 > div:nth-child(1) {
+    background-color: rgba(229, 1, 0, 0.67);
+    color: white;
+}
+header.header-3 .conteudo-1 > div:nth-child(2) {
+    background-color: rgba(250, 226, 196, 0.67);
+    color: #B97A57;
+}
+header.header-3 .conteudo-1 > div:nth-child(3) {
+    background-color: rgba(1, 70, 147, 0.67);
+    color: white;
+}
+
+header.header-3 .conteudo-2 > div:nth-child(1) {
+    background-color: rgba(233, 229, 230, 0.67);
+    color: black;
+    }
+header.header-3 .conteudo-2 > div:nth-child(2) {
+    background-color: rgba(61, 179, 176, 0.67);
+    color: white;
+}
+header.header-3 .conteudo-2 > div:nth-child(3) {
+    background-color: rgba(1, 132, 160, 0.67);
+    color: white;
+}
+
+header.header-3 .conteudo-1 div p,
+header.header-3 .conteudo-2 div p {
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+header.header-3 .conteudo-1 div p a ,
+header.header-3 .conteudo-2 div p a {
+margin-left: 10px;
+left: 15px; 
+
+}
+header.header-3 .conteudo-1 div p a img,
+header.header-3 .conteudo-2 div p a img{
+width: 30px;
+padding: 0;
+margin: 0;
+left: 15px; 
+
+}
+
+/*    Fim da section  Contatos Úteis  */
+
+
+
+
+/*    Inicio Header Informação   */
+
+
+
+
+section.header-informacoes{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   max-width: 1100px;
+   
+}
+
+section.header-informacoes .header-informacoes--logo{
+    width: 200px;
+    height: 170px;
+    text-align: center;
+
+}
+section.header-informacoes .header-informacoes--logo img{
+     width: 80px;
+}
+
+section.header-informacoes  p{
+   width: 180px;
+   text-align: center;
+   font-size: 18px;
+}
+
+section.header-informacoes nav{
+    width: 70%;
+    display: flex;
+    justify-content: right;
+    margin: 30px 0 30px 0;
+}
+
+section.header-informacoes ul{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+section.header-informacoes ul:nth-child(2) {
+ margin-left: 150px;
+
+ }
+
+section.header-informacoes ul li{
+   width: 100%;
+   list-style: none;
+   margin: 5px 0;
+   
+}
+
+
+section.header-informacoes ul li a{
+  text-decoration: none;
+   color: black;
+  }
+section.header-informacoes ul li a:hover{
+   color: var(--primary-color);
+  }
+
+
+/*    Fim Header Informação   */
+
+
+/*   Inicio Footer   */
+
+footer.rodape{
+    background: var(--primary-color);
+    height: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+/*   Fim Footer   */
+
+
+/* Mudar a cor do scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+  }
+
+
+  /* Media screen */
+  @media (max-width: 1366px){
+
+    
+.heartcare_container--img-background img{
+    width: 100%;
+    height: 100vh;
+     
+}
+	
+    .heartcare_container--intro {
+        position: absolute;
+        top: 250px;
+        left: 130px;
+        font-size: 20px;
+        color: white;
+        font-weight: 500;
+
+    }
+
+    .heartcare_container--intro h2{
+        font-size: 22px;
+        color: #f7f1f1;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    
+    }
+
+    .heartcare_container--intro button{
+       
+        width: 126px;
+        height: 53px;
+        font-size: 16px;
+       
+    }
+}
+@media (max-width: 1024px){
+
+    .header-1--logo--1 {
+    margin-left: 50px;
+    }
+
+    .header-1--menu {
+        margin-right: 40px;
+    }
+
+    .heartcare_container--intro {
+    top: 220px;
+    left: 70px;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    }
+
+    .heartcare_container--intro h2{
+    font-size: 18px;
+    color: #f7f1f1;
+    margin: 30px 0;
+    }
+
+    .heartcare_container--intro a{
+        background-color: white;
+        color: var(--primary-color);
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 26px;
+        text-transform: uppercase;
+        font-weight: 600;
+        cursor: pointer;
+        transition: .5s;
+        text-decoration: none;
+    
+    }
+
+    hr{
+    max-width: 722px;
+     }
+
+    section.calculadora article {
+    width: 700px;
+    height: 300;
+    margin: 0 13%;
+    }
+    section.calculadora::after {
+        content: url(./docs/imagens/Vectorpeq.png);
+        position: relative;
+        bottom: 580px;
+    }
+    section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div p {
+    background: white;
+    margin: 0px 10px;
+    width: 300px;
+    line-height: 1.8;
+    }
+    section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-1,
+    section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-2,
+    section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-3,
+    section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-4,
+    section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-5{
+    width: 600px;
+    margin: 10px auto;
+   
+}
+
+    header.header-3{
+    background: white;
+    border: none;
+    height: 1000px;
+}
+    header.header-3::after {
+    content: url(./docs/imagens/Detalhepeq.png);
+    position: relative;
+    bottom: 920px;
+    }
+
+    header.header-3 .conteudo-1 > div, header.header-3 .conteudo-2 > div {
+    width: 200px;
+    }
+    header.header-3 .contatosUteis > div{
+    display: flex;
+    }
+    header.header-3 .contatosUteis div a > img {
+    width: 140px;
+    }
+    
+    header.header-3 .conteudo-1 div p a ,
+    header.header-3 .conteudo-2 div p a {
+    margin-left: 2px;
+ 
+
+}
+    header.header-3 .contatosUteis div > p {
+   
+    font-size: 12px;
+   
+}
+    section.header-informacoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 700px;
+    }
+  
+    section.header-informacoes ul {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    section.header-informacoes ul:nth-child(2) {
+    margin-left: 85px;
+    }
+
+}
+@media (max-width: 768px){
+
+    * {
+        overflow-x: hidden;
+    }
+     .header-1 {
+    justify-content: space-between;
+      
+    }
+
+     .header-1--logo--1 {
+        margin: 0px;
+    }
+ 
+    .header-1--menu li a {
+    padding: 7px;
+   }
+
+    .heartcare_container--intro {
+        top: 530px;
+        font-size: 32px;
+        height: 365px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--primary-color);
+        position: absolute;
+        left: 0;
+        padding: 70px 0;
+    }
+
+    .heartcare_container--img-background  {
+       background-image: url(./docs/imagens/heart-care.png);
+       background-size: 80%;
+       background-position-x: center;
+       background-repeat: no-repeat;
+    }
+    .heartcare_container--img-background img {
+        visibility: hidden;
+    }
+
+    .heartcare_container--intro h2 {
+        font-size: 28px;
+        color: #f7f1f1;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 490px;
+    }
+    
+    .heartcare_container--intro a {
+        background-color: white;
+        color: var(--primary-color);
+        padding: 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: 600;
+        cursor: pointer;
+        transition: .5s;
+        text-decoration: none;
+        position: relative;
+        right: 150px;
+        margin-top: 10px;
+    }
+    section.calculadora {
+        background: white;
+        margin-bottom: 100px;
+    }
+    section.calculadora::after {
+        content: url(./docs/imagens/Vectorpeq.png);
+       
+    }
+    .calculadora h1::before {
+        content: url(./docs/imagens/aspaspeq.png);
+    }
+
+    section.calculadora article {
+    width: 700px;
+    margin-left: 25px;
+    }
+
+    section.calculadora .imcResultado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 10px;
+        
+    }
+    section.calculadora .imcResultado .imcClassificacao__Resultado {
+    background: #EAEAEA;
+    border-radius: 3px;
+    box-shadow: 2px 2px 0px rgb(200, 198, 198);
+       
+    }
+    hr {
+    margin: auto;
+    background: url(./docs/imagens/Line.png);
+    background-position: center;
+    max-width: 600px;
+    height: 2px;
+    }
+
+    section#saber__sobre__o__que .header-2 h1::before {
+        content: url(./docs/imagens/aspaspeq.png);
+    }
+
+    section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div p {
+    background: white;
+    margin: 0px 10px;
+    width: 300px;
+    line-height: 1.8;
+    }
+
+    section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-1,
+    section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-2,
+    section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-3,
+    section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-4,
+    section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-5{
+    width: 600px;
+    margin: 10px auto;
+   }
+   header.header-3::after {
+    content: url(./docs/imagens/Detalhepeq.png);
+    position: relative;
+    bottom: 730px;
+}
+    header.header-3{
+        background: white;
+        border: none;
+        height: 1010px;
+    }
+    header.header-3 h1::before {
+        content: url(./docs/imagens/aspaspeq.png);
+    }
+    header.header-3 .conteudo-1 > div, header.header-3 .conteudo-2 > div {
+        width: 200px;
+    }
+    header.header-3 .contatosUteis > div{
+        display: flex;
+    }
+    header.header-3 .contatosUteis div > img {
+        width: 140px;
+    }
+    section.header-informacoes .header-informacoes--logo {
+        width: 250px;
+        height: 250px;
+        text-align: center;
+    }
+    section.header-informacoes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: auto;
+        max-width: 1100px;
+    }
+
+    section.header-informacoes nav {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+    section.header-informacoes ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto auto 0;
+          
+    }
+
+    section.header-informacoes ul:nth-child(2) {
+        margin-left: 60px;
+    }
+
+    
+    } 
+
+
+    @media (max-width: 720px){
+      
+          
+        .header-1--logo{
+            display: block;
+          
+        }
+
+
+        .heartcare_container  {
+            width: 100%;
+         
+        }
+      
+        .heartcare_container--intro {
+            top: 600px;
+            font-size: 32px;
+            height: 860px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: var(--primary-color);
+            position: absolute;
+            left: 0;
+        }
+      
+        .heartcare_container--img-background {
+            background-image: url(./docs/imagens/heart-care.png);
+            background-size: 100%;
+            background-position-x: center;
+            background-repeat: no-repeat;
+        }
+        .heartcare_container--intro h1 {
+          margin-top: 100px;
+          line-height: 1.3;
+          font-size: 56px;
+        }
+        .heartcare_container--intro h2 {
+            font-size: 48px;
+            color: #f7f1f1;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            width: 590px;
+            line-height: 1.5;
+        }
+        .heartcare_container--intro a {
+            background-color: white;
+            color: var(--primary-color);
+            padding: 26px;
+            border: none;
+            border-radius: 5px;
+            font-size: 26px;
+            text-transform: uppercase;
+            font-weight: 600;
+            cursor: pointer;
+            transition: .5s;
+            text-decoration: none;
+            position: relative;
+            right: 170px;
+            margin-top: 30px;
+        
+        }
+       
+        section.calculadora {
+            
+        margin-bottom: 100px;
+           
+        }
+
+        section.calculadora article {
+        width: 640px;
+        }
+     
+        section#saber__sobre__o__que {
+            background: white;
+            padding-bottom: 100px;
+            
+        }
+        header.header-3 {
+            background: white;
+            border: none;
+            height: 900px;
+            position: relative;
+        }
+      
+    }
+
+     /* Estilos específicos para dispositivos com largura entre 414px e 896px */
+  
+    @media (max-width: 414px) and (max-height: 896px){
+
+     .header-1 {
+        height: 220px;
+        position: absolute;
+        }
+
+        .header-1--menu {
+        
+        display: block;
+        margin: auto;
+        
+        }
+
+        .header-1--logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .header-1--menu ul {
+        
+        width: 100%;
+
+        }
+     
+        .header-1--menu li {
+         
+        display: block;
+        margin: 0;
+        }
+
+        .header-1--menu li a{
+         
+        display: block;
+        margin: 5px;
+        text-align: center;
+        }
+
+        .heartcare_container {
+            width: 100%;
+            position: absolute;
+            top: 190px;
+            overflow: hidden;
+        }
+        .heartcare_container::after{
+            content: url('');
+            
+        }
+        .heartcare_container--img-background {
+            background-image: url(./docs/imagens/heart-care.png);
+            background-size: 100%;
+            background-position-x: center;
+            background-repeat: no-repeat;
+        }
+        .heartcare_container--intro {
+            top: 320px;
+            padding: 0 0 0 20px;
+        
+        }
+        .heartcare_container--intro h1 {
+            line-height: 1.5;
+            font-size: 20px;
+            width: 300px;
+            margin: 80px 0 10px;
+        }
+
+        .heartcare_container--intro h2 {
+            font-size: 16px;
+            color: #f7f1f1;
+            margin: 10px 0 0 0;
+            width: 300px;
+          
+        }
+        .heartcare_container--intro a {
+            padding: 10px;
+            right: 100px;
+            position: relative;
+            font-size: 14px;
+            margin: 25px;
+        
+        }
+     
+        section.calculadora {
+            
+            position: absolute;
+            top: 920px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+           
+        .calculadora h1 {
+            font-size: 22px;
+            width: 100%;
+           
+            padding-bottom: 20px;
+        }
+        
+        section.calculadora article{
+            
+          
+            width: 350px;
+            margin: auto;
+           
+        }
+
+        section.calculadora article h2 {
+            text-align: center;
+            padding-top: 30px;
+            font-size: 16px;
+            padding-bottom: 10px;
+        }
+        section.calculadora article p {
+            width: 320px;
+                      
+            font-size: 14px;
+         
+        }
+        section.calculadora article img {
+           
+            padding-bottom: 10px;
+        }
+
+        section.calculadora h3 {
+            font-size: 16px;
+          
+            width: 100%;
+        }
+        section.calculadora form#imcForm .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+        section.calculadora form#imcForm input {
+            display: flex;
+            margin: 0;
+            border: 1px solid var(--primary-color);
+            padding: 5px;
+            width: 130px;
+            border-radius: 5px;
+            text-align: center;
+            outline: none;
+        }
+        section.calculadora form#imcForm select {
+            appearance: none;
+            border: 1px solid var(--primary-color);
+            padding: 5px;
+            width: 140px;
+            border-radius: 5px;
+            color: #767678;
+            text-align: center;
+            outline: none;
+            cursor: pointer;
+        }
+        section.calculadora button {
+            margin: 0;
+            font-size: 14px;
+            padding: 8px;
+         }
+
+        section.calculadora .imcResultado {
+            flex-direction: column;
+            gap: 10px;
+            width: 350px;
+        }
+
+        section.calculadora .imcResultado .imcClassificacao__Resultado {
+            width: 100%;
+            margin: auto;
+                      
+        }
+        section.calculadora .imcResultado .imcClassificacao__Resultado p#resultado {
+            font-size: 36px;
+            color: var(--primary-color);
+            margin-top: 20px;
+            text-align: center;
+        }
+        section.calculadora .imcClassificacao .imc,
+        section.calculadora .imcClassificacao .classificacao {
+            
+            width: 175px;
+           
+          
+        }
+        section.calculadora .imcClassificacao .imc h3,
+        section.calculadora .imcClassificacao .classificacao h3 {
+          
+           margin: 0px;
+       }
+        section.calculadora .imcClassificacao .imc p, 
+        section.calculadora .imcClassificacao .classificacao p {
+            font-size: 16px;
+            width: 100%;
+            margin: 10px 0 10px 0;
+        }
+        section.calculadora::after {
+            content: url("");
+        }
+      section.calculadora .imcResultado .imcImagem {
+            background: #EAEAEA;
+            width: 250px;
+            height: 280px;
+            border-radius: 3px;
+            box-shadow: 2px 2px 0px rgb(200, 198, 198);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+    }
+        section.calculadora .imcResultado .imcImagem img {
+            width: 25%;
+            height: 245px;
+        }
+      
+        section#saber__sobre__o__que {
+            background: white;
+            padding-bottom: 100px;
+            position: absolute;
+            top: 2200px;
+            width: 100%;
+        }
+ 
+        section#saber__sobre__o__que h1 {
+            font-size: 22px;
+            text-align: center;
+            color: var(--primary-color);
+            padding-top: 100px;
+        }
+
+        section#saber__sobre__o__que .header-2 .header-2--barra-pesquisa input {
+            margin-right: 3px;
+            border: 1px solid var(--primary-color);
+            padding: 5px;
+            width: 180px;
+            border-radius: 5px;
+            outline: none;
+        }
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-1, 
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-2, 
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-3, 
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-4,
+         section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-5 {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div img {
+            background: white;
+            width: 100px;
+            height: 80px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 0px rgb(200, 198, 198);
+            margin-bottom: 20px;
+        }
+         
+        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-1 > div p,
+        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-2 > div p,
+        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-3 > div p,
+        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-4 > div p,
+        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-5 > div p{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 14px;
+            width: 280px;
+            text-align: justify;
+        }
+      
+        
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div button {
+            background: white;
+            border: 1px solid var(--primary-color);
+            padding: 10px;
+            border-radius: 3px;
+            color: var(--primary-color);
+            font-size: 14px;
+            transition: .5s;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+      
+        header.header-3 {
+            position: absolute;
+            top: 4650px;
+            height: 2300px;
+            width: 100%;
+        }
+      
+        header.header-3::after {
+            content: normal;
+           
+        }
+
+        header.header-3 .header-3--barra-pesquisa input {
+            margin-right: 3px;
+            border: 1px solid var(--primary-color);
+            padding: 5px;
+            width: 180px;
+            border-radius: 5px;
+            outline: none;
+        }
+        header.header-3 h1 {
+            font-size: 22px;
+            text-align: center;
+            color: var(--primary-color);
+            padding-top: 100px;
+        }
+        header.header-3 .contatosUteis > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        header.header-3 .conteudo-1 > div, header.header-3 .conteudo-2 > div {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+     
+        header.header-3 .contatosUteis div a > img {
+            width: 250px;
+        }
+
+        hr {
+            margin: auto;
+            background: url(./docs/imagens/Line.png);
+            background-position: center;
+            max-width: 300px;
+            height: 2px;
+        }
+        section.header-informacoes {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 6850px;
+            width: 100%;
+        }
+        section.header-informacoes .header-informacoes--logo {
+            width: 180px;
+            height: 150px;
+         
+        }
+        section.header-informacoes nav {
+            width: 80%;
+        }
+        section.header-informacoes ul {
+            width: 150px;
+            margin: 0 auto auto 0;
+        }
+        section.header-informacoes ul:nth-child(2) {
+            margin:0;
+        }
+        footer.rodape {
+            background: var(--primary-color);
+            height: 80px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 22px;
+            position: absolute;
+            top: 7270px;
+            width: 100%;
+        }
+    } 
+   
+    
+ /* Estilos específicos para dispositivos com largura entre 412px e 915px */
+  
+    @media (max-width: 412px) and (max-height: 915px){
+
+     .header-1 {
+        height: 220px;
+        position: absolute;
+        }
+
+        .header-1--menu {
+        
+        display: block;
+        margin: auto;
+        
+        }
+
+        .header-1--logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .header-1--menu ul {
+        
+        width: 100%;
+
+        }
+     
+        .header-1--menu li {
+         
+        display: block;
+        margin: 0;
+        }
+
+        .header-1--menu li a{
+         
+        display: block;
+        margin: 5px;
+        text-align: center;
+        }
+
+        .heartcare_container {
+            width: 100%;
+            position: absolute;
+            top: 190px;
+            overflow: hidden;
+        }
+        .heartcare_container::after{
+            content: url('');
+            
+        }
+        .heartcare_container--img-background {
+            background-image: url(./docs/imagens/heart-care.png);
+            background-size: 100%;
+            background-position-x: center;
+            background-repeat: no-repeat;
+        }
+        .heartcare_container--intro {
+            top: 350px;
+            padding: 0 0 0 20px;
+        
+        }
+        .heartcare_container--intro h1 {
+            line-height: 1.5;
+            font-size: 22px;
+            width: 300px;
+            margin: 80px 0 10px;
+        }
+
+        .heartcare_container--intro h2 {
+            font-size: 18px;
+            color: #f7f1f1;
+            margin: 10px 0 0 0;
+            width: 300px;
+          
+        }
+        .heartcare_container--intro a {
+            padding: 10px;
+            right: 100px;
+            position: relative;
+            font-size: 14px;
+            margin: 20px;
+        
+        }
+     
+        section.calculadora {
+            
+            position: absolute;
+            top: 920px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+           
+        .calculadora h1 {
+            font-size: 22px;
+            width: 100%;
+           
+            padding-bottom: 20px;
+        }
+        
+        section.calculadora article{
+            
+          
+            width: 350px;
+            margin: auto;
+           
+        }
+
+        section.calculadora article h2 {
+            text-align: center;
+            padding-top: 30px;
+            font-size: 16px;
+            padding-bottom: 10px;
+        }
+        section.calculadora article p {
+            width: 320px;
+                      
+            font-size: 14px;
+         
+        }
+        section.calculadora article img {
+           
+            padding-bottom: 10px;
+        }
+
+        section.calculadora h3 {
+            font-size: 16px;
+          
+            width: 100%;
+        }
+        section.calculadora form#imcForm .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+        section.calculadora form#imcForm input {
+            display: flex;
+            margin: 0;
+            border: 1px solid var(--primary-color);
+            padding: 5px;
+            width: 130px;
+            border-radius: 5px;
+            text-align: center;
+            outline: none;
+        }
+        section.calculadora form#imcForm select {
+            appearance: none;
+            border: 1px solid var(--primary-color);
+            padding: 5px;
+            width: 140px;
+            border-radius: 5px;
+            color: #767678;
+            text-align: center;
+            outline: none;
+            cursor: pointer;
+        }
+        section.calculadora button {
+            margin: 0;
+            font-size: 14px;
+            padding: 8px;
+         }
+
+        section.calculadora .imcResultado {
+            flex-direction: column;
+            gap: 10px;
+            width: 350px;
+        }
+
+        section.calculadora .imcResultado .imcClassificacao__Resultado {
+            width: 100%;
+            margin: auto;
+                      
+        }
+        section.calculadora .imcResultado .imcClassificacao__Resultado p#resultado {
+            font-size: 36px;
+            color: var(--primary-color);
+            margin-top: 20px;
+            text-align: center;
+        }
+        section.calculadora .imcClassificacao .imc,
+        section.calculadora .imcClassificacao .classificacao {
+            
+            width: 175px;
+           
+          
+        }
+        section.calculadora .imcClassificacao .imc h3,
+        section.calculadora .imcClassificacao .classificacao h3 {
+          
+           margin: 0px;
+       }
+        section.calculadora .imcClassificacao .imc p, 
+        section.calculadora .imcClassificacao .classificacao p {
+            font-size: 16px;
+            width: 100%;
+            margin: 10px 0 10px 0;
+        }
+        section.calculadora::after {
+            content: url("");
+        }
+      section.calculadora .imcResultado .imcImagem {
+            background: #EAEAEA;
+            width: 250px;
+            height: 280px;
+            border-radius: 3px;
+            box-shadow: 2px 2px 0px rgb(200, 198, 198);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+    }
+        section.calculadora .imcResultado .imcImagem img {
+            width: 25%;
+            height: 245px;
+        }
+      
+        section#saber__sobre__o__que {
+            background: white;
+            padding-bottom: 100px;
+            position: absolute;
+            top: 2200px;
+            width: 100%;
+        }
+ 
+        section#saber__sobre__o__que h1 {
+            font-size: 22px;
+            text-align: center;
+            color: var(--primary-color);
+            padding-top: 100px;
+        }
+
+        section#saber__sobre__o__que .header-2 .header-2--barra-pesquisa input {
+            margin-right: 3px;
+            border: 1px solid var(--primary-color);
+            padding: 5px;
+            width: 180px;
+            border-radius: 5px;
+            outline: none;
+        }
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-1, 
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-2, 
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-3, 
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-4,
+         section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-5 {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div img {
+            background: white;
+            width: 100px;
+            height: 80px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 0px rgb(200, 198, 198);
+            margin-bottom: 20px;
+        }
+         
+        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-1 > div p,
+        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-2 > div p,
+        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-3 > div p,
+        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-4 > div p,
+        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-5 > div p{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 14px;
+            width: 280px;
+            text-align: justify;
+        }
+      
+        
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div button {
+            background: white;
+            border: 1px solid var(--primary-color);
+            padding: 10px;
+            border-radius: 3px;
+            color: var(--primary-color);
+            font-size: 14px;
+            transition: .5s;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+      
+        header.header-3 {
+            position: absolute;
+            top: 4650px;
+            height: 2300px;
+            width: 100%;
+        }
+        header.header-3::after {
+            content: normal;
+           
+        }
+
+        header.header-3 .header-3--barra-pesquisa input {
+            margin-right: 3px;
+            border: 1px solid var(--primary-color);
+            padding: 5px;
+            width: 180px;
+            border-radius: 5px;
+            outline: none;
+        }
+        header.header-3 h1 {
+            font-size: 22px;
+            text-align: center;
+            color: var(--primary-color);
+            padding-top: 100px;
+        }
+        header.header-3 .contatosUteis > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        header.header-3 .conteudo-1 > div, header.header-3 .conteudo-2 > div {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header.header-3 .contatosUteis div a > img {
+            width: 250px;
+        }
+        hr {
+            margin: auto;
+            background: url(./docs/imagens/Line.png);
+            background-position: center;
+            max-width: 300px;
+            height: 2px;
+        }
+        section.header-informacoes {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 6880px;
+            width: 100%;
+        }
+        section.header-informacoes .header-informacoes--logo {
+            width: 180px;
+            height: 150px;
+         
+        }
+        section.header-informacoes nav {
+            width: 80%;
+        }
+        section.header-informacoes ul {
+            width: 150px;
+            margin: 0 auto auto 0;
+        }
+        section.header-informacoes ul:nth-child(2) {
+            margin:0;
+        }
+        footer.rodape {
+            background: var(--primary-color);
+            height: 80px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 22px;
+            position: absolute;
+            top: 7300px;
+            width: 100%;
+        }
+    } 
+   
+
+    
+
+    @media (max-width: 411px){
+
+        .header-1 {
+        height: 220px;
+        position: absolute;
+        }
+
+        .header-1--menu {
+        
+        display: block;
+        margin: auto;
+        
+        }
+
+        .header-1--logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .header-1--menu ul {
+        
+        width: 100%;
+
+        }
+     
+        .header-1--menu li {
+         
+        display: block;
+        margin: 0;
+        }
+
+        .header-1--menu li a{
+         
+        display: block;
+        margin: 5px;
+        text-align: center;
+        }
+
+        .heartcare_container {
+            width: 100%;
+            position: absolute;
+            top: 190px;
+            overflow: hidden;
+        }
+        .heartcare_container::after{
+            content: url('');
+            
+        }
+        .heartcare_container--img-background {
+            background-image: url(./docs/imagens/heart-care.png);
+            background-size: 80%;
+            background-position-x: center;
+            background-repeat: no-repeat;
+        }
+        .heartcare_container--intro {
+            top: 270px;
+            padding: 30px 0;
+        
+        }
+        .heartcare_container--intro h1 {
+            line-height: 1.5;
+            font-size: 22px;
+            width: 300px;
+            margin: 0;
+        }
+
+        .heartcare_container--intro h2 {
+            font-size: 18px;
+            color: #f7f1f1;
+            margin: 15px 0 0 0;
+            width: 300px;
+          
+        }
+        .heartcare_container--intro a {
+            padding: 10px;
+            right: 100px;
+            position: relative;
+            font-size: 14px;
+            margin: 10px;
+        
+        }
+     
+        section.calculadora {
+            
+            position: absolute;
+            /* top: 750px; */
+            top: 770px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+           
+        .calculadora h1 {
+            font-size: 22px;
+            width: 100%;
+           
+            padding-bottom: 20px;
+        }
+        
+        section.calculadora article{
+            
+          
+            width: 350px;
+            margin: auto;
+           
+        }
+
+        section.calculadora article h2 {
+            text-align: center;
+            padding-top: 30px;
+            font-size: 16px;
+            padding-bottom: 10px;
+        }
+        section.calculadora article p {
+            width: 320px;
+                      
+            font-size: 14px;
+         
+        }
+        section.calculadora article img {
+           
+            padding-bottom: 10px;
+        }
+
+        section.calculadora h3 {
+            font-size: 16px;
+          
+            width: 100%;
+        }
+        section.calculadora form#imcForm .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+        section.calculadora form#imcForm input {
+            display: flex;
+            margin: 0;
+            border: 1px solid var(--primary-color);
+            padding: 5px;
+            width: 130px;
+            border-radius: 5px;
+            text-align: center;
+            outline: none;
+        }
+        section.calculadora form#imcForm select {
+            appearance: none;
+            border: 1px solid var(--primary-color);
+            padding: 5px;
+            width: 140px;
+            border-radius: 5px;
+            color: #767678;
+            text-align: center;
+            outline: none;
+            cursor: pointer;
+        }
+        section.calculadora button {
+            margin: 0;
+            font-size: 14px;
+            padding: 8px;
+         }
+
+        section.calculadora .imcResultado {
+            flex-direction: column;
+            gap: 10px;
+            width: 350px;
+        }
+
+        section.calculadora .imcResultado .imcClassificacao__Resultado {
+            width: 100%;
+            margin: auto;
+                      
+        }
+        section.calculadora .imcResultado .imcClassificacao__Resultado p#resultado {
+            font-size: 36px;
+            color: var(--primary-color);
+            margin-top: 20px;
+            text-align: center;
+        }
+        section.calculadora .imcClassificacao .imc,
+        section.calculadora .imcClassificacao .classificacao {
+            
+            width: 175px;
+           
+          
+        }
+        section.calculadora .imcClassificacao .imc h3,
+        section.calculadora .imcClassificacao .classificacao h3 {
+          
+           margin: 0px;
+       }
+        section.calculadora .imcClassificacao .imc p, 
+        section.calculadora .imcClassificacao .classificacao p {
+            font-size: 16px;
+            width: 100%;
+            margin: 10px 0 10px 0;
+        }
+        section.calculadora::after {
+            content: url("");
+        }
+      section.calculadora .imcResultado .imcImagem {
+            background: #EAEAEA;
+            width: 250px;
+            height: 280px;
+            border-radius: 3px;
+            box-shadow: 2px 2px 0px rgb(200, 198, 198);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+    }
+        section.calculadora .imcResultado .imcImagem img {
+            width: 25%;
+            height: 245px;
+        }
+      
+        section#saber__sobre__o__que {
+            background: white;
+            padding-bottom: 100px;
+            position: absolute;
+            top: 2035px;
+            width: 100%;
+        }
+ 
+        section#saber__sobre__o__que h1 {
+            font-size: 22px;
+            text-align: center;
+            color: var(--primary-color);
+            padding-top: 100px;
+        }
+
+        section#saber__sobre__o__que .header-2 .header-2--barra-pesquisa input {
+            margin-right: 3px;
+            border: 1px solid var(--primary-color);
+            padding: 5px;
+            width: 180px;
+            border-radius: 5px;
+            outline: none;
+        }
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-1, 
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-2, 
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-3, 
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-4,
+         section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-5 {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div img {
+            background: white;
+            width: 100px;
+            height: 80px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 0px rgb(200, 198, 198);
+            margin-bottom: 20px;
+        }
+         
+        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-1 > div p,
+        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-2 > div p,
+        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-3 > div p,
+        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-4 > div p,
+        section#saber__sobre__o__que .saber__sobre__o__que__conteudo .conteudo-5 > div p{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 14px;
+            width: 280px;
+            text-align: justify;
+        }
+      
+        
+        section#saber__sobre__o__que article .saber__sobre__o__que__conteudo > div button {
+            background: white;
+            border: 1px solid var(--primary-color);
+            padding: 10px;
+            border-radius: 3px;
+            color: var(--primary-color);
+            font-size: 14px;
+            transition: .5s;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+      
+        header.header-3 {
+            position: absolute;
+            top: 4500px;
+            height: 2300px;
+            width: 100%;
+        }
+        header.header-3::after {
+            content: normal;
+           
+        }
+
+        header.header-3 .header-3--barra-pesquisa input {
+            margin-right: 3px;
+            border: 1px solid var(--primary-color);
+            padding: 5px;
+            width: 180px;
+            border-radius: 5px;
+            outline: none;
+        }
+        header.header-3 h1 {
+            font-size: 22px;
+            text-align: center;
+            color: var(--primary-color);
+            padding-top: 100px;
+        }
+        header.header-3 .contatosUteis > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        header.header-3 .conteudo-1 > div, header.header-3 .conteudo-2 > div {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header.header-3 .contatosUteis div > img {
+            width: 200px;
+        }
+        hr {
+            margin: auto;
+            background: url(./docs/imagens/Line.png);
+            background-position: center;
+            max-width: 300px;
+            height: 2px;
+        }
+        section.header-informacoes {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 6700px;
+            width: 100%;
+        }
+        section.header-informacoes .header-informacoes--logo {
+            width: 180px;
+            height: 150px;
+         
+        }
+        section.header-informacoes nav {
+            width: 80%;
+        }
+        section.header-informacoes ul {
+            width: 150px;
+            margin: 0 auto auto 0;
+        }
+        section.header-informacoes ul:nth-child(2) {
+            margin:0;
+        }
+        footer.rodape {
+            background: var(--primary-color);
+            height: 80px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 22px;
+            position: absolute;
+            top: 7120px;
+            width: 100%;
+        }
+    }
+
+    /* Estilos específicos para dispositivos com largura entre 375px e 812px */
+  
+    @media (max-width: 375px) and (max-height: 812px){
+
+       
+        .heartcare_container--img-background {
+            background-size: 100%;
+        }
+        
+        .heartcare_container--intro {
+            top: 320px;
+            padding: 50px 0;
+            height: 380px;
+        }
+        
+        .heartcare_container--intro h1 {
+            line-height: 1.2;
+            font-size: 22px;
+            width: 250px;
+        }
+
+        .heartcare_container--intro h2 {
+            font-size: 18px;
+            color: #f7f1f1;
+            margin: 15px 0 0 0;
+            width: 250px;
+            line-height: 1.2;
+        }
+
+        .heartcare_container--intro a {
+            padding: 10px;
+            right: 70px;
+            position: relative;
+            font-size: 14px;
+        }
+
+        section.calculadora {
+            position: absolute;
+            top: 815px;
+           
+        }
+        .calculadora h1 {
+            font-size: 22px;
+            width: 100%;
+            padding: 100px 0 20px 0;
+        }
+        section.calculadora article {
+            width: 300px;
+            margin: auto;
+        }
+        section.calculadora article p {
+            width: 280px;
+            font-size: 12px;
+            padding: 0;
+        }
+        section.calculadora article img {
+            padding-bottom: 10px;
+            width: 120px;
+        }
+
+        section.calculadora .imcResultado .imcClassificacao__Resultado {
+            width: 280px;
+            margin: auto;
+        }
+        section.calculadora .imcClassificacao .imc p, section.calculadora .imcClassificacao .classificacao p {
+            font-size: 14px;
+            margin: 10px 0 10px 0;
+        }
+        section.calculadora .imcResultado .imcImagem {
+            width: 200px;
+            height: 230px;
+        
+        }
+        section.calculadora .imcResultado .imcImagem img {
+            width: 25%;
+            height: 200px;
+        }
+
+        header.header-3 {
+            position: absolute;
+            top: 4480px;
+            height: 2300px;
+        }
+        hr {
+            margin: auto;
+            background: url(./docs/imagens/Line.png);
+            background-position: center;
+            max-width: 250px;
+            height: 2px;
+        }
+        section.header-informacoes {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 6700px;
+            width: 100%;
+        }
+        section.header-informacoes nav {
+            width: 85%;
+        }
+        footer.rodape {
+            background: var(--primary-color);
+            height: 80px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 22px;
+            position: absolute;
+            top: 7120px;
+            width: 100%;
+        }
+      
+    }
+
+    /* Estilos específicos para dispositivos com largura entre 375px e 667px */
+
+    @media (max-width: 375px) and (max-height: 667px) {
+        .heartcare_container--img-background {
+            background-size: 80%;
+        }
+        .heartcare_container--intro {
+            top: 250px;
+            padding: 10px 0;
+            height: 210px;
+        }
+        .heartcare_container--intro h1 {
+            font-size: 18px;
+            width: 250px;
+            margin: 10px 0 0;
+        }
+        .heartcare_container--intro h2 {
+            font-size: 16px;
+            color: #f7f1f1;
+            margin: 15px 0 0 0;
+            width: 250px;
+            line-height: 1.2;
+        }
+        .heartcare_container--intro a {
+            padding: 8px;
+            right: 80px;
+            position: relative;
+            font-size: 12px;
+        }
+        section.calculadora {
+            position: absolute;
+            top: 680px;
+        }
+        .calculadora h1 {
+            font-size: 22px;
+            width: 100%;
+            padding: 50px 0 20px 0;
+        }
+        section#saber__sobre__o__que {
+            position: absolute;
+            top: 1835px;
+        }
+        section#saber__sobre__o__que h1 {
+            font-size: 22px;
+            text-align: center;
+            color: var(--primary-color);
+            padding-top: 50px;
+        }
+        header.header-3 h1 {
+            font-size: 22px;
+            text-align: center;
+            color: var(--primary-color);
+            padding-top: 50px;
+        }
+        header.header-3 {
+            position: absolute;
+            top: 4280px;
+            height: 2300px;
+        }
+        header.header-3 .contatosUteis {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+        section.header-informacoes {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 6380px;
+            width: 100%;
+        }
+        footer.rodape {
+            position: absolute;
+            top: 6800px;
+        }
+    }
+    
+    /* Estilos específicos para dispositivos com largura entre 360px e 720px */
+    
+    @media (max-width: 360px) and (max-height:720px){
+        .heartcare_container--intro {
+            top: 280px;
+            padding: 30px 0 20px 0;
+            height: 200px;
+        }
+        .heartcare_container--intro a {
+            padding: 10px;
+            right: 70px;
+            position: relative;
+            font-size: 14px;
+        
+        }
+        section.calculadora {
+            position: absolute;
+            top: 720px;
+        }
+        section#saber__sobre__o__que {
+            position: absolute;
+            top: 1900px;
+        }
+        header.header-3 {
+            position: absolute;
+            top: 4350px;
+            height: 2300px;
+        }
+        section.header-informacoes {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 6550px;
+            width: 100%;
+        }
+        footer.rodape {
+            background: var(--primary-color);
+            height: 80px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 22px;
+            position: absolute;
+            top: 6980px;
+            width: 100%;
+        }
+    }
+    
+    /* Estilos específicos para dispositivos com largura entre 360px e 640px */
+    @media (max-width: 360px) and (max-height: 640px) {
+        
+        .heartcare_container--intro {
+            top: 230px;
+            padding: 10px 0 20px 0;
+            height: 200px;
+        }
+        .heartcare_container--intro a {
+            padding: 8px;
+            right: 80px;
+            position: relative;
+            font-size: 12px;
+        }
+        section.calculadora {
+            position: absolute;
+            top: 650px;
+        }
+        section#saber__sobre__o__que {
+            position: absolute;
+            top: 1780px;
+        }
+        header.header-3 {
+            position: absolute;
+            top: 4180px;
+            height: 2300px;
+        }
+        section.header-informacoes {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 6300px;
+            width: 100%;
+        }
+        footer.rodape {
+            background: var(--primary-color);
+            height: 80px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 22px;
+            position: absolute;
+            top: 6750px;
+            width: 100%;
+        }
+      }
+    /* Estilos específicos para dispositivos com largura entre 320px e 568px */
+    
+    @media (max-width: 320px) and (max-height: 568px){
+
+        .heartcare_container--intro {
+            top: 200px!important;
+            padding: 30px 0 20px 0;
+            height: 180px;
+        }
+        .heartcare_container--intro h1 {
+        font-size: 16px;
+        width: 250px;
+        margin: 10px 0 0;
+    }
+    .heartcare_container--intro h2 {
+        font-size: 14px;
+       
+    }
+        .heartcare_container--intro a {
+            padding: 10px;
+            right: 70px;
+            position: relative;
+            font-size: 14px;
+        
+        }
+        section.calculadora {
+            position: absolute;
+            top: 720px;
+        }
+        section#saber__sobre__o__que {
+            position: absolute;
+            top: 1900px;
+        }
+            section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-1, section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-2, section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-3, section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-4, section#saber__sobre__o__que article .saber__sobre__o__que__conteudo .conteudo-5 {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+    }
+        header.header-3 {
+            position: absolute;
+            top: 4320px;
+            height: 2300px;
+        }
+        section.header-informacoes {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 6450px;
+            width: 100%;
+        }
+        footer.rodape {
+            background: var(--primary-color);
+            height: 80px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 22px;
+            position: absolute;
+            top: 6900px;
+            width: 100%;
+        }
+    }
+    
+ 
+      
