@@ -1215,14 +1215,14 @@ footer.rodape{
         }
         .heartcare_container--intro {
             top: 320px;
-            padding: 0;
+            padding: 0 0 0 20px;
         
         }
         .heartcare_container--intro h1 {
             line-height: 1.5;
-            font-size: 18px;
+            font-size: 20px;
             width: 300px;
-            margin: 20px 0 10px;
+            margin: 80px 0 10px;
         }
 
         .heartcare_container--intro h2 {
@@ -1237,7 +1237,7 @@ footer.rodape{
             right: 100px;
             position: relative;
             font-size: 14px;
-            margin: 5px;
+            margin: 25px;
         
         }
      
@@ -1591,14 +1591,14 @@ footer.rodape{
         }
         .heartcare_container--intro {
             top: 350px;
-            padding: 0;
+            padding: 0 0 0 20px;
         
         }
         .heartcare_container--intro h1 {
             line-height: 1.5;
             font-size: 22px;
             width: 300px;
-            margin: 30px 0 10px;
+            margin: 80px 0 10px;
         }
 
         .heartcare_container--intro h2 {
